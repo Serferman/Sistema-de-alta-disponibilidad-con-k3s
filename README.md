@@ -43,11 +43,11 @@ La principal ventaja que obtendrían las empresas es la escalabilidad que tiene 
 ## Análisis general del sistema.
 ### Análisis breve de las tecnologías que se utilizarán.
 
-Para realizar un análisis breve del sistema, nos debemos centrar en los componentes básicos que componen el mismo y necesita para funcionar, por lo tanto, estará compuesto de 5 nodos/equipos los cuales son:
-
 <div align="center">
-  <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/3db77254bb9573efc96390a6a38cf2c089ea6a53/recursos/Diagramas%20Explicativos/ModelRack1.png" align="right" width=38% height=10% padding="30px"/>
+  <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/3db77254bb9573efc96390a6a38cf2c089ea6a53/recursos/Diagramas%20Explicativos/ModelRack1.png" align="right" width=40% height=12% padding="30px"/>
 </div>
+
+Para realizar un análisis breve del sistema, nos debemos centrar en los componentes básicos que componen el mismo y necesita para funcionar, por lo tanto, estará compuesto de 5 nodos/equipos los cuales son:
 
 * Banana PI M5 (ARMv8-A) (4Gb, Amlogic S905X3 Cortex-A55 4 Núcleos) 
 * Raspberry PI 3 (ARMv8) (1Gb, Broadcom BCM2837B0 Cortex-A53 4 Núcleos)
