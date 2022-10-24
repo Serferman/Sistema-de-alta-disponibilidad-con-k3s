@@ -163,6 +163,8 @@ Las principales diferencias respecto a la propuesta inicial son:
 * Patch Panel Cat6a 12Ports. (Propuesta 2)
 * Server ITX X86 como proxy (Añadiendo tarjeta de red). (Propuesta 3)
 * Añadir una unidad al rack de servidores SBC´s. (Propuesta 3)
+<br/>
+<br/>
 
 ### Servidores Blade Atornillados (Versiones 1 - 2)
  
@@ -183,6 +185,8 @@ Las principales diferencias respecto a la propuesta inicial son:
 * Patch Panel Cat6a 12Ports. (Propuesta 1)
 * SBC “Orange PI R1 LTS” como proxy. (Propuesta 1 - 2)
 * Añadir otra franja de servidores SBC´s al rack. (Propuesta 1)
+<br/>
+<br/>
 
 ### Servidores Blade Deslizadores (Versiones 1 – 2)
  
@@ -199,3 +203,5 @@ Las principales diferencias respecto a la propuesta inicial son:
 * Switch 10/100/1000 Mbps 16Ports. (Propuesta 1)
 * Patch Panel Cat6a 12Ports. (Propuesta 1)
 * Soporte para servidores blade SBC´s. (Propuesta 1 - 2
+<br/>
+<br/>
