@@ -61,7 +61,7 @@ Seguidamente a estos elementos básicos que componen la espina dorsal del proyec
 Con esto finalizaríamos el listado de los dispositivos que tienen unas mínimas tecnologías para su gestión/administración, pero no quiere decir que esto sea todo el hardware necesario para el proyecto, ya que quedarían unos cuantos componentes para su estructuración y administración que posteriormente se mencionarán.
 
 <div align="center">
-  <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/3db77254bb9573efc96390a6a38cf2c089ea6a53/recursos/Diagramas%20Explicativos/ModelRack1.png" width=45% height=14% padding="30px"/>
+  <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/3db77254bb9573efc96390a6a38cf2c089ea6a53/recursos/Diagramas%20Explicativos/ModelRack1.png" align="left" width=45% height=14% padding="30px"/>
 </div>
 
 En relación con los sistemas operativos que se deben instalar en cada uno de los nodos, se deben de tener en cuenta la arquitectura y la marca de estos, ya que pueden existir S.O específicos para estos. Por lo tanto, los siguientes sistemas operativos que se instalarán serán los siguientes:
