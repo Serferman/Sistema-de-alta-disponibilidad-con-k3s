@@ -72,7 +72,7 @@ En relación con los sistemas operativos que se deben instalar en cada uno de lo
 
 Respecto al software que instalaremos para el correcto funcionamiento del clúster, necesitaremos instalar las siguientes herramientas en todos los equipos:
 
-  <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/cb88074d755c62382ca87abb4fe62ca5aea006e9/recursos/Diagramas%20Explicativos/Esquema-por-capas-realista%20(Propuesta%20inicial)v2.png" align="left" width=45% height=14% padding="30px"/>
+  <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/cb88074d755c62382ca87abb4fe62ca5aea006e9/recursos/Diagramas%20Explicativos/Esquema-por-capas-realista%20(Propuesta%20inicial)v2.png" align="left" width=40% height=10% padding="30px"/>
 
 * K3S (Kubernetes Lightweight)(Software para creación de clúster con ARM)
 * Tar (Es el comando que tienen todos los sistemas Linux para comprimir archivos, que, en conjunto con otros en un script, se puede hacer un protocolo de copias remotas)
