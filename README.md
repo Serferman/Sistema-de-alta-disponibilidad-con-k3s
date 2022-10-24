@@ -45,15 +45,15 @@ La principal ventaja que obtendrían las empresas es la escalabilidad que tiene 
 
 Para realizar un análisis breve del sistema, nos debemos centrar en los componentes básicos que componen el mismo y necesita para funcionar, por lo tanto, estará compuesto de 5 nodos/equipos los cuales son:
 
+<div align="center">
+  <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/3db77254bb9573efc96390a6a38cf2c089ea6a53/recursos/Diagramas%20Explicativos/ModelRack1.png" align="right" width=35% height=10% padding="30px"/>
+</div>
+
 * Banana PI M5 (ARMv8-A) (4Gb, Amlogic S905X3 Cortex-A55 4 Núcleos) 
 * Raspberry PI 3 (ARMv8) (1Gb, Broadcom BCM2837B0 Cortex-A53 4 Núcleos)
 * Raspberry PI 4 (ARMv8-A) (4Gb, Broadcom BCM2711 Cortex-A72 4 Núcleos) 
 * Raspberry PI 4 (ARMv8-A) (8Gb, Broadcom BCM2711 Cortex-A72 4 Núcleos)
 * Servidor ITX 2U (x86) (16Gb RAM, Ryzen 5 2600 6 Núcleos) 
-
-<div align="center">
-  <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/3db77254bb9573efc96390a6a38cf2c089ea6a53/recursos/Diagramas%20Explicativos/ModelRack1.png" align="right" width=35% height=10% padding="30px"/>
-</div>
 
 Seguidamente a estos elementos básicos que componen la espina dorsal del proyecto, tenemos algunos elementos complementarios. Algunos de los cuales son:
 
