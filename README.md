@@ -51,6 +51,10 @@ Para realizar un análisis breve del sistema, nos debemos centrar en los compone
 * Raspberry PI 4 (ARMv8-A) (8Gb, Broadcom BCM2711 Cortex-A72 4 Núcleos)
 * Servidor ITX 2U (x86) (16Gb RAM, Ryzen 5 2600 6 Núcleos) 
 
+<div align="center">
+  <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/3db77254bb9573efc96390a6a38cf2c089ea6a53/recursos/Diagramas%20Explicativos/ModelRack1.png" align="left" width=45% height=14% padding="30px"/>
+</div>
+
 Seguidamente a estos elementos básicos que componen la espina dorsal del proyecto, tenemos algunos elementos complementarios. Algunos de los cuales son:
 
 * Servidor NAS WD Mycloud EX2 ULTRA (2 Bahías, 1 Disco duro Externo de 4 TB, 1 Disco duro 
@@ -59,10 +63,6 @@ Seguidamente a estos elementos básicos que componen la espina dorsal del proyec
 * Riello UPS 800VA (4 Enchufes, 1 Conector USB, 480W)
 
 Con esto finalizaríamos el listado de los dispositivos que tienen unas mínimas tecnologías para su gestión/administración, pero no quiere decir que esto sea todo el hardware necesario para el proyecto, ya que quedarían unos cuantos componentes para su estructuración y administración que posteriormente se mencionarán.
-
-<div align="center">
-  <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/3db77254bb9573efc96390a6a38cf2c089ea6a53/recursos/Diagramas%20Explicativos/ModelRack1.png" align="left" width=45% height=14% padding="30px"/>
-</div>
 
 En relación con los sistemas operativos que se deben instalar en cada uno de los nodos, se deben de tener en cuenta la arquitectura y la marca de estos, ya que pueden existir S.O específicos para estos. Por lo tanto, los siguientes sistemas operativos que se instalarán serán los siguientes:
 
