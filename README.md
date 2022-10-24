@@ -142,3 +142,48 @@ Además de todo esto, dependiendo de la versión del software de clusterización
 * Herramienta para la administración del SAI (PowerShield).
 * Servicio de clusterización (K3s).
 * Acceso al sistema operativo (MY Cloud OS 5) del NAS en red.
+
+## Definición y valoración de alternativas. 
+### Servidores horizontales (Versiones 1 - 2 - 3)
+
+
+Esta propuesta se centra en las bases del concepto y es la que primordialmente he seguido. Podemos ver que en las diferentes versiones siempre aparecen SBC’s colocados horizontalmente, en tandas de 2, consiguiendo de esta manera mucha capacidad de gestión física de los mismos, pero desaprovechamos mucho espacio de la unidad del rack. 
+
+Además, observamos como podemos jugar con la cantidad de puertos del panel de parcheo (12) y del switch (16), consiguiendo de esta manera, más conectividad en nuestro rack, pero como ya he comentado varias veces, todo depende de la necesidad de ese momento.
+
+En la tercera propuesta existe una peculiaridad, tendríamos el clúster que proponemos como base del proyecto, pero el maestro no sería el pc basado en X86, ya que este se dedicaría exclusivamente a proteger la red mediante un sistema Proxy o Firewall. De esta forma, dedicamos todos los recursos del nodo más potente del rack a proteger a todos los demás.
+
+Las principales diferencias respecto a la propuesta inicial son:
+
+* Switch 10/100/1000 Mbps 16Ports. (Propuesta 2)
+* Patch Panel Cat6a 12Ports. (Propuesta 2)
+* Server ITX X86 como proxy (Añadiendo tarjeta de red). (Propuesta 3)
+* Añadir una unidad al rack de servidores SBC´s. (Propuesta 3)
+
+La propuesta que se está intentando llevar a cabo actualmente, es la que se ha marcado con un punto rojo.
+
+### Servidores Blade Atornillados (Versiones 1 - 2)
+ 
+Como bien indica el nombre de esta propuesta, el formato en el que los servidores SBC`s son colocados dentro del rack, se asemeja a como los servidores Blade están colocados en un rack de 19’’.
+
+Podemos observar a simple vista que en un espacio reducido hemos aumentado la cantidad de SBC’s que pueden funcionar simultáneamente, pero de la misma manera hemos aumentado el espacio que estos ocupan dentro del rack, han pasado de ocupar 4 (en tandas de 2 horizontalmente) en 2U a 5 SBC’s verticalmente en 2U.
+
+Una curiosa característica de esta propuesta es que, disponemos en los dos casos de un proxy o firewall con el que protegeremos la red de nuestro clúster. A diferencia de la propuesta anterior, que nos brindaba esta opción montada en el servidor ITX X86, en esta, se nos brinda la posibilidad montada en un SBC’s, el cual no tiene las mismas capacidades físicas que el caso anterior, pero es una capa más de seguridad.
+
+Las principales diferencias respecto a la propuesta inicial son:
+
+* Switch 10/100/1000 Mbps 16Ports. (Propuesta 1)
+* Patch Panel Cat6a 12Ports. (Propuesta 1)
+* SBC “Orange PI R1 LTS” como proxy. (Propuesta 1 - 2)
+* Añadir otra franja de servidores SBC´s al rack. (Propuesta 1)
+
+### Servidores Blade Deslizadores (Versiones 1 – 2)
+ 
+Como última propuesta tendríamos esta, la cual se centra en optimizar el máximo espacio posible mediante un modelo que también se asemeja bastante a como los servidores Blade están colocados.
+
+En esta disposición podremos colocar hasta un máximo de 7 SBC`s haciéndola la más optima.Debemos de tener en cuenta que cuantos más SBC’s estén colocados en nuestro rack, másconexiones debemos tener. Por lo que podríamos disponer de las conexiones justas para los nodos que hay en el rack (Propuesta 2) o podríamos disponer de bastantes puertos para hacer escalable el sistema y en un futuro poder ampliarlo (Propuesta 1).
+
+Las principales diferencias respecto a la propuesta inicial son:
+* Switch 10/100/1000 Mbps 16Ports. (Propuesta 1)
+* Patch Panel Cat6a 12Ports. (Propuesta 1)
+* Soporte para servidores blade SBC´s. (Propuesta 1 - 2
