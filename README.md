@@ -1,7 +1,7 @@
 # High availability system with k3s
 ## En que consiste
 
-  <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/f073996cc14c1d34aa923d18cdeb911db5039c56/recursos/Diagramas%20Explicativos/Diagramas%20de%20las%20versiones%20proyecto%20Rack%2010''/Servidores%20horizontales%20(Version%201%20Rack).png" align="right" width=25% height=75% padding="10px"/>
+  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores horizontales (Version 1 Rack).png" align="right" width=25% height=75% padding="10px"/>
 
 El proyecto consiste en una estructura de servidores de bajo consumo en clúster que proporcionará alta disponibilidad y escalabilidad al sistema mediante K3s, pudiendo ser complementada por capas de seguridad físicas (Firewalls, Proxys, IPS) o lógicas.
 
@@ -25,9 +25,8 @@ El motivo principal de la realización de este proyecto es mostrar a las empresa
 La principal ventaja que obtendrían las empresas es la escalabilidad que tiene el sistema y su alta disponibilidad en relación con los servicios que se pueden brindar. 
 
 <div align="center">
-  <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/57a2a7c39b55bb3055ad8898ebc6aefc97c9db9b/recursos/Diagramas%20Explicativos/Un%20pod.png" width=45% height=14% padding="30px"/>
-  
-  <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/57a2a7c39b55bb3055ad8898ebc6aefc97c9db9b/recursos/Diagramas%20Explicativos/Varios%20pods.png" width=45% height=14% padding="30px"/>
+  <img src="diagramas/Un pod.png" width=45% height=14% padding="30px"/>
+  <img src="diagramas/Varios pods.png" width=45% height=14% padding="30px"/>
 </div>
 
 ## Objetivos básicos
@@ -146,6 +145,11 @@ Además de todo esto, dependiendo de la versión del software de clusterización
 ## Definición y valoración de alternativas. 
 ### Servidores horizontales (Versiones 1 - 2 - 3)
 
+<div align="center">
+  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores horizontales (Version 1 Rack).png" width=40% height=10% padding="30px"/>
+  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores horizontales (Version 2 Rack).png" width=40% height=10% padding="30px"/> 
+  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores horizontales (Version 3 Rack)(Servidor Maestro como proxy).png" width=40% height=10% padding="30px"/>
+</div>
 
 Esta propuesta se centra en las bases del concepto y es la que primordialmente he seguido. Podemos ver que en las diferentes versiones siempre aparecen SBC’s colocados horizontalmente, en tandas de 2, consiguiendo de esta manera mucha capacidad de gestión física de los mismos, pero desaprovechamos mucho espacio de la unidad del rack. 
 
