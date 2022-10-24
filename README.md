@@ -11,7 +11,7 @@ Gracias a un SAI semi gestionable, se podrá disponer de una situación de alta 
 
 Por último, todo esto será administrado mediante un servicio VPN (Zerotier o Hamachi) y SSH (OpenSSH o DropBear). 
 
-<p align="left" src="https://github.com/Serferman/high-availability-system-with-k3s/blob/862083787a6b44f7c3ce0c1da5c7cda6fa73182a/recursos/Diagramas%20Explicativos/Diagramas%20de%20las%20versiones%20proyecto%20Rack%2010''/Servidores%20horizontales%20(Version%201%20Rack).png"/>
+<p align="left" src="https://github.com/Serferman/high-availability-system-with-k3s/blob/862083787a6b44f7c3ce0c1da5c7cda6fa73182a/recursos/Diagramas%20Explicativos/Diagramas%20de%20las%20versiones%20proyecto%20Rack%2010''/Servidores%20horizontales%20(Version%201%20Rack).png" />
 
 
 ¿Cuáles son los objetivos?
