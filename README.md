@@ -13,8 +13,8 @@ Gracias a un SAI semi gestionable, se podrá disponer de una situación de alta 
 
 Por último, todo esto será administrado mediante un servicio VPN (Zerotier o Hamachi) y SSH (OpenSSH o DropBear). 
 
-¿Cuáles son los objetivos?
---------------------------
+## ¿Cuáles son los objetivos?
+
 El motivo principal de la realización de este proyecto es mostrar a las empresas la posibilidad de tener una estructura de servidores propia, sin que esto, conlleve realizar un gran desembolso de dinero para las mismas.
 
 La principal ventaja que obtendrían las empresas es la escalabilidad que tiene el sistema y su alta disponibilidad en relación con los servicios que se pueden brindar. 
@@ -59,33 +59,33 @@ La principal ventaja que obtendrían las empresas es la escalabilidad que tiene 
   * Disipadores para SBC’s .
   * 4 tarjetas microSD de 32 GB
 * Un servidor maestro basado el x86, con formato ITX (2U)
-o Placa base ITX.
-o Nano PSU.
-o 2 módulos RAM 8GB.
-o Disipador pequeño.
-o Tarjeta Gráfica Slim genérica 1 Slot.
-o Modelo 3D para el soporte
-o HDD 500GB
-o SSD 120GB
+  * Placa base ITX.
+  * Nano PSU.
+  * 2 módulos RAM 8GB.
+  * Disipador pequeño.
+  * Tarjeta Gráfica Slim genérica 1 Slot.
+  * Modelo 3D para el soporte
+  * HDD 500GB
+  * SSD 120GB
 * 2 pasacables (0,5U).
 * Un ventilador específico para refrigerar el rack 10”.
 * 2 regletas de 4 enchufes cada una con un interruptor para poder apagarla (2U).
 * 4 transformadores para los SBC’s
 * Un transformador para cada uno de estos; Servidor maestro ITX, el Switch, el NAS WD y el 
-disco duro externo.
+  disco duro externo.
 * Un SAI administrable de 480W con 4 tomas de corriente.
 * Una NAS de red WD de 2 Bahías.
-o 2 discos Duros de 500GB
+  * 2 discos Duros de 500GB
 * Un disco duro externo de 2.5 pulgadas de 4TB
 * Un disco duro externo de 3.5 pulgadas de 1TB
 * Una Orange PI R1 como Firewall/proxy (Este apartado es opcional)
 
 ### Necesidades lógicas generales:
-- 3 sistemas operativos “Raspberry PI OS”.
-- Un sistema operativo basado en Ubuntu Server “Ubuntu Server 20.04 bpi m5”.
-- Un sistema operativo “Ubuntu Server”.
-- Servicio VPN (Zerotier o Hamachi) o (Wireguard/OpenVPN).
-- Servicio SSH (OpenSSH).
-- Herramienta para la administración del SAI (PowerShield).
-- Servicio de clusterización (K3s).
-- Acceso al sistema operativo (MY Cloud OS 5) del NAS en red.
+* 3 sistemas operativos “Raspberry PI OS”.
+* Un sistema operativo basado en Ubuntu Server “Ubuntu Server 20.04 bpi m5”.
+* Un sistema operativo “Ubuntu Server”.
+* Servicio VPN (Zerotier o Hamachi) o (Wireguard/OpenVPN).
+* Servicio SSH (OpenSSH).
+* Herramienta para la administración del SAI (PowerShield).
+* Servicio de clusterización (K3s).
+* Acceso al sistema operativo (MY Cloud OS 5) del NAS en red.
