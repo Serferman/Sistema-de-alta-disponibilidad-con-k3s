@@ -141,7 +141,7 @@ Además de todo esto, dependiendo de la versión del software de clusterización
 * Herramienta para la administración del SAI (PowerShield).
 * Servicio de clusterización (K3s).
 * Acceso al sistema operativo (MY Cloud OS 5) del NAS en red.
-<br/>
+
 
 ## Definición y valoración de alternativas. 
 ### Servidores horizontales (Versiones 1 - 2 - 3)
@@ -164,7 +164,7 @@ Las principales diferencias respecto a la propuesta inicial son:
 * Patch Panel Cat6a 12Ports. (Propuesta 2)
 * Server ITX X86 como proxy (Añadiendo tarjeta de red). (Propuesta 3)
 * Añadir una unidad al rack de servidores SBC´s. (Propuesta 3)
-<br/>
+
 
 ### Servidores Blade Atornillados (Versiones 1 - 2)
  
@@ -185,7 +185,7 @@ Las principales diferencias respecto a la propuesta inicial son:
 * Patch Panel Cat6a 12Ports. (Propuesta 1)
 * SBC “Orange PI R1 LTS” como proxy. (Propuesta 1 - 2)
 * Añadir otra franja de servidores SBC´s al rack. (Propuesta 1)
-<br/>
+
 
 ### Servidores Blade Deslizadores (Versiones 1 – 2)
  
@@ -204,3 +204,14 @@ Las principales diferencias respecto a la propuesta inicial son:
 * Patch Panel Cat6a 12Ports. (Propuesta 1)
 * Soporte para servidores blade SBC´s. (Propuesta 1 - 2
 <br/>
+
+### Selección, valoración y posibles mejoras de la solución elegida.
+
+  <img src="diagramas/Diagramas detallados electrico y de conectividad del Rack 10''/Esquema conjunto (Electricidad).png" width=30% height=10% hspace=5% />
+
+Como se puede observar, en la parte superior tenemos dos diagramas sobre el circuito eléctrico del proyecto. El primero hace referencia a la fase actual del proyecto, es decir, el nivel que el proyecto está desarrollado ahora mismo y el segundo sería la situación ideal en la que estaría nuestro proyecto en caso de estar completamente desarrollado en el ámbito eléctrico.
+
+En la parte inferior de este apartado, observamos dos diagramas que hacen referencia a la conectividad de red (Ethernet) y de datos (USB). De la misma forma que los esquemas anteriores, el primero hace referencia al diseño que ya está montado y desarrollado, por otro lado, el segundo es la situación ideal que tendría el proyecto de cara a la conectividad de este
+
+  <img src="diagramas/Diagramas detallados electrico y de conectividad del Rack 10''/Esquema conjunto (Conectividad).png" width=30% height=10% hspace=5% />
+
