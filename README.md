@@ -1,9 +1,9 @@
 # High availability system with k3s
+En que consiste
+---------------
 
   <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/f073996cc14c1d34aa923d18cdeb911db5039c56/recursos/Diagramas%20Explicativos/Diagramas%20de%20las%20versiones%20proyecto%20Rack%2010''/Servidores%20horizontales%20(Version%201%20Rack).png" align="right" width=272 height=500 padding="10px"/>
 
-En que consiste
----------------
 El proyecto consiste en una estructura de servidores de bajo consumo en clúster que proporcionará alta disponibilidad y escalabilidad al sistema mediante K3s, pudiendo ser complementada por capas de seguridad físicas (Firewalls, Proxys, IPS) o lógicas.
 
 Estos “servidores” tendrán distintas arquitecturas “Banana PI M5 (ARMv8-A)”, “Raspberry PI 3 (ARMv8)”, “Raspberry PI 4 (ARMv8-A)”, “PC formato micro-ITX (x86)” y sistemas operativos, ya que estos deben de estar adaptados a cada equipo.
