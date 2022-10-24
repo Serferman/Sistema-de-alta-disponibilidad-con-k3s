@@ -19,3 +19,21 @@ Por último, todo esto será administrado mediante un servicio VPN (Zerotier o H
 El motivo principal de la realización de este proyecto es mostrar a las empresas la posibilidad de tener una estructura de servidores propia, sin que esto, conlleve realizar un gran desembolso de dinero para las mismas.
 
 La principal ventaja que obtendrían las empresas es la escalabilidad que tiene el sistema y su alta disponibilidad en relación con los servicios que se pueden brindar. 
+
+¿Qué es lo que quiere decir esto?
+---------------------------------
+El motivo principal de la realización de este proyecto es mostrar a las empresas la posibilidad de tener una estructura de servidores propia, sin que esto, conlleve realizar un gran desembolso de dinero para las mismas.
+
+La principal ventaja que obtendrían las empresas es la escalabilidad que tiene el sistema y su alta disponibilidad en relación con los servicios que se pueden brindar. 
+
+Objetivos básicos
+-----------------
+* Desarrollar una estructura de Clúster mediante K3s, disponiendo de 4 SBC’s y un nodo 
+maestro basado en X86.
+* Obtener un acceso seguro mediante SSH y VPN a estos servidores para una correcta 
+administración.
+*
+*
+*
+*
+*
