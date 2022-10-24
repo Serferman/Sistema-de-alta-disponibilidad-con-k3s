@@ -13,3 +13,4 @@ Gracias a un SAI semi gestionable, se podrá disponer de una situación de alta 
 momentáneamente a un servidor de respaldo.
 
 Por último, todo esto será administrado mediante un servicio VPN (Zerotier o Hamachi) y SSH (OpenSSH o DropBear). 
+https://github.com/Serferman/high-availability-system-with-k3s/blob/0ebb7c19b45846d76d30c24ec0622fe81e64fafa/recursos/Diagramas%20Explicativos/Diagramas%20de%20las%20versiones%20proyecto%20Rack%2010''/Servidores%20horizontales%20(Version%201%20Rack).png
