@@ -164,13 +164,12 @@ Las principales diferencias respecto a la propuesta inicial son:
 * Server ITX X86 como proxy (Añadiendo tarjeta de red). (Propuesta 3)
 * Añadir una unidad al rack de servidores SBC´s. (Propuesta 3)
 <br/>
-<br/>
 
 ### Servidores Blade Atornillados (Versiones 1 - 2)
  
 <div align="center">
-  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores Blade Atornillados (Version 1 Rack).png" width=30% height=10% hspace=10% />
-  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores Blade Atornillados (Version 2 Rack).png" width=30% height=10% /> 
+  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores Blade Atornillados (Version 1 Rack).png" width=30% height=10% hspace=5% />
+  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores Blade Atornillados (Version 2 Rack).png" width=30% height=10% hspace=5% /> 
 </div>
  
 Como bien indica el nombre de esta propuesta, el formato en el que los servidores SBC`s son colocados dentro del rack, se asemeja a como los servidores Blade están colocados en un rack de 19’’.
@@ -186,13 +185,12 @@ Las principales diferencias respecto a la propuesta inicial son:
 * SBC “Orange PI R1 LTS” como proxy. (Propuesta 1 - 2)
 * Añadir otra franja de servidores SBC´s al rack. (Propuesta 1)
 <br/>
-<br/>
 
 ### Servidores Blade Deslizadores (Versiones 1 – 2)
  
 <div align="center">
-  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores Blade Deslizadores (Version 1 Rack).png" width=30% height=10% hspace=10% />
-  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores Blade Deslizadores (Version 2 Rack).png" width=30% height=10% /> 
+  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores Blade Deslizadores (Version 1 Rack).png" width=30% height=10% hspace=5% />
+  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores Blade Deslizadores (Version 2 Rack).png" width=30% height=10% hspace=5%/> 
 </div>
  
 Como última propuesta tendríamos esta, la cual se centra en optimizar el máximo espacio posible mediante un modelo que también se asemeja bastante a como los servidores Blade están colocados.
@@ -200,8 +198,8 @@ Como última propuesta tendríamos esta, la cual se centra en optimizar el máxi
 En esta disposición podremos colocar hasta un máximo de 7 SBC`s haciéndola la más optima.Debemos de tener en cuenta que cuantos más SBC’s estén colocados en nuestro rack, másconexiones debemos tener. Por lo que podríamos disponer de las conexiones justas para los nodos que hay en el rack (Propuesta 2) o podríamos disponer de bastantes puertos para hacer escalable el sistema y en un futuro poder ampliarlo (Propuesta 1).
 
 Las principales diferencias respecto a la propuesta inicial son:
+
 * Switch 10/100/1000 Mbps 16Ports. (Propuesta 1)
 * Patch Panel Cat6a 12Ports. (Propuesta 1)
 * Soporte para servidores blade SBC´s. (Propuesta 1 - 2
-<br/>
 <br/>
