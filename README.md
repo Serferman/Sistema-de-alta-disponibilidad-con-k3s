@@ -146,9 +146,9 @@ Además de todo esto, dependiendo de la versión del software de clusterización
 ### Servidores horizontales (Versiones 1 - 2 - 3)
 
 <div align="center">
-  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores horizontales (Version 1 Rack).png" width=30% height=10% padding="30px"/>
-  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores horizontales (Version 2 Rack).png" width=30% height=10% padding="30px"/> 
-  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores horizontales (Version 3 Rack)(Servidor Maestro como proxy).png" width=30% height=10% padding="30px"/>
+  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores horizontales (Version 1 Rack).png" width=30% height=10% hspace=1% />
+  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores horizontales (Version 2 Rack).png" width=30% height=10% hspace=1% /> 
+  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores horizontales (Version 3 Rack)(Servidor Maestro como proxy).png" width=30% height=10% hspace=1%/>
 </div>
 
 Esta propuesta se centra en las bases del concepto y es la que primordialmente he seguido. Podemos ver que en las diferentes versiones siempre aparecen SBC’s colocados horizontalmente, en tandas de 2, consiguiendo de esta manera mucha capacidad de gestión física de los mismos, pero desaprovechamos mucho espacio de la unidad del rack. 
@@ -164,9 +164,12 @@ Las principales diferencias respecto a la propuesta inicial son:
 * Server ITX X86 como proxy (Añadiendo tarjeta de red). (Propuesta 3)
 * Añadir una unidad al rack de servidores SBC´s. (Propuesta 3)
 
-La propuesta que se está intentando llevar a cabo actualmente, es la que se ha marcado con un punto rojo.
-
 ### Servidores Blade Atornillados (Versiones 1 - 2)
+ 
+<div align="center">
+  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores Blade Atornillados (Version 1 Rack).png" width=30% height=10% hspace=10% />
+  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores Blade Atornillados (Version 2 Rack).png" width=30% height=10% /> 
+</div>
  
 Como bien indica el nombre de esta propuesta, el formato en el que los servidores SBC`s son colocados dentro del rack, se asemeja a como los servidores Blade están colocados en un rack de 19’’.
 
@@ -182,6 +185,11 @@ Las principales diferencias respecto a la propuesta inicial son:
 * Añadir otra franja de servidores SBC´s al rack. (Propuesta 1)
 
 ### Servidores Blade Deslizadores (Versiones 1 – 2)
+ 
+<div align="center">
+  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores Blade Deslizadores (Version 1 Rack).png" width=30% height=10% hspace=10% />
+  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores Blade Deslizadores (Version 2 Rack).png" width=30% height=10% /> 
+</div>
  
 Como última propuesta tendríamos esta, la cual se centra en optimizar el máximo espacio posible mediante un modelo que también se asemeja bastante a como los servidores Blade están colocados.
 
