@@ -141,6 +141,7 @@ Además de todo esto, dependiendo de la versión del software de clusterización
 * Herramienta para la administración del SAI (PowerShield).
 * Servicio de clusterización (K3s).
 * Acceso al sistema operativo (MY Cloud OS 5) del NAS en red.
+<br/>
 
 ## Definición y valoración de alternativas. 
 ### Servidores horizontales (Versiones 1 - 2 - 3)
