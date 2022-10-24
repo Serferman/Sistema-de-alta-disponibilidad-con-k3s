@@ -26,9 +26,11 @@ El motivo principal de la realización de este proyecto es mostrar a las empresa
 
 La principal ventaja que obtendrían las empresas es la escalabilidad que tiene el sistema y su alta disponibilidad en relación con los servicios que se pueden brindar. 
 
+<div align="center">
   <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/57a2a7c39b55bb3055ad8898ebc6aefc97c9db9b/recursos/Diagramas%20Explicativos/Un%20pod.png" align="center" width=272 height=150 padding="10px"/>
   
   <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/57a2a7c39b55bb3055ad8898ebc6aefc97c9db9b/recursos/Diagramas%20Explicativos/Varios%20pods.png" align="center" width=272 height=150 padding="10px"/>
+</div>
 
 Objetivos básicos
 -----------------
