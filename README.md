@@ -52,7 +52,7 @@ Para realizar un análisis breve del sistema, nos debemos centrar en los compone
 * Servidor ITX 2U (x86) (16Gb RAM, Ryzen 5 2600 6 Núcleos) 
 
 <div align="center">
-  <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/3db77254bb9573efc96390a6a38cf2c089ea6a53/recursos/Diagramas%20Explicativos/ModelRack1.png" align="left" width=45% height=14% padding="30px"/>
+  <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/3db77254bb9573efc96390a6a38cf2c089ea6a53/recursos/Diagramas%20Explicativos/ModelRack1.png" align="right" width=35% height=10% padding="30px"/>
 </div>
 
 Seguidamente a estos elementos básicos que componen la espina dorsal del proyecto, tenemos algunos elementos complementarios. Algunos de los cuales son:
