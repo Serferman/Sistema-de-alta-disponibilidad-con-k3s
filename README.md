@@ -47,17 +47,17 @@ La principal ventaja que obtendrían las empresas es la escalabilidad que tiene 
 * Un Armario rack 10” 12U
 * Un dispositivo de red capaz de hacer enrutamiento NAT (Router).
 * Un switch de X puertos inteligente (1U) (Dependiendo de lo grande que queramos hacer el 
-clúster).
-o Modelo 3D para el soporte (obviamente se podría comprar un switch específico 
-para rack de 10” y ahorrarse esto).
+  clúster).
+  * Modelo 3D para el soporte (obviamente se podría comprar un switch específico 
+    para rack de 10” y ahorrarse esto).
 * Un patch panel de X puertos (0,5U) (en relación con el switch).
 * Unos 10 metros de cableado de par tranzado de categoría 6a.
 * 6 cables de par trenzado de Cat 6a para conectar el switch con el patch panel.
 * Unas cabezas RJ45 FTP cat7.
 * 4 miniordenadores o SBC’s (2U) (Podemos usar la cantidad que queramos o podamos).
-o 2 modelos 3D para el soporte.
-o Disipadores para SBC’s .
-o 4 tarjetas microSD de 32 GB
+  * 2 modelos 3D para el soporte.
+  * Disipadores para SBC’s .
+  * 4 tarjetas microSD de 32 GB
 * Un servidor maestro basado el x86, con formato ITX (2U)
 o Placa base ITX.
 o Nano PSU.
