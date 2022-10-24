@@ -1,5 +1,5 @@
 # High availability system with k3s
-##En que consiste
+## En que consiste
 ---------------
 
   <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/f073996cc14c1d34aa923d18cdeb911db5039c56/recursos/Diagramas%20Explicativos/Diagramas%20de%20las%20versiones%20proyecto%20Rack%2010''/Servidores%20horizontales%20(Version%201%20Rack).png" align="right" width=272 height=500 padding="10px"/>
