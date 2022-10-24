@@ -83,13 +83,13 @@ Respecto al software que instalaremos para el correcto funcionamiento del clúst
 
 En relación con el software especifico que debemos instalar en el máster sería:
 
-  * PowerShield (Software para la automatización del apagado de los servidores en caso de corte eléctrico.)
+  * ***PowerShield*** (Software para la automatización del apagado de los servidores en caso de corte eléctrico.)
 
 Respecto a los servicios que se podría montar encima de K3s, serian:
 
-  * Servidor Web (NginX)
-  * Servidor base de datos (MariaDB), (MySQL) o (MongoDB)
-  * Cualquier CMS (Wordpress), (Drupal), (Joomla), (Moodle), etc …
+  * ***Servidor Web*** (NginX)
+  * ***Servidor base de datos*** (MariaDB), (MySQL) o (MongoDB)
+  * ***Cualquier CMS*** (Wordpress), (Drupal), (Joomla), (Moodle), etc …
 
 Además de todo esto, dependiendo de la versión del software de clusterización que este instaladase utilizará la base de datos “SQLite” o “ETCD”, estas dos son bases de datos enfocadas a distribuciones ligeras.
 
