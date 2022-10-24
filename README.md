@@ -75,21 +75,21 @@ Respecto al software que instalaremos para el correcto funcionamiento del clúst
   <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/cb88074d755c62382ca87abb4fe62ca5aea006e9/recursos/Diagramas%20Explicativos/Esquema-por-capas-realista%20(Propuesta%20inicial)v2.png" align="left" width=35% height=6% padding="30px"/>
  </br>
  
-* K3S (Kubernetes Lightweight)(Software para creación de clúster con ARM)
-* Tar (Es el comando que tienen todos los sistemas Linux para comprimir archivos, que, en conjunto con otros en un script, se puede hacer un protocolo de copias remotas)
-* OpenSSH (Es el servidor SSH por el que se accederá a cada nodo en caso de necesitarlo)
-* Zerotier (VPN principal “VPS” por la que se tendrá acceso remoto al sistema del clúster)
-* Hamachi (VPN secundaria “VPS” por la que se tendrá acceso remoto al sistema del clúster)
+  * K3S (Kubernetes Lightweight)(Software para creación de clúster con ARM)
+  * Tar (Es el comando que tienen todos los sistemas Linux para comprimir archivos, que, en conjunto con otros en un script, se puede hacer un protocolo de copias         remotas)
+  * OpenSSH (Es el servidor SSH por el que se accederá a cada nodo en caso de necesitarlo)
+  * Zerotier (VPN principal “VPS” por la que se tendrá acceso remoto al sistema del clúster)
+  * Hamachi (VPN secundaria “VPS” por la que se tendrá acceso remoto al sistema del clúster)
 
 En relación con el software especifico que debemos instalar en el máster sería:
 
-* PowerShield (Software para la automatización del apagado de los servidores en caso de corte eléctrico.)
+  * PowerShield (Software para la automatización del apagado de los servidores en caso de corte eléctrico.)
 
 Respecto a los servicios que se podría montar encima de K3s, serian:
 
-* Servidor Web (NginX)
-* Servidor base de datos (MariaDB), (MySQL) o (MongoDB)
-* Cualquier CMS (Wordpress), (Drupal), (Joomla), (Moodle), etc …
+  * Servidor Web (NginX)
+  * Servidor base de datos (MariaDB), (MySQL) o (MongoDB)
+  * Cualquier CMS (Wordpress), (Drupal), (Joomla), (Moodle), etc …
 
 Además de todo esto, dependiendo de la versión del software de clusterización que este instaladase utilizará la base de datos “SQLite” o “ETCD”, estas dos son bases de datos enfocadas a distribuciones ligeras.
 
