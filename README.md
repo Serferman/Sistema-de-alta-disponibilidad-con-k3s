@@ -28,12 +28,11 @@ La principal ventaja que obtendrían las empresas es la escalabilidad que tiene 
 
 Objetivos básicos
 -----------------
-* Desarrollar una estructura de Clúster mediante K3s, disponiendo de 4 SBC’s y un nodo 
-maestro basado en X86.
-* Obtener un acceso seguro mediante SSH y VPN a estos servidores para una correcta 
-administración.
-*
-*
-*
-*
-*
+* Desarrollar una estructura de Clúster mediante K3s, disponiendo de 4 SBC’s y un nodo maestro basado en X86.
+* Obtener un acceso seguro mediante SSH y VPN a estos servidores para una correcta administración.
+* Capacitar al sistema el correcto despliegue de PODs desde la terminal permitiendo así administrarlos, replicarlos y eliminarlos. (Alta disponibilidad)
+* Posteriormente, capacitar al sistema de una administración gráfica desde la que desplegar PODs y administrarlos.
+* Abaratar costes en el desarrollo de una estructura de servidores propietaria
+* Facilitar la escalabilidad del sistema y la alta disponibilidad de este y de los servicios, en función de las necesidades de la empresa.
+* Proporcionar una monitorización más personalizada, esto iría en relación con lo grande que sería nuestro clúster, ya que en ciertos puntos podríamos poner proxy’s o firewalls.
+
