@@ -51,3 +51,26 @@ Todo el hardware usado para realizar este proyecto ha sido comprado en la vida r
 <tr> <td colspan=2></td> <td>1.458,64€</td> <td>1.534,2€</td></tr>
 </table>
 </div>
+
+## Telecomunicación y redes
+
+Todo el apartado de comunicación y redes usa hardware, cableado, etc. Todo lo mencionado anteriormente ha sido usado para realizar este proyecto en la realidad, por lo que el presupuesto se acerca lo máximo posible a la realidad.
+
+<div align=center>
+<table>
+<tr> <td>Articulo</td> <td>Cantidad</td> <td>Precio unidad</td> <td>Importe</td></tr>
+<tr> <td>Router Mi AIoT AC2350</td> <td>1</td> <td>24,76€</td> <td>24,76€</td></tr>
+<tr> <td>Switch D-Link DGS-1100-08</td> <td>1</td> <td>36,33€</td> <td>36,33€</td></tr>
+<tr> <td>Modelo 3D (Soporte Switch 10”)</td> <td>1</td> <td>16,10€</td> <td>16,10€</td></tr>
+<tr> <td>Patch Panel deleyCON</td> <td>1</td> <td>20,75€</td> <td>20,75€</td></tr>
+<tr> <td>Cable de par trenzado (Cat6a) (SFTP) (10M)</td> <td>1</td> <td>18,32€</td> <td>18,32€</td></tr>
+<tr> <td>Conectores RJ45 (Cat7) (FTP)</td> <td>10</td> <td>5,01€</td> <td>5,01€</td></tr>
+<tr> <td>Protectores para conectores RJ45</td> <td>10</td> <td>1,57€</td> <td>1,57€</td></tr>
+<tr> <td>Cables de par trenzado (Cat6) (UTP)</td> <td>6</td> <td>5,15€</td> <td>5,15€</td></tr>
+<tr> <td colspan=2></td> <td>127,99€</td> <td>127,99€</td></tr>
+</table>
+</div>
+
+Precios y cantidades totales tras el recuento de material
+Cantidad total Precio unidad total Importe total
+104 1.586,63€ 1.662,19€
