@@ -68,8 +68,8 @@
 
 <div align="center">
   <img src="/diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores horizontales (Version 1 Rack).png" width=30% height=10% hspace=1% />
-  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores horizontales (Version 2 Rack).png" width=30% height=10% hspace=1% /> 
-  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores horizontales (Version 3 Rack)(Servidor Maestro como proxy).png" width=30% height=10% hspace=1%/>
+  <img src="/diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores horizontales (Version 2 Rack).png" width=30% height=10% hspace=1% /> 
+  <img src="/diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores horizontales (Version 3 Rack)(Servidor Maestro como proxy).png" width=30% height=10% hspace=1%/>
 </div>
 
 Esta propuesta se centra en las bases del concepto y es la que primordialmente he seguido. Podemos ver que en las diferentes versiones siempre aparecen SBC’s colocados horizontalmente, en tandas de 2, consiguiendo de esta manera mucha capacidad de gestión física de los mismos, pero desaprovechamos mucho espacio de la unidad del rack. 
@@ -89,8 +89,8 @@ Las principales diferencias respecto a la propuesta inicial son:
 ### Servidores Blade Atornillados (Versiones 1 - 2)
  
 <div align="center">
-  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores Blade Atornillados (Version 1 Rack).png" width=30% height=10% hspace=5% />
-  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores Blade Atornillados (Version 2 Rack).png" width=30% height=10% hspace=5% /> 
+  <img src="/diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores Blade Atornillados (Version 1 Rack).png" width=30% height=10% hspace=5% />
+  <img src="/diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores Blade Atornillados (Version 2 Rack).png" width=30% height=10% hspace=5% /> 
 </div>
  
 Como bien indica el nombre de esta propuesta, el formato en el que los servidores SBC`s son colocados dentro del rack, se asemeja a como los servidores Blade están colocados en un rack de 19’’.
@@ -110,8 +110,8 @@ Las principales diferencias respecto a la propuesta inicial son:
 ### Servidores Blade Deslizadores (Versiones 1 – 2)
  
 <div align="center">
-  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores Blade Deslizadores (Version 1 Rack).png" width=30% height=10% hspace=5% />
-  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores Blade Deslizadores (Version 2 Rack).png" width=30% height=10% hspace=5%/> 
+  <img src="/diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores Blade Deslizadores (Version 1 Rack).png" width=30% height=10% hspace=5% />
+  <img src="/diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores Blade Deslizadores (Version 2 Rack).png" width=30% height=10% hspace=5%/> 
 </div>
  
 Como última propuesta tendríamos esta, la cual se centra en optimizar el máximo espacio posible mediante un modelo que también se asemeja bastante a como los servidores Blade están colocados.
@@ -127,7 +127,7 @@ Las principales diferencias respecto a la propuesta inicial son:
 
 ### Selección, valoración y posibles mejoras de la solución elegida.
 <div align="center">
-  <img src="diagramas/Diagramas detallados electrico y de conectividad del Rack 10''/Esquema conjunto (Electricidad).png" width=80% height=40% />
+  <img src="/diagramas/Diagramas detallados electrico y de conectividad del Rack 10''/Esquema conjunto (Electricidad).png" width=80% height=40% />
 </div>
 
 Como se puede observar, en la parte superior tenemos dos diagramas sobre el circuito eléctrico del proyecto. El primero hace referencia a la fase actual del proyecto, es decir, el nivel que el proyecto está desarrollado ahora mismo y el segundo sería la situación ideal en la que estaría nuestro proyecto en caso de estar completamente desarrollado en el ámbito eléctrico.
@@ -135,14 +135,14 @@ Como se puede observar, en la parte superior tenemos dos diagramas sobre el circ
 En la parte inferior de este apartado, observamos dos diagramas que hacen referencia a la conectividad de red (Ethernet) y de datos (USB). De la misma forma que los esquemas anteriores, el primero hace referencia al diseño que ya está montado y desarrollado, por otro lado, el segundo es la situación ideal que tendría el proyecto de cara a la conectividad de este
 
 <div align="center">
-  <img src="diagramas/Diagramas detallados electrico y de conectividad del Rack 10''/Esquema conjunto (Conectividad).png" width=80% height=40% />
+  <img src="/diagramas/Diagramas detallados electrico y de conectividad del Rack 10''/Esquema conjunto (Conectividad).png" width=80% height=40% />
 </div>
 
 ## Propuesta del sistema funcional 
 
 En esta propuesta hemos eliminado por completo cualquier rastro de la estructura de Docker. Por lo que el Servidor Maestro se quedaría con un único S.O “Ubuntu Server” y sobre este instalaremos varios servicios, entre los que están Zerotier/Hamachi, Tar/Rsync,PowerShield, K3s (Para desplegar servicios), openSSH, etc…
 
-  <img src="diagramas/Diagrama lógico del sistema y sus relaciones/Esquema-por-capas-realista (Propuesta inicial).png" align="left" width=50% height=5% hspace=2% />
+  <img src="/diagramas/Diagrama lógico del sistema y sus relaciones/Esquema-por-capas-realista (Propuesta inicial).png" align="left" width=50% height=5% hspace=2% />
 
 * **Zerotier/ Hamachi** → Se instalaría con la intención de tener un acceso remoto al sistema mediante VPN (VPS).
 
@@ -170,13 +170,13 @@ En este apartado, se buscarán ampliaciones físicas teniendo en cuenta que las 
  
 <table>
  <tr>
-   <td align="center"><img src="diagramas/Diagramas de las Expansiones/SBC y Cargadores de pared Atornillados.png" width=90% height=20% /></td>
-   <td colspan="2" align="center"><img src="diagramas/Diagramas de las Expansiones/SBC Deslizadores.png" width=90% height=20% /></td>
+   <td align="center"><img src="/diagramas/Diagramas de las Expansiones/SBC y Cargadores de pared Atornillados.png" width=90% height=20% /></td>
+   <td colspan="2" align="center"><img src="/diagramas/Diagramas de las Expansiones/SBC Deslizadores.png" width=90% height=20% /></td>
  </tr>
  <tr>
-   <td align="center"><img src="diagramas/Diagramas de las Expansiones/Switch16 y Patch Panel12.png" width=90% height=20% /></td>
-   <td align="center"><img src="diagramas/Diagramas de las Expansiones/Anker 5 Ports.png" width=40% height=5% /></td>
-   <td align="center"><img src="diagramas/Diagramas de las Expansiones/Proxy(Orange pi R1).png" width=40% height=5% /></td>
+   <td align="center"><img src="/diagramas/Diagramas de las Expansiones/Switch16 y Patch Panel12.png" width=90% height=20% /></td>
+   <td align="center"><img src="/diagramas/Diagramas de las Expansiones/Anker 5 Ports.png" width=40% height=5% /></td>
+   <td align="center"><img src="/diagramas/Diagramas de las Expansiones/Proxy(Orange pi R1).png" width=40% height=5% /></td>
  </tr>
 </table>
  
