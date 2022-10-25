@@ -263,13 +263,13 @@ En este apartado, se buscarán ampliaciones físicas teniendo en cuenta que las 
  
 <table>
  <tr>
-   <td><img src="diagramas/Diagramas de las Expansiones/SBC y Cargadores de pared Atornillados.png" width70% height=10% /></td>
-   <td colspan="2"><img src="diagramas/Diagramas de las Expansiones/SBC Deslizadores.png" width=70% height=15% /></td>
+   <td><img src="diagramas/Diagramas de las Expansiones/SBC y Cargadores de pared Atornillados.png" align="center" width=90% height=20% /></td>
+   <td colspan="2"><img src="diagramas/Diagramas de las Expansiones/SBC Deslizadores.png" align="center" width=90% height=20% /></td>
  </tr>
  <tr>
-   <td><img src="diagramas/Diagramas de las Expansiones/Switch16 y Patch Panel12.png" width=70% height=10% /></td>
-   <td><img src="diagramas/Diagramas de las Expansiones/Anker 5 Ports.png" width=50% height=5% /></td>
-   <td><img src="diagramas/Diagramas de las Expansiones/Proxy(Orange pi R1).png" width=50% height=5% /></td>
+   <td><img src="diagramas/Diagramas de las Expansiones/Switch16 y Patch Panel12.png" width=90% height=20% /></td>
+   <td><img src="diagramas/Diagramas de las Expansiones/Anker 5 Ports.png" width=30% height=5% /></td>
+   <td><img src="diagramas/Diagramas de las Expansiones/Proxy(Orange pi R1).png" width=30% height=5% /></td>
  </tr>
 </table>
  
