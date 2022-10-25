@@ -71,6 +71,11 @@ Todo el apartado de comunicación y redes usa hardware, cableado, etc. Todo lo m
 </table>
 </div>
 
-Precios y cantidades totales tras el recuento de material
-Cantidad total Precio unidad total Importe total
-104 1.586,63€ 1.662,19€
+## Precios y cantidades totales tras el recuento de material
+
+<div align=center>
+<table>
+<tr> <td>Cantidad total</td> <td>Precio unidad</td> <td>total Importe total</td></tr>
+<tr> <td>104</td> <td>1.586,63€</td> <td>1.662,19€</td></tr>
+</table>
+</div>
