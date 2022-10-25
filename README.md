@@ -264,12 +264,12 @@ En este apartado, se buscarán ampliaciones físicas teniendo en cuenta que las 
 <table>
  <tr>
    <td align="center"><img src="diagramas/Diagramas de las Expansiones/SBC y Cargadores de pared Atornillados.png" width=90% height=20% /></td>
-   <td colspan="2"><img src="diagramas/Diagramas de las Expansiones/SBC Deslizadores.png" width=90% height=20% /></td>
+   <td colspan="2" align="center"><img src="diagramas/Diagramas de las Expansiones/SBC Deslizadores.png" width=90% height=20% /></td>
  </tr>
  <tr>
-   <td><img src="diagramas/Diagramas de las Expansiones/Switch16 y Patch Panel12.png" width=90% height=20% /></td>
-   <td><img src="diagramas/Diagramas de las Expansiones/Anker 5 Ports.png" width=30% height=5% /></td>
-   <td><img src="diagramas/Diagramas de las Expansiones/Proxy(Orange pi R1).png" width=30% height=5% /></td>
+   <td align="center"><img src="diagramas/Diagramas de las Expansiones/Switch16 y Patch Panel12.png" width=90% height=20% /></td>
+   <td align="center"><img src="diagramas/Diagramas de las Expansiones/Anker 5 Ports.png" width=40% height=5% /></td>
+   <td align="center"><img src="diagramas/Diagramas de las Expansiones/Proxy(Orange pi R1).png" width=40% height=5% /></td>
  </tr>
 </table>
  
