@@ -235,7 +235,7 @@ En la parte inferior de este apartado, observamos dos diagramas que hacen refere
 
 En esta propuesta hemos eliminado por completo cualquier rastro de la estructura de Docker. Por lo que el Servidor Maestro se quedaría con un único S.O “Ubuntu Server” y sobre este instalaremos varios servicios, entre los que están Zerotier/Hamachi, Tar/Rsync,PowerShield, K3s (Para desplegar servicios), openSSH, etc…
 
-  <img src="diagramas/Diagrama lógico del sistema y sus relaciones/Esquema-por-capas-realista (Propuesta inicial).png" align="left" width=50% height=10% />
+  <img src="diagramas/Diagrama lógico del sistema y sus relaciones/Esquema-por-capas-realista (Propuesta inicial).png" align="left" width=50% height=5% hspace=2% />
 
 * **Zerotier/ Hamachi** → Se instalaría con la intención de tener un acceso remoto al sistema mediante VPN (VPS).
 
@@ -252,3 +252,38 @@ Gracias al sistema de clusterización K3s se pueden configurar los despliegues d
 Respecto a los demás servicios el funcionamiento es muy parecido a la propuesta del sistema ideal,obviamente quitándole algunas capas de seguridad, como el proxy o firewall.
 
 Estas son las posibles bases que estableceré al proyecto, pero obviamente todo proyecto es mejorable y adaptativo a lo largo del tiempo, por lo que puedo sumarle o quitarle software al proyecto en medida de lo que las necesidades de este dicten.
+
+## Expansiones o ampliaciones
+### Expansiones o ampliaciones físicas
+En este apartado, se buscarán ampliaciones físicas teniendo en cuenta que las características que buscadas son:
+
+* Mayor potencia.
+* Menor espacio ocupado.
+* Mejor flexibilidad y escalabilidad.
+ 
+<table>
+ <tr>
+   <td><img src="diagramas/Diagramas de las Expansiones/SBC y Cargadores de pared Atornillados.png" width=50% height=5% /></td>
+   <td><img src="diagramas/Diagramas de las Expansiones/SBC Deslizadores.png" width=50% height=5% /></td>
+ </tr>
+ <tr>
+   <td><img src="diagramas/Diagramas de las Expansiones/Switch16 y Patch Panel12.png" width=50% height=5% /></td>
+   <td>
+      <table>
+        <tr>
+          <td><img src="diagramas/Diagramas de las Expansiones/Anker 5 Ports.png" width=20% height=1% /></td>
+          <td><img src="diagramas/Diagramas de las Expansiones/Proxy(Orange pi R1).png" width=20% height=1% /></td>
+        </tr>
+     </table>
+   </td>
+ </tr>
+</table>
+ 
+### Expansiones o ampliaciones lógicas
+Con relación a las ampliaciones lógicas, debemos de tener en cuenta que el núcleo del sistema es el software de clusterización, por lo que todo lo que se añada al sistema, será complementario al mismo o con la finalidad de mejorar o proteger el sistema. Se tendrá en cuenta las siguientes características:
+
+* Mayor seguridad en cada nodo y en la red.
+* Capacidad de realizar copias de seguridad parciales (De los datos o servicios).
+* Instalar en el sistema, un sistema de balanceo de carga especifico.
+* Instalar un servicio de clusterización complementario (Rancher) que sea capaz de administrar el clúster principal por una interfaz gráfica.
+* Instalar y configurar en uno de los nodos que tenga dos tarjetas de red, un sistema operativo firewall (IPFire, PFsense) y configurarlo.
