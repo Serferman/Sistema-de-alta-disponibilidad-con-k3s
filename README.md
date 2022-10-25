@@ -233,9 +233,9 @@ En la parte inferior de este apartado, observamos dos diagramas que hacen refere
 
 ## Propuesta del sistema funcional 
 
-  <img src="diagramas/Diagrama lógico del sistema y sus relaciones/Esquema-por-capas-realista (Propuesta inicial).png" align="left" width=70% height=30% />
-
 En esta propuesta hemos eliminado por completo cualquier rastro de la estructura de Docker. Por lo que el Servidor Maestro se quedaría con un único S.O “Ubuntu Server” y sobre este instalaremos varios servicios, entre los que están Zerotier/Hamachi, Tar/Rsync,PowerShield, K3s (Para desplegar servicios), openSSH, etc…
+
+  <img src="diagramas/Diagrama lógico del sistema y sus relaciones/Esquema-por-capas-realista (Propuesta inicial).png" align="left" width=60% height=20% />
 
 * **Zerotier/ Hamachi** → Se instalaría con la intención de tener un acceso remoto al sistema mediante VPN (VPS).
 
