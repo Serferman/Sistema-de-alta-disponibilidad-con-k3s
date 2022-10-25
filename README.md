@@ -92,56 +92,69 @@ Respecto a los servicios que se podría montar encima de K3s, serian:
 
 Además de todo esto, dependiendo de la versión del software de clusterización que este instaladase utilizará la base de datos “SQLite” o “ETCD”, estas dos son bases de datos enfocadas a distribuciones ligeras.
 
-## Listado de las necesidades del proyecto
-### Necesidades físicas generales:
-
-* Una salida de la red a internet.
-* Un Armario rack 10” 12U
-* Un dispositivo de red capaz de hacer enrutamiento NAT (Router).
-* Un switch de X puertos inteligente (1U) (Dependiendo de lo grande que queramos hacer el 
-  clúster).
-  * Modelo 3D para el soporte (obviamente se podría comprar un switch específico 
-    para rack de 10” y ahorrarse esto).
-* Un patch panel de X puertos (0,5U) (en relación con el switch).
-* Unos 10 metros de cableado de par tranzado de categoría 6a.
-* 6 cables de par trenzado de Cat 6a para conectar el switch con el patch panel.
-* Unas cabezas RJ45 FTP cat7.
-* 4 miniordenadores o SBC’s (2U) (Podemos usar la cantidad que queramos o podamos).
-  * 2 modelos 3D para el soporte.
-  * Disipadores para SBC’s .
-  * 4 tarjetas microSD de 32 GB
-* Un servidor maestro basado el x86, con formato ITX (2U)
-  * Placa base ITX.
-  * Nano PSU.
-  * 2 módulos RAM 8GB.
-  * Disipador pequeño.
-  * Tarjeta Gráfica Slim genérica 1 Slot.
-  * Modelo 3D para el soporte
-  * HDD 500GB
-  * SSD 120GB
-* 2 pasacables (0,5U).
-* Un ventilador específico para refrigerar el rack 10”.
-* 2 regletas de 4 enchufes cada una con un interruptor para poder apagarla (2U).
-* 4 transformadores para los SBC’s
-* Un transformador para cada uno de estos; Servidor maestro ITX, el Switch, el NAS WD y el 
-  disco duro externo.
-* Un SAI administrable de 480W con 4 tomas de corriente.
-* Una NAS de red WD de 2 Bahías.
-  * 2 discos Duros de 500GB
-* Un disco duro externo de 2.5 pulgadas de 4TB
-* Un disco duro externo de 3.5 pulgadas de 1TB
-* Una Orange PI R1 como Firewall/proxy (Este apartado es opcional)
-
-### Necesidades lógicas generales:
-* 3 sistemas operativos “Raspberry PI OS”.
-* Un sistema operativo basado en Ubuntu Server “Ubuntu Server 20.04 bpi m5”.
-* Un sistema operativo “Ubuntu Server”.
-* Servicio VPN (Zerotier o Hamachi) o (Wireguard/OpenVPN).
-* Servicio SSH (OpenSSH).
-* Herramienta para la administración del SAI (PowerShield).
-* Servicio de clusterización (K3s).
-* Acceso al sistema operativo (MY Cloud OS 5) del NAS en red.
-
+## Requisitos del sistema.
+### Técnicos o hardware
+* 1x Armario rack 10” 12U.
+* 1x Paquete de tornillos.
+* 1x Router Mi AIoT AC2350 (4 Puertos) (10/100/1000 Mbps).
+* 1x Switch D-Link DGS-1100-08 (8 Puertos) (10/100/1000 Mbps) (1U).
+  * 1x Modelo 3D (Soporte Switch 10”).
+* 1x Patch Panel deleyCON (8 Puertos) (Cat6) (0.5U).
+* 1x Cable de par trenzado (Cat6a) (SFTP) (10M).
+* 10x Conectores RJ45 (Cat7) (FTP).
+* 10X Protectores para conectores RJ45 (Rojas)
+* 6x Cables de par trenzado (Cat6) (UTP).
+* 4x SBCs (2U)
+  * 2x Modelos 3D (Soporte SBCs 10”).
+  * 4x Disipadores (Para SBCs).
+  * 4x MicroSD Sandisk (32Gb).
+  * 4x Transformadores de (5V 3A) o (5V 2.5A).
+  * 4x Cables de energía (Tipo-C) o (Micro-USB).
+  * 4x Cables de USB 2.0 a USB 2.0 en L.
+* 1x Servidor ITX x86 (2U)
+  * 1x CPU “AMD Ryzen 2600” (6 Cores) (3.4GHz) (65W) (95º)
+  * 1x Placa base “B450 I AORUS PRO WIFI” (AMD).
+  * 1x “RGeek” pico PSU (150W).
+  * 2x “G.Skill Ripjaws V” RAM (8GB) (3000Mhz) (DDR4).
+  * 1x Disipador “AMD Wraith Stealth Socket AM4”.
+  * 1x Tarjeta Gráfica Slim genérica 1 Slot.
+  * 1x WD HDD 500GB (2.5 Pulgadas).
+  * 1x Kingston SSD 120GB (2.5 Pulgadas).
+  * 1x Interruptor de metal Rojo.
+  * 1x Ventilador Slim (120x120x12MM).
+  * 1x RGeek Transformador (120W).
+  * 1x Adaptador en L (AC).
+    * 1x Modelo 3D (Caja para Rack 10”).
+* 2x Pasacables DIGITUS (0.5U).
+* 1x Ventilador Rack 10” (12x12Cm).
+* 2x Regletas de 4 enchufes (2U).
+* 1x NAS Western Digital de Red (2 Bahías).
+  * 1x Adaptador en L de RJ45 macho a hembra.
+  * 1x Adaptador en L (AC).
+  * 1x Transformador (Del Fabricante).
+  * 2x WD HDD 500GB (3.5 Pulgadas).
+* 1x HDD Externo Western Digital (4TB) (2.5 Pulgadas).
+  * 1x Cable USB a Micro USB Tipo-C.
+* 1x HDD Externo Yottamaster (1TB) (3.5 Pulgadas).
+  * 1x Cable USB 3.0 Tipo-B.
+  * 1x Transformador (Del Fabricante).
+* 1x SAI Riello 800VA (480W).
+  * 4x Adaptador en L (IEC).
+  * 4x Adaptador de IEC a enchufe tipo C.
+  * 1x Cable USB 2.0 Tipo-B.
+### Sistema o Software
+* 3x Raspberry PI OS.
+* 1x “Ubuntu Server 20.04 bpi m5”.
+* 1x Ubuntu Server 20.04 LTS.
+* 6x Zerotier/Hamachi.
+* 5x OpenSSH.
+* 1x PowerShield.
+* 5x K3s.
+* 1x Portainer.
+* 1x Entware.
+* 1x Script Apagado.
+* 5x Scripts Copias remotas (Tar).
+* 1x Acceso a MY Cloud OS 5.
 
 ## Definición y valoración de alternativas. 
 ### Servidores horizontales (Versiones 1 - 2 - 3)
@@ -217,3 +230,25 @@ En la parte inferior de este apartado, observamos dos diagramas que hacen refere
 <div align="center">
   <img src="diagramas/Diagramas detallados electrico y de conectividad del Rack 10''/Esquema conjunto (Conectividad).png" width=80% height=40% />
 </div>
+
+## Propuesta del sistema funcional 
+
+  <img src="diagramas/Diagrama lógico del sistema y sus relaciones/Esquema-por-capas-realista (Propuesta inicial).png" align="left" width=70% height=30% />
+
+En esta propuesta hemos eliminado por completo cualquier rastro de la estructura de Docker. Por lo que el Servidor Maestro se quedaría con un único S.O “Ubuntu Server” y sobre este instalaremos varios servicios, entre los que están Zerotier/Hamachi, Tar/Rsync,PowerShield, K3s (Para desplegar servicios), openSSH, etc…
+
+* **Zerotier/ Hamachi** → Se instalaría con la intención de tener un acceso remoto al sistema mediante VPN (VPS).
+
+* **Tar/Rsync** → “Tar” es un comando que está instalado por defecto en la gran mayoría de distribuciones Linux, “Rsync” se debe de instalar en los sistemas Linux, ya que este no está instalado por defecto. Estos dos servicios son posibles soluciones para establecer un sistema de Backups remotos.
+
+* **PowerShield** → Es un software de control que nos servirá para recibir las señales de apagado que el SAI nos mandará al servidor maestro, junto a este funcionará un script desarrollado para realizar un apagado remoto en todos los nodos esclavos del clúster.
+
+* **OpenSSH** → Es un software que nos permitirá acceder al sistema con usuario y contraseña. En el caso de este proyecto, se usará la autenticación mediante clave pública-privada y usuario. Además, se fortalecerá el servicio para mejorar su seguridad.
+
+* **K3s** → Es un software de clusterización que nos permitirá agrupar nodos individuales en grupos, permitiendo así aprovechar su potencia de cómputo o almacenamiento como un conjunto.
+
+Gracias al sistema de clusterización K3s se pueden configurar los despliegues de aplicaciones/servicios en el clúster con relación a las necesidades existentes, por ejemplo, que siempre estén disponibles una cierta cantidad de PODs, para que si alguno de estos cae eltráfico se redirija a otro o tengan una cantidad de recursos reservados a cada uno de estos.
+
+Respecto a los demás servicios el funcionamiento es muy parecido a la propuesta del sistema ideal,obviamente quitándole algunas capas de seguridad, como el proxy o firewall.
+
+Estas son las posibles bases que estableceré al proyecto, pero obviamente todo proyecto es mejorable y adaptativo a lo largo del tiempo, por lo que puedo sumarle o quitarle software al proyecto en medida de lo que las necesidades de este dicten.
