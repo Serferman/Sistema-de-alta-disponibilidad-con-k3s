@@ -28,6 +28,8 @@ Los servicios y herramientas usadas son:
 <tr> <td> MyCloud OS 5 (Sist.) </td> <td> Comprar NAS </td> </tr>
 </table>
 
+<br/>
+
 * **K3s** → (Kubernetes Lightweight) Es un software de clusterización que nos permite unir distintos nodos de una red (En un grupo virtual), de esta manera podemos usar su potencia en conjunto hacia un objetivo en concreto (Servicios, herramientas, CMS). Todo esto se consigue instalando en el servidor maestro el servicio y mediante unos tokens, los cuales se generan en los nodos del clúster, podremos unir estos al mismo.
 
 * **Zerotier** → Es una VPN por software (VPS), mediante esta VPN tendremos acceso a todos los nodos del clúster, ya que estará instalado en todos estos. Para configurar la red de este servicio, disponemos de una página web en la que debemos iniciar sesión con un usuario, establecer el nombre de una red y la IP de esta. (Esta puede ser la que queramos).
