@@ -4,7 +4,7 @@ En este apartado explicare el software finamente usado para el desarrollo de est
 Los servicios y herramientas usadas son:
 
 <div align="center">
-<img src="/diagramas/Diagrama lógico del sistema y sus relaciones/Esquema-por-capas-realista v2 (Mayor Calidad).png" width=52% />
+<img src="/diagramas/Diagrama lógico del sistema y sus relaciones/Esquema-por-capas-realista v2 (Mayor Calidad).png" align="right" width=52% />
 
 <table>
 <tr> <td align="center"> <b> Software </b> </td> <td align="center"> <b> Precio </b> </td> </tr>
