@@ -21,7 +21,7 @@ Los servicios y herramientas usadas son:
 </table>
 
 <table>
-<tr> <td> Sistemas </td> <td> Precio </td> </tr>
+<tr> <td align="center"> <b> Sistemas </b> </td> <td align="center"> <b> Precio </b> </td> </tr>
 <tr> <td> Ubuntu Server </td> <td> Open Source </td> </tr>
 <tr> <td> Raspberry PI OS </td> <td> Sin Coste </td> </tr>
 <tr> <td> Ubuntu Buster Lite </td> <td> Sin Coste </td> </tr>
