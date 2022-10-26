@@ -3,7 +3,7 @@
 En este apartado explicare el software finamente usado para el desarrollo de este proyecto y su posible coste, para ello me apoyaré en un esquema en el que definiré el uso de cada servicio. 
 Los servicios y herramientas usadas son:
 
-<img src="/diagramas/Diagrama lógico del sistema y sus relaciones/Esquema-por-capas-realista v2 (Mayor Calidad).png" align="right" width=50% height=5% hspace=2% />
+<img src="/diagramas/Diagrama lógico del sistema y sus relaciones/Esquema-por-capas-realista v2 (Mayor Calidad).png" align="right" width=50% height=5% />
 
 <table>
 <tr> <td align="center"> <b> Software </b> </td> <td align="center"> <b> Precio </b> </td> </tr>
