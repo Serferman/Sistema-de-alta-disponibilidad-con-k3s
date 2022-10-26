@@ -3,6 +3,7 @@
 En este apartado explicare el software finamente usado para el desarrollo de este proyecto y su posible coste, para ello me apoyaré en un esquema en el que definiré el uso de cada servicio. 
 Los servicios y herramientas usadas son:
 
+<div align="center">
 <img src="/diagramas/Diagrama lógico del sistema y sus relaciones/Esquema-por-capas-realista v2 (Mayor Calidad).png" align="right" width=52% />
 
 <table>
@@ -27,7 +28,8 @@ Los servicios y herramientas usadas son:
 <tr> <td> Ubuntu Buster Lite </td> <td> Sin Coste </td> </tr>
 <tr> <td> MyCloud OS 5 (Sist.) </td> <td> Comprar NAS </td> </tr>
 </table>
-
+</div>
+  
 <br/>
 
 * **K3s** → (Kubernetes Lightweight) Es un software de clusterización que nos permite unir distintos nodos de una red (En un grupo virtual), de esta manera podemos usar su potencia en conjunto hacia un objetivo en concreto (Servicios, herramientas, CMS). Todo esto se consigue instalando en el servidor maestro el servicio y mediante unos tokens, los cuales se generan en los nodos del clúster, podremos unir estos al mismo.
