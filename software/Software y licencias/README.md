@@ -6,7 +6,7 @@ Los servicios y herramientas usadas son:
 <img src="/diagramas/Diagrama lógico del sistema y sus relaciones/Esquema-por-capas-realista v2 (Mayor Calidad).png" align="right" width=50% height=5% hspace=2% />
 
 <table>
-<tr> <td> Software </td> <td> Precio </td> </tr>
+<tr> <td> <b> Software </b> </td> <td> Precio </td> </tr>
 <tr> <td> K3s </td> <td> Sin Coste </td> </tr>
 <tr> <td> Zerotier </td> <td> Sin Coste </td> </tr>
 <tr> <td> OpenSSH </td> <td> Open Source </td> </tr>
