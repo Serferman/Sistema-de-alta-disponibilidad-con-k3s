@@ -17,6 +17,22 @@
 
 * **Entware** → Es un software que se instalará en el NAS WD a través de un archivo binario. Este nos permitirá mantener un conjunto de carpetas importantes de forma persistente, ya que el NAS WD Ext2 Ultra reinicia cualquier configuración que se le realice al apagarse o reiniciarse.
 
+* **MyCloud OS 5 (Web)** → Es un servicio web que nos brinda Western digital en casi todos sus productos, nos permite acceder a través de internet a nuestro NAS y lo que en este se esté almacenando. Por lo tanto, podemos verificar el estado de las copias de seguridad remotas.
+
+* **Script apagado** → Este es un script que ha sido desarrollado por mí mismo para realizar un apagado remoto en el sistema del clúster. Se ha tenido en cuenta la seguridad y se ha juntado con el servicio OpenSSH, de esta manera hemos usado autenticación por clave.
+
+* **Script copias de seguridad remotas** → De la misma manera que en el caso anterior, este es un script desarrollado por mí mismo para realizar copias de seguridad de cada nodo del clúster y mandarlas a través de la red al NAS, teniendo así una manera de recuperar los sistemas en caso de corrupción. Para esto también se ha tenido en cuenta la seguridad y se ha fusionado con el servicio OpenSSH, de esta forma se ha usado la autenticación por clave.
+
+<br/>
+
+* **Ubuntu Server** → Este es el típico de Ubuntu Server, la versión escogida es la 20.04 LTS.
+
+* **Raspberry PI OS** → Este sistema está adaptado por la marca “Raspberry” para su propio hardware, es una derivación del Debian convencional.
+
+* **Ubuntu Buster Lite** → De la misma manera que el anterior, este sistema esta modificado por los creadores de “Banana PI” para su propio hardware, es una derivación del Debian convencional.
+
+* **MyCloud OS 5 (Sistema)** → Este sistema es el que WD le pone a sus NAS, también está basado en Debian, pero a diferencia de los anteriores, este S.O es super capado desde la línea de comandos, por lo que apenas puedes hacerle alguna modificación.
+* 
 Gracias a este sistema de clusterización K3s se pueden configurar despliegues de servicios en un clúster creado con casi todos sus equipos en una arquitectura ARM. La idea principal es que siempre estén disponibles una cierta cantidad de PODs, para que si alguno de estos "cae", el tráfico de este se redirija a otro o que automaticamente se cree otro consiguiendo asi un entorno de alta disponibilidad. Ademas, para estos PODs se pueden reservar una cantidad de recursos físicos de cada nodo existente dentro de la agrupación del cluster.
 
 Respecto a los demás servicios, su funcionamiento es muy parecido a la propuesta del sistema ideal, obviamente quitándole algunas capas de seguridad, como el proxy o firewall.
@@ -52,3 +68,7 @@ Los servicios y herramientas usadas son:
 </div>
 
 Tiene dos versiones, la gratuita, que viene con ciertas limitaciones (no de funcionalidad si no de cantidad) y la de pago, que está sin capar.
+
+En general, se está usando servicios o herramientas de Open Source o directamente gratis, por lo que el coste por software se reduce al mínimo. También hemos de valorar que, si queremos desarrollar este mismo proyecto en un entorno más profesional, muchos de estos servicios se deberán contratar o directamente, montarlos uno mismo, de esta forma te aseguras de que el servicio este acorde a tus necesidades y tenga una mínima garantía de que no fallará.
+
+De la misma manera, aunque estos servicios que se ven en el esquema sean servicios base para el funcionamiento del sistema, sobre estos se pueden montar cualquier otro, ya que mi proyecto se especializa en la alta disponibilidad de K3s y sus pods, en los cuales podríamos montar un servidor Nginx, Apache2, MongoDB, MariaDB, MySQL, Filezilla, etc 
