@@ -68,7 +68,7 @@ En relación con los sistemas operativos que se deben instalar en cada uno de lo
 
 Respecto al software que instalaremos para el correcto funcionamiento del sistema del Rack, tendremos el siguiente esquema para mostrar las propuestas que se podrán instalar en cada equipo:
 
-  <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/cb88074d755c62382ca87abb4fe62ca5aea006e9/recursos/Diagramas%20Explicativos/Esquema-por-capas-realista%20(Propuesta%20inicial)v2.png" align="left" width=35% height=6% hspace=4% vspace=4%/>
+  <img src="diagramas/Diagrama lógico del sistema y sus relaciones/Esquema-por-capas-del-software.png" align="left" width=35% height=6% hspace=4% vspace=4%/>
  </br>
  
   * **K3S** (Kubernetes Lightweight)(Software para creación de clúster con ARM)
