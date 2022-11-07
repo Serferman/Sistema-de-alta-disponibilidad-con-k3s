@@ -44,30 +44,29 @@ Esto nos quiere decir que, cuando tengamos una gran fluctuación de peticiones d
   <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/3db77254bb9573efc96390a6a38cf2c089ea6a53/recursos/Diagramas%20Explicativos/ModelRack1.png" align="right" width=40% height=12% padding="30px"/>
 </div>
 
-Para realizar un análisis breve del sistema, nos debemos centrar en los componentes básicos que componen el mismo y necesita para funcionar, por lo tanto, estará compuesto de 5 nodos/equipos los cuales son:
+Para realizar un análisis breve del sistema que utilizaré, nos centraremos en los componentes que lo componen para su funcionamiento. Por lo tanto, estará compuesto de 5 nodos/equipos los cuales son:
 
-* **Banana PI M5** (ARMv8-A) (4Gb, Amlogic S905X3 Cortex-A55 4 Núcleos) 
-* **Raspberry PI 3** (ARMv8) (1Gb, Broadcom BCM2837B0 Cortex-A53 4 Núcleos)
-* **Raspberry PI 4** (ARMv8-A) (4Gb, Broadcom BCM2711 Cortex-A72 4 Núcleos) 
-* **Raspberry PI 4** (ARMv8-A) (8Gb, Broadcom BCM2711 Cortex-A72 4 Núcleos)
-* **Servidor ITX 2U** (x86) (16Gb RAM, Ryzen 5 2600 6 Núcleos) 
+* **Banana PI M5** (ARMv8-A) (4Gb, Amlogic S905X3 Cortex-A55 4 Núcleos).
+* **Raspberry PI 3** (ARMv8) (1Gb, Broadcom BCM2837B0 Cortex-A53 4 Núcleos).
+* **Raspberry PI 4** (ARMv8-A) (4Gb, Broadcom BCM2711 Cortex-A72 4 Núcleos).
+* **Raspberry PI 4** (ARMv8-A) (8Gb, Broadcom BCM2711 Cortex-A72 4 Núcleos).
+* **Servidor ITX 2U** (x86) (16Gb RAM, Ryzen 5 2600 6 Núcleos).
 
-Seguidamente a estos elementos básicos que componen la espina dorsal del proyecto, tenemos algunos elementos complementarios. Algunos de los cuales son:
+Seguidamente a estos componentes básicos que componen la espina dorsal del proyecto, tenemos algunos elementos complementarios, pero aun asi, necesarios. Los cuales son:
 
-* **Servidor NAS WD Mycloud EX2 ULTRA** (2 Bahías, 1 Disco duro Externo de 4 TB, 1 Disco duro 
-  Externo de 1 TB)
+* **Servidor NAS WD Mycloud EX2 ULTRA** (2 Bahías, RJ45, 2 USB 3.0)
 * **Switch Gestionable D-LINK** (8 Puertos, 1000Gb/s, Smart)
-* **Riello UPS 800VA** (4 Enchufes, 1 Conector USB, 480W)
+* **Riello UPS 800VA** (4 Enchufes, 1 Conector USB type-B, 480W)
 
-Con esto finalizaríamos el listado de los dispositivos que tienen unas mínimas tecnologías para su gestión/administración, pero no quiere decir que esto sea todo el hardware necesario para el proyecto, ya que quedarían unos cuantos componentes para su estructuración y administración que posteriormente se mencionarán.
+Con esto finalizaríamos el listado de los dispositivos que sirven para la intercomunicación del sistema y sobre los que instalaremos el S.O y el software de clusterización, pero no quiere decir que esto sea todo el hardware necesario para el proyecto, ya que quedarían unos cuantos componentes para su estructuración y administración que posteriormente se mencionaré.
 
-En relación con los sistemas operativos que se deben instalar en cada uno de los nodos, se deben de tener en cuenta la arquitectura y la marca de estos, ya que pueden existir S.O específicos para estos. Por lo tanto, los siguientes sistemas operativos que se instalarán serán los siguientes:
+En relación con los sistemas operativos que se deben instalar en cada uno de los equipos, se deben de tener en cuenta la arquitectura y la marca de estos, ya que pueden existir S.O específicos para estos equipos. Por lo tanto, los S.O que se instalarán serán los siguientes:
 
-* **Ubuntu Server** (Sistema principal para el equipo Server ITX 2u).
+* **Ubuntu Server** (Sistema principal para el equipo Server ITX 2U).
 * **Debian Buster/Ubuntu** (Para el equipo Banana Pi M5).
-* **Raspberry PI OS Lite** (Para los equipos que son Raspberry`s).
+* **Raspberry PI OS Lite** (Para los 3 equipos que son Raspberry`s).
 
-Respecto al software que instalaremos para el correcto funcionamiento del clúster, necesitaremos instalar las siguientes herramientas en todos los equipos:
+Respecto al software que instalaremos para el correcto funcionamiento del sistema del Rack, tendremos el siguiente esquema para mostrar las propuestas que se podrán instalar en cada equipo:
 
   <img src="https://github.com/Serferman/high-availability-system-with-k3s/blob/cb88074d755c62382ca87abb4fe62ca5aea006e9/recursos/Diagramas%20Explicativos/Esquema-por-capas-realista%20(Propuesta%20inicial)v2.png" align="left" width=35% height=6% hspace=4% vspace=4%/>
  </br>
