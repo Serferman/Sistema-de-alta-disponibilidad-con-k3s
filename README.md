@@ -1,4 +1,4 @@
-# High availability system with k3s
+# Sistema de alta disponibilidad con k3s
 ## En que consiste
 
   <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores horizontales (Version 1 Rack).png" align="right" width=25% height=75% padding="10px"/>
