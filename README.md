@@ -27,15 +27,15 @@ Esto nos quiere decir que, cuando tengamos una gran fluctuación de peticiones d
   <img src="diagramas/Varios pods.png" width=45% height=14% padding="30px"/>
 </div>
 
-## Objetivos básicos
+## Objetivos básicos/fundamentales y adaptativos/opcionales
 
-* Desarrollar una estructura de Clúster mediante K3s, disponiendo de 4 SBC’s y un nodo maestro basado en X86.
-* Obtener un acceso seguro mediante SSH y VPN a estos servidores para una correcta administración.
-* Capacitar al sistema el correcto despliegue de PODs desde la terminal permitiendo así administrarlos, replicarlos y eliminarlos. (Alta disponibilidad)
-* Posteriormente, capacitar al sistema de una administración gráfica desde la que desplegar PODs y administrarlos.
-* Abaratar costes en el desarrollo de una estructura de servidores propietaria
-* Facilitar la escalabilidad del sistema y la alta disponibilidad de este y de los servicios, en función de las necesidades de la empresa.
-* Proporcionar una monitorización más personalizada, esto iría en relación con lo grande que sería nuestro clúster, ya que en ciertos puntos podríamos poner proxy’s o firewalls.
+* Desarrollar una estructura de Clúster mediante K3s, disponiendo de 4 SBC’s y un nodo maestro basado en X86. (Objetivo adaptativo dependiendo del hardware que dispongamos)
+* Obtener un acceso relativamente seguro mediante SSH y VPN a estos servidores para su correcta administración.
+* Capacitar al sistema para el correcto despliegue de PODs desde la terminal permitiendo así administrarlos, replicarlos y eliminarlos. (Objetivo adaptativo si disponemos de interfaz gráfica)
+* Capacitar al diseño de un sistema de administración gráfica para k3s desde el que desplegar, administrar y replicar PODs.
+* Abaratar costes para el desarrollo de una estructura de servidores propietaria.
+* Facilitar la escalabilidad del sistema y la alta disponibilidad de este y sus servicios en función de las necesidades que tengamos.
+* Proporcionar una monitorización más personalizada, esto iría en relación con la magnitud que tenga nuestro clúster/proyecto, ya que en ciertos puntos podríamos poner proxy’s o firewalls. (Objetivo adaptativo dependiendo de la magnitud del proyecto y sus necesidades)
 
 ## Análisis general del sistema.
 ### Análisis breve de las tecnologías que se utilizarán.
