@@ -3,11 +3,11 @@
 
   <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores horizontales (Version 1 Rack).png" align="right" width=25% height=75% padding="10px"/>
 
-El proyecto consiste en una estructura de servidores de bajo consumo en clúster que proporcionará alta disponibilidad y escalabilidad al sistema mediante K3s, pudiendo ser complementada por capas de seguridad físicas (Firewalls, Proxys, IPS) o lógicas.
+El proyecto inicial consiste en una estructura de servidores de bajo consumo eléctrico en clúster que proporcionará alta disponibilidad y escalabilidad al sistema mediante el sistema de clusterización K3s, pudiendo ser complementada por capas de seguridad físicas (Firewalls, Proxys, IPS) o lógicas.
 
-Estos “servidores” tendrán distintas arquitecturas “Banana PI M5 (ARMv8-A)”, “Raspberry PI 3 (ARMv8)”, “Raspberry PI 4 (ARMv8-A)”, “PC formato micro-ITX (x86)” y sistemas operativos, ya que estos deben de estar adaptados a cada equipo.
+Estos “servidores” tendrán distintas arquitecturas “Banana PI M5 (**ARMv8-A**)”, “Raspberry PI 3 (**ARMv8**)”, “Raspberry PI 4 (**ARMv8-A**)”, “PC formato micro-ITX (**x86**)” y distintos sistemas operativos, ya que estos deben de estar adaptados a cada equipo.
 
-Para el tratamiento de los datos, dispondríamos de una nube privada, gracias a un NAS. En este se podría almacenar tanto copias de seguridad de los sistemas, como posibles datos logísticos.
+Para el tratamiento de los datos, dispondríamos de una nube privada, NAS. En este se podría almacenar tanto copias de seguridad de los sistemas, como posibles datos logísticos o de configuracón.
 
 Gracias a un SAI semi gestionable, se podrá disponer de una situación de alta disponibilidad, ya que, en caso de fallo en la red eléctrica principal, los servidores se apagarán automáticamente, sin que estos acaben dañados.
 
