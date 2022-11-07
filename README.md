@@ -7,9 +7,9 @@ El proyecto inicial consiste en una estructura de servidores de bajo consumo el�
 
 Estos “servidores” tendrán distintas arquitecturas “Banana PI M5 (**ARMv8-A**)”, “Raspberry PI 3 (**ARMv8**)”, “Raspberry PI 4 (**ARMv8-A**)”, “PC formato micro-ITX (**x86**)” y distintos sistemas operativos, ya que estos deben de estar adaptados a cada equipo.
 
-Para el tratamiento de los datos, dispondríamos de una nube privada, NAS. En este se podría almacenar tanto copias de seguridad de los sistemas, como posibles datos logísticos o de configuracón.
+Para el tratamiento de los datos, dispondríamos de una nube privada (NAS). En este se podría almacenar tanto copias de seguridad de los sistemas, como posibles datos logísticos o de configuracón.
 
-Gracias a un SAI semi gestionable, se podrá disponer de una situación de alta disponibilidad, ya que, en caso de fallo en la red eléctrica principal, los servidores se apagarán automáticamente, sin que estos acaben dañados.
+Además, gracias a un SAI semi gestionable, se podrá disponer de una situación de protección electrica y salvaguardado de los sistemas, ya que, en caso de fallo en la red eléctrica principal, los servidores se apagarán automáticamente, sin que estos acaben dañados.
 
 Por último, todo esto será administrado mediante un servicio VPN (Zerotier o Hamachi) y SSH (OpenSSH o DropBear). 
 
