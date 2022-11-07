@@ -9,20 +9,18 @@ Estos “servidores” tendrán distintas arquitecturas “Banana PI M5 (**ARMv8
 
 Para el tratamiento de los datos, dispondríamos de una nube privada (NAS). En este se podría almacenar tanto copias de seguridad de los sistemas, como posibles datos logísticos o de configuracón.
 
-Además, gracias a un SAI semi gestionable, se podrá disponer de una situación de protección electrica y salvaguardado de los sistemas, ya que, en caso de fallo en la red eléctrica principal, los servidores se apagarán automáticamente, sin que estos acaben dañados.
+Además, gracias a un SAI semi gestionable, dispondremos de una situación de protección electrica y salvaguardado de los sistemas, ya que, en caso de fallo en la red eléctrica principal, los servidores se apagarán automáticamente, sin que estos acaben dañados.
 
-Por último, todo esto será administrado mediante un servicio VPN (Zerotier o Hamachi) y SSH (OpenSSH o DropBear). 
+Por último, todo esto será administrado mediante un servicio VPN externo (Zerotier o Hamachi)(VPS) y SSH (OpenSSH o DropBear). 
 
 ## ¿Cuáles son los objetivos?
 
-El motivo principal de la realización de este proyecto es mostrar a las empresas la posibilidad de tener una estructura de servidores propia, sin que esto, conlleve realizar un gran desembolso de dinero para las mismas.
+El motivo principal de la realización de este proyecto es mostrar a las empresas la posibilidad de tener una estructura de servidores propia, sin que esto conlleve realizar un gran desembolso de dinero para estas. Aun asi, la tendencia actual es tener todos los servicios en la nube, normalmente mediante las plataformas Azure o AWS.
 
-La principal ventaja que obtendrían las empresas es la escalabilidad que tiene el sistema y su alta disponibilidad en relación con los servicios que se pueden brindar. 
+La principal ventaja que obtendrían las empresas es la escalabilidad que tiene el sistema de clusterización y su alta disponibilidad en relación con los servicios que se pueden brindar. 
 
-## ¿Qué es lo que quiere decir esto?
-El motivo principal de la realización de este proyecto es mostrar a las empresas la posibilidad de tener una estructura de servidores propia, sin que esto, conlleve realizar un gran desembolso de dinero para las mismas.
-
-La principal ventaja que obtendrían las empresas es la escalabilidad que tiene el sistema y su alta disponibilidad en relación con los servicios que se pueden brindar. 
+## ¿Qué es lo que quiere decir "tener alta disponibilidad"?
+Esto nos quiere decir que, cuando tengamos una gran fluctuación de peticiones de entrada y salida en nuestro servidor, podemos distribuir la carga entre distintos servidores mediante un balanceador de carga del sistema de clusterización, evitando así la saturación del sistema y la probable caída del servicio que estemos brindando.
 
 <div align="center">
   <img src="diagramas/Un pod.png" width=45% height=14% padding="30px"/>
