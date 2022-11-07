@@ -43,7 +43,7 @@ Estas son las posibles bases que estableceré al proyecto, pero obviamente todo 
 En este apartado explicare el software finamente usado para el desarrollo de este proyecto y su posible coste, para ello me apoyaré en un esquema en el que definiré el uso de cada servicio. 
 Los servicios y herramientas usadas son:
 
-<table>
+<table align="left">
 <tr> <td align="center"> <b> Software </b> </td> <td align="center"> <b> Precio </b> </td> </tr>
 <tr> <td> K3s </td> <td> Sin Coste </td> </tr>
 <tr> <td> Zerotier </td> <td> Sin Coste </td> </tr>
@@ -58,7 +58,7 @@ Los servicios y herramientas usadas son:
 <tr> <td> Script Copias </td> <td> En propiedad </td> </tr>
 </table>
 
-<table>
+<table align="right">
 <tr> <td align="center"> <b> Sistemas </b> </td> <td align="center"> <b> Precio </b> </td> </tr>
 <tr> <td> Ubuntu Server </td> <td> Open Source </td> </tr>
 <tr> <td> Raspberry PI OS </td> <td> Sin Coste </td> </tr>
