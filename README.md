@@ -11,7 +11,7 @@ Para el tratamiento de los datos, dispondríamos de una nube privada (NAS). En e
 
 Además, gracias a un SAI semi gestionable, dispondremos de una situación de protección electrica y salvaguardado de los sistemas, ya que, en caso de fallo en la red eléctrica principal, los servidores se apagarán automáticamente, sin que estos acaben dañados.
 
-Por último, todo esto será administrado mediante un servicio VPN externo (Zerotier o Hamachi)(VPS) y SSH (OpenSSH o DropBear). 
+Por último, todo esto será administrado mediante un servicio VPN externo (Zerotier o Hamachi) y SSH (OpenSSH o DropBear). 
 
 ## ¿Cuáles son los objetivos?
 
