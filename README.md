@@ -72,20 +72,20 @@ Respecto al software que instalaremos para el correcto funcionamiento del sistem
  </br>
  
   * **K3S** (Kubernetes Lightweight)(Software de clusterización compatible con las aquitecturas ARM).
-  * **Tar** (Comando que tienen todos los sistemas Linux para comprimir archivos, que, en conjunto con otros en un script, se puede hacer un protocolo de                      copias remotas).
-  * **OpenSSH** (Es el servidor SSH por el que se accederá a cada nodo en caso de necesitarlo).
+  * **Tar** (Comando que tienen todos los S.O Linux para la compresión de archivos, con el que podemos hacer un protocolo de copias remotas).
+  * **OpenSSH** (Es el servicio SSH por el que se accederá a cada nodo).
   * **Zerotier** (VPN principal “VPS” por la que se tendrá acceso remoto al sistema del clúster).
   * **Hamachi** (VPN secundaria “VPS” por la que se tendrá acceso remoto al sistema del clúster).
   * **Entware** (Software para hacer persistente parte del S.O del NAS WD Ext2 Ultra).
 
-En relación con el software especifico que debemos instalar en el máster sería:
+En relación con el software que debemos instalar en el equipo maestro será:
 
-  * **PowerShield** (Software para la automatización del apagado de los servidores en caso de corte eléctrico.)
+  * **PowerShield** (Software para el control del SAI semigestionable, nos permite crear alertas y ciertas automatizaciones).
 
-Respecto a los servicios que se podría montar encima de K3s, serian:
+Respecto a los servicios que se podría montar encima del software de clusterización K3s, serian:
 
-  * **Servidor Web** (NginX)
-  * **Servidor base de datos** (MariaDB), (MySQL) o (MongoDB)
-  * **Cualquier CMS** (Wordpress), (Drupal), (Joomla), (Moodle), etc …
+  * **Servidor Web** (NginX), (apache2), etc...
+  * **Servidor base de datos** (MariaDB), (MySQL) o (MongoDB).
+  * **Cualquier CMS** (Wordpress), (Drupal), (Joomla), (Moodle), etc ...
 
-Además de todo esto, dependiendo de la versión del software de clusterización que este instaladase utilizará la base de datos “SQLite” o “ETCD”, estas dos son bases de datos enfocadas a distribuciones ligeras.
+Además, dependiendo de la versión del software de clusterización **k3s** que tengamos instalada, se utilizará la base de datos “SQLite” o “ETCD”, estas son bases de datos enfocadas a distribuciones ligeras.
