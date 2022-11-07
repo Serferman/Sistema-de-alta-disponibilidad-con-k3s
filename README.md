@@ -66,16 +66,17 @@ En relación con los sistemas operativos que se deben instalar en cada uno de lo
 * **Debian Buster/Ubuntu** (Para el equipo Banana Pi M5).
 * **Raspberry PI OS Lite** (Para los 3 equipos que son Raspberry`s).
 
-Respecto al software que instalaremos para el correcto funcionamiento del sistema del Rack, tendremos el siguiente esquema para mostrar las propuestas que se podrán instalar en cada equipo:
+Respecto al software que instalaremos para el correcto funcionamiento del sistema instalado en elRack, tendremos el siguiente esquema para mostrar las propuestas de software que se podrián instalar en cada equipo:
 
   <img src="diagramas/Diagrama lógico del sistema y sus relaciones/Esquema-por-capas-del-software.png" align="left" width=35% height=6% hspace=4% vspace=4%/>
  </br>
  
-  * **K3S** (Kubernetes Lightweight)(Software para creación de clúster con ARM)
-  * **Tar** (Es el comando que tienen todos los sistemas Linux para comprimir archivos, que, en conjunto con otros en un script, se puede hacer un protocolo de                      copias remotas)
-  * **OpenSSH** (Es el servidor SSH por el que se accederá a cada nodo en caso de necesitarlo)
-  * **Zerotier** (VPN principal “VPS” por la que se tendrá acceso remoto al sistema del clúster)
-  * **Hamachi** (VPN secundaria “VPS” por la que se tendrá acceso remoto al sistema del clúster)
+  * **K3S** (Kubernetes Lightweight)(Software de clusterización compatible con las aquitecturas ARM).
+  * **Tar** (Comando que tienen todos los sistemas Linux para comprimir archivos, que, en conjunto con otros en un script, se puede hacer un protocolo de                      copias remotas).
+  * **OpenSSH** (Es el servidor SSH por el que se accederá a cada nodo en caso de necesitarlo).
+  * **Zerotier** (VPN principal “VPS” por la que se tendrá acceso remoto al sistema del clúster).
+  * **Hamachi** (VPN secundaria “VPS” por la que se tendrá acceso remoto al sistema del clúster).
+  * **Entware** (Software para hacer persistente parte del S.O del NAS WD Ext2 Ultra).
 
 En relación con el software especifico que debemos instalar en el máster sería:
 
