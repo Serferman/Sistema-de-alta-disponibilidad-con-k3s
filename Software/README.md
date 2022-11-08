@@ -3,9 +3,9 @@
 <img src="/diagramas/Diagrama lógico del sistema y sus relaciones/Esquema-por-capas-realista (Propuesta inicial).png" align="left" width=48% height=5% hspace=2% />
 </br>
 
-* **K3s** → Es un software de clusterización que nos permite unir distintos nodos de una red (En un grupo virtual), de esta manera podemos usar su potencia en conjunto hacia un objetivo en concreto (Servicios, herramientas, CMS). Todo esto se consigue instalando en el servidor maestro el servicio y mediante unos tokens, los cuales se generan en los nodos del clúster, podremos unir estos al mismo.
+* **K3s** → Es un software de clusterización que nos permite unir distintos nodos de una red en un "grupo virtual", de esta manera podemos enfocar su potencia de computo individual hacia un objetivo en concreto (Servicios, herramientas, CMS). Todo esto se consigue instalando en el servidor maestro el servicio k3s y mediante unos tokens, que se generan en los nodos esclavos, podremos unirlos al "grupo virtual".
 
-* **Portainer** → Es un software que instalaremos en el NAS WD a través de un archivo binario. Portainer es la interfaz gráfica que brindan los sistemas Docker para poder ser administrador de una manera más sencilla. En este proyecto se utilizará para administrar el clúster de una manera gráfica.
+* **Portainer** → Es un software que instalaremos en el NAS WD a través de un archivo binario. Portainer es la interfaz gráfica que brinda el servicio de Docker para poder administrar sus contenedores de una manera gráfica y más sencilla. Esta herramienta se utilizará como complemento para administrar el clúster de una manera gráfica.
 
 * **Zerotier/ Hamachi** → Es una VPN por software (VPS), mediante esta VPN tendremos acceso a todos los nodos del clúster, ya que estará instalado en todos estos. Para configurar la red de este servicio, disponemos de una página web en la que debemos iniciar sesión con un usuario, establecer el nombre de una red y la IP de esta. (Esta puede ser la que queramos).
 
@@ -15,13 +15,13 @@
 
 * **OpenSSH** → Es un servicio OpenSource (Codigo abierto) que nos permitirá acceder al sistema con usuario, contraseña, puerto, claves, etc. En el caso de este proyecto, se usará la autenticación mediante clave pública-privada y usuario. Además, se fortalecerá el servicio para mejorar su seguridad.
 
-* **Entware** → Es un software que se instalará en el NAS WD a través de un archivo binario. Este nos permitirá mantener un conjunto de carpetas importantes de forma persistente, ya que el NAS WD Ext2 Ultra reinicia cualquier configuración que se le realice al apagarse o reiniciarse.
+* **Entware** → Es un software que se instalará en el NAS WD a través de un archivo binario. Este nos permitirá mantener un conjunto de carpetas importantes de forma persistente, ya que el "NAS WD Ext2 Ultra" reinicia cualquier configuración que se le realice al apagarse o reiniciarse.
 
-* **MyCloud OS 5 (Web)** → Es un servicio web que nos brinda Western digital en casi todos sus productos, nos permite acceder a través de internet a nuestro NAS y lo que en este se esté almacenando. Por lo tanto, podemos verificar el estado de las copias de seguridad remotas.
+* **MyCloud OS 5 (Web)** → Es un servicio web que nos brinda Western digital en casi todos sus productos, nos permite acceder a través de internet al almacenamiento de nuestro NAS. Por lo tanto, podemos verificar el estado de las copias de seguridad remotas.
 
-* **Script apagado** → Este es un script que ha sido desarrollado por mí mismo para realizar un apagado remoto en el sistema del clúster. Se ha tenido en cuenta la seguridad y se ha juntado con el servicio OpenSSH, de esta manera hemos usado autenticación por clave.
+* **Script apagado** → Este script que ha sido desarrollado para realizar un apagado remoto en el sistema del clúster. Se ha tenido en cuenta la seguridad y se ha juntado con el servicio OpenSSH, de esta manera hemos usado autenticación por clave. Su manera de funcionar es simple, el SAI semigestionable detecta un corte de corriente, este le manda un aviso al servidor maestro y este ultimo, empieza con la ejecución del script en consecuencia al aviso recibido, por lo que secuencialmente irá apagando los servidores esclavos uno a uno.
 
-* **Script copias de seguridad remotas** → De la misma manera que en el caso anterior, este es un script desarrollado por mí mismo para realizar copias de seguridad de cada nodo del clúster y mandarlas a través de la red al NAS, teniendo así una manera de recuperar los sistemas en caso de corrupción. Para esto también se ha tenido en cuenta la seguridad y se ha fusionado con el servicio OpenSSH, de esta forma se ha usado la autenticación por clave.
+* **Script copias de seguridad remotas** → Este es un script desarrollado para realizar copias de seguridad de cada nodo del clúster y mandarlas a través de la red al NAS, teniendo así una manera de recuperar los sistemas en caso de corrupción. Para esto también se ha usado el servicio OpenSSH teniendo en cuenta su seguridad y realizando asi, la autenticación mediante clave pública/privada.
 
 <br/>
 
