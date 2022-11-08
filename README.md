@@ -1,7 +1,7 @@
 # Sistema de alta disponibilidad con k3s
 ## En que consiste
 
-  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores horizontales (Version 1 Rack).png" align="right" width=25% height=75% padding="10px"/>
+  <img src="diagramas/Diagramas de versiones del sistema del Rack 10''/Servidores horizontales (Version 1 Rack).png" align="right" width=25% height=75% />
 
 El proyecto inicial consiste en una estructura de servidores de bajo consumo eléctrico en clúster que proporcionará alta disponibilidad y escalabilidad al sistema mediante el sistema de clusterización K3s, pudiendo ser complementada por capas de seguridad físicas (Firewalls, Proxys, IPS) o lógicas.
 
