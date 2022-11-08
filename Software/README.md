@@ -1,6 +1,6 @@
 ## Propuesta de un sistema funcional 
 
-<img src="/diagramas/Diagrama lógico del sistema y sus relaciones/Esquema-por-capas-realista (Propuesta inicial).png" align="left" width=48% height=5% hspace=2% />
+<img src="/diagramas/Diagrama lógico del sistema y sus relaciones/Esquema-por-capas-realista (Propuesta inicial).png" align="left" width=48% height=5% hspace=2% vspace=2% />
 </br>
 
 * **K3s** → Es un software de clusterización que nos permite unir distintos nodos de una red en un "grupo virtual", de esta manera podemos enfocar su potencia de computo individual hacia un objetivo en concreto (Servicios, herramientas, CMS). Todo esto se consigue instalando en el servidor maestro el servicio k3s y mediante unos tokens, que se generan en los nodos esclavos, podremos unirlos al "grupo virtual".
