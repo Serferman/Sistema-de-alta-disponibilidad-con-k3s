@@ -43,7 +43,7 @@ Estas son las posibles bases que estableceré al proyecto, pero obviamente todo 
 ## Licencias y coste del software
 En este apartado explicare el coste del software que estoy usando y sus licencias de uso. Los servicios y herramientas usadas son:
 
-<table align="left" hspace=2% >
+<table align="left">
 <tr> <td align="center"> <b> Software </b> </td> <td align="center"> <b> Precio </b> </td> </tr>
 <tr> <td> K3s </td> <td> Sin Coste </td> </tr>
 <tr> <td> Zerotier </td> <td> Sin Coste </td> </tr>
@@ -66,7 +66,7 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <tr> <td> MyCloud OS 5 (Sist.) </td> <td> Comprar NAS </td> </tr>
 </table>
 
-<div align="center">
+<div align="justify">
 Tiene dos versiones, la gratuita, que viene con ciertas limitaciones (no de funcionalidad si no de cantidad) y la de pago, que está sin capar.
 
 En general, se está usando servicios o herramientas de Open Source o directamente gratis, por lo que el coste por software se reduce al mínimo. También hemos de valorar que, si queremos desarrollar este mismo proyecto en un entorno más profesional, muchos de estos servicios se deberán contratar o directamente, montarlos uno mismo, de esta forma te aseguras de que el servicio este acorde a tus necesidades y tenga una mínima garantía de que no fallará.
