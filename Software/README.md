@@ -66,8 +66,6 @@ De la misma manera, aunque estos servicios que se ven en el esquema sean servici
         <tr> <td> Script Copias </td> <td> En propiedad </td> </tr>
       </table>
     </td>
-  </tr>
-  <tr>
     <td>
       <table align="right">
         <tr> <td align="center"> <b> Sistemas </b> </td> <td align="center"> <b> Precio </b> </td> </tr>
