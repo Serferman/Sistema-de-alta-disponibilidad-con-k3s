@@ -60,7 +60,7 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 
 <br/>
 
-<table align="left" hspace=2% >
+<table>
 <tr> <td align="center"> <b> Sistemas </b> </td> <td align="center"> <b> Precio </b> </td> </tr>
 <tr> <td> Ubuntu Server </td> <td> Open Source </td> </tr>
 <tr> <td> Raspberry PI OS </td> <td> Sin Coste </td> </tr>
