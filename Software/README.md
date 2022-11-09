@@ -58,6 +58,8 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <tr> <td> Script Copias </td> <td> En propiedad </td> </tr>
 </table>
 
+<br/>
+
 <table align="left" hspace=2% >
 <tr> <td align="center"> <b> Sistemas </b> </td> <td align="center"> <b> Precio </b> </td> </tr>
 <tr> <td> Ubuntu Server </td> <td> Open Source </td> </tr>
