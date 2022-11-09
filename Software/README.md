@@ -78,10 +78,7 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 
 <table>
 <tr> <td align="center"> <b> Sistemas </b> </td> <td align="center"> <b> Precio </b> </td> </tr>
