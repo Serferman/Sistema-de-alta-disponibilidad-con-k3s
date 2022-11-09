@@ -43,6 +43,7 @@ Estas son las posibles bases que estableceré al proyecto, pero obviamente todo 
 ## Licencias y coste del software
 En este apartado explicare el coste del software que estoy usando y sus licencias de uso. Los servicios y herramientas usadas son:
 
+<div style="margin: 20px 20px 20px 20px;">
 <table align="left">
 <tr> <td align="center"> <b> Software </b> </td> <td align="center"> <b> Precio </b> </td> </tr>
 <tr> <td> K3s </td> <td> Sin Coste </td> </tr>
@@ -57,6 +58,7 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <tr> <td> Script apagado </td> <td> En propiedad </td> </tr>
 <tr> <td> Script Copias </td> <td> En propiedad </td> </tr>
 </table>
+</div>
 
 <div style="margin: 20px 20px 20px 20px;">
 <table align="right">
