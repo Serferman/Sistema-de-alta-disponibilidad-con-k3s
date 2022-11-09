@@ -43,7 +43,6 @@ Estas son las posibles bases que estableceré al proyecto, pero obviamente todo 
 ## Licencias y coste del software
 En este apartado explicare el coste del software que estoy usando y sus licencias de uso. Los servicios y herramientas usadas son:
 
-<div style="margin: 20px 20px 20px 20px;">
 <table align="left">
 <tr> <td align="center"> <b> Software </b> </td> <td align="center"> <b> Precio </b> </td> </tr>
 <tr> <td> K3s </td> <td> Sin Coste </td> </tr>
@@ -58,9 +57,7 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <tr> <td> Script apagado </td> <td> En propiedad </td> </tr>
 <tr> <td> Script Copias </td> <td> En propiedad </td> </tr>
 </table>
-</div>
 
-<div style="margin: 20px 20px 20px 20px;">
 <table align="right">
 <tr> <td align="center"> <b> Sistemas </b> </td> <td align="center"> <b> Precio </b> </td> </tr>
 <tr> <td> Ubuntu Server </td> <td> Open Source </td> </tr>
@@ -68,12 +65,13 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <tr> <td> Ubuntu Buster Lite </td> <td> Sin Coste </td> </tr>
 <tr> <td> MyCloud OS 5 (Sist.) </td> <td> Comprar NAS </td> </tr>
 </table>
-</div>
   
 <div style="margin: 20px 20px 20px 20px;">
+  <p>
 Tiene dos versiones, la gratuita, que viene con ciertas limitaciones (no de funcionalidad si no de cantidad) y la de pago, que está sin capar.
   
 En general, se está usando servicios o herramientas de Open Source o directamente gratis, por lo que el coste por software se reduce al mínimo. También hemos de valorar que, si queremos desarrollar este mismo proyecto en un entorno más profesional, muchos de estos servicios se deberán contratar o directamente, montarlos uno mismo, de esta forma te aseguras de que el servicio este acorde a tus necesidades y tenga una mínima garantía de que no fallará.
 
-De la misma manera, aunque estos servicios que se ven en el esquema sean servicios base para el funcionamiento del sistema, sobre estos se pueden montar cualquier otro, ya que mi proyecto se especializa en la alta disponibilidad de K3s y sus pods, en los cuales podríamos montar un servidor Nginx, Apache2, MongoDB, MariaDB, MySQL, Filezilla, etc 
+De la misma manera, aunque estos servicios que se ven en el esquema sean servicios base para el funcionamiento del sistema, sobre estos se pueden montar cualquier otro, ya que mi proyecto se especializa en la alta disponibilidad de K3s y sus pods, en los cuales podríamos montar un servidor Nginx, Apache2, MongoDB, MariaDB, MySQL, Filezilla, etc
+  </p>
 </div>
