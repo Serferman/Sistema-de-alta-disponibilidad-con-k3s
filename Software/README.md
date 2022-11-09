@@ -34,7 +34,7 @@
 * **MyCloud OS 5 (Sistema)** → Este es el sistema que la marca WD le pone a sus servidores NAS. También es una derivación de Debian, con la pequeña peculiaridad de que este S.O tiene muy restringido el uso de su línea de comandos, por lo que apenas se le puede hacer alguna modificación.
 
 
-Gracias a este sistema de clusterización K3s se pueden configurar despliegues de servicios en un clúster creado con casi todos sus equipos en una arquitectura ARM. La idea principal es que siempre estén disponibles una cierta cantidad de PODs, para que si alguno de estos "cae", el tráfico de este se redirija a otro o que automaticamente se cree otro consiguiendo asi un entorno de alta disponibilidad. Ademas, para estos PODs se pueden reservar una cantidad de recursos físicos de cada nodo existente dentro de la agrupación del cluster.
+Gracias al software de clusterización K3s que se esta usando, se pueden configurar despliegues de servicios en un clúster creado con casi todos sus equipos en una arquitectura ARM. La idea principal es que siempre estén disponibles una cierta cantidad de PODs, para que si alguno de estos "cae", el tráfico de este se redirija a otro o que automaticamente se cree otro consiguiendo asi un entorno de alta disponibilidad. Ademas, para estos PODs se pueden reservar una cantidad de recursos físicos de cada nodo existente dentro de la agrupación del cluster.
 
 Respecto a los demás servicios, su funcionamiento es muy parecido a la propuesta del sistema ideal, obviamente quitándole algunas capas de seguridad, como el proxy o firewall.
 
