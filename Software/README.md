@@ -49,27 +49,34 @@ En general, se está usando servicios o herramientas de Open Source o directamen
 De la misma manera, aunque estos servicios que se ven en el esquema sean servicios base para el funcionamiento del sistema, sobre estos se pueden montar cualquier otro, ya que mi proyecto se especializa en la alta disponibilidad de K3s y sus pods, en los cuales podríamos montar un servidor Nginx, Apache2, MongoDB, MariaDB, MySQL, Filezilla, etc
 
 <table style="border:hidden">
-  <table align="left">
-    <tr> <td align="center"> <b> Software </b> </td> <td align="center"> <b> Precio </b> </td> </tr>
-    <tr> <td> K3s </td> <td> Sin Coste </td> </tr>
-    <tr> <td> Zerotier </td> <td> Sin Coste </td> </tr>
-    <tr> <td> OpenSSH </td> <td> Open Source </td> </tr>
-    <tr> <td> PowerShield </td> <td> Sin coste </td> </tr>
-    <tr> <td> Tar </td> <td> Open Source </td> </tr>
-    <tr> <td> Portainer </td> <td> Sin Coste </td> </tr>
-    <tr> <td> Entware </td> <td> Sin Coste </td> </tr>
-    <tr> <td> ComEmu64 </td> <td> Sin Coste </td> </tr>
-    <tr> <td> MyCloud OS 5 (Web) </td> <td> Comprar NAS </td> </tr>
-    <tr> <td> Script apagado </td> <td> En propiedad </td> </tr>
-    <tr> <td> Script Copias </td> <td> En propiedad </td> </tr>
-  </table>
-
-  <table align="right">
-    <tr> <td align="center"> <b> Sistemas </b> </td> <td align="center"> <b> Precio </b> </td> </tr>
-    <tr> <td> Ubuntu Server </td> <td> Open Source </td> </tr>
-    <tr> <td> Raspberry PI OS </td> <td> Sin Coste </td> </tr>
-    <tr> <td> Ubuntu Buster Lite </td> <td> Sin Coste </td> </tr>
-    <tr> <td> MyCloud OS 5 (Sist.) </td> <td> Comprar NAS </td> </tr>
-  </table>
+  <tr>
+    <td>
+      <table align="left">
+        <tr> <td align="center"> <b> Software </b> </td> <td align="center"> <b> Precio </b> </td> </tr>
+        <tr> <td> K3s </td> <td> Sin Coste </td> </tr>
+        <tr> <td> Zerotier </td> <td> Sin Coste </td> </tr>
+        <tr> <td> OpenSSH </td> <td> Open Source </td> </tr>
+        <tr> <td> PowerShield </td> <td> Sin coste </td> </tr>
+        <tr> <td> Tar </td> <td> Open Source </td> </tr>
+        <tr> <td> Portainer </td> <td> Sin Coste </td> </tr>
+        <tr> <td> Entware </td> <td> Sin Coste </td> </tr>
+        <tr> <td> ComEmu64 </td> <td> Sin Coste </td> </tr>
+        <tr> <td> MyCloud OS 5 (Web) </td> <td> Comprar NAS </td> </tr>
+        <tr> <td> Script apagado </td> <td> En propiedad </td> </tr>
+        <tr> <td> Script Copias </td> <td> En propiedad </td> </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <table align="right">
+        <tr> <td align="center"> <b> Sistemas </b> </td> <td align="center"> <b> Precio </b> </td> </tr>
+        <tr> <td> Ubuntu Server </td> <td> Open Source </td> </tr>
+        <tr> <td> Raspberry PI OS </td> <td> Sin Coste </td> </tr>
+        <tr> <td> Ubuntu Buster Lite </td> <td> Sin Coste </td> </tr>
+        <tr> <td> MyCloud OS 5 (Sist.) </td> <td> Comprar NAS </td> </tr>
+      </table>
+    </td>
+  </tr>
 </table>
   
