@@ -25,14 +25,15 @@
 
 <br/>
 
-* **Ubuntu Server** → Este es el típico de Ubuntu Server, la versión escogida es la 20.04 LTS.
+* **Ubuntu Server** → Este es el típico S.O de Ubuntu Server, la versión escogida es la 20.04 LTS.
 
-* **Raspberry PI OS** → Este sistema está adaptado por la marca “Raspberry” para su propio hardware, es una derivación del Debian convencional.
+* **Raspberry PI OS** → Este sistema está adaptado por la marca “Raspberry” para su propio hardware, es una derivación del S.O Debian convencional.
 
-* **Ubuntu Buster Lite** → De la misma manera que el anterior, este sistema esta modificado por los creadores de “Banana PI” para su propio hardware, es una derivación del Debian convencional.
+* **Ubuntu Buster Lite** → De la misma manera que el caso anterior, este sistema ha sido modificado a partir de un S.O Debian por los creadores de “Banana PI” para adaptarse su propio hardware.
 
-* **MyCloud OS 5 (Sistema)** → Este sistema es el que WD le pone a sus NAS, también está basado en Debian, pero a diferencia de los anteriores, este S.O es super capado desde la línea de comandos, por lo que apenas puedes hacerle alguna modificación.
-* 
+* **MyCloud OS 5 (Sistema)** → Este es el sistema que la marca WD le pone a sus servidores NAS. También es una derivación de Debian, con la pequeña peculiaridad de que este S.O tiene muy restringido el uso de su línea de comandos, por lo que apenas se le puede hacer alguna modificación.
+
+
 Gracias a este sistema de clusterización K3s se pueden configurar despliegues de servicios en un clúster creado con casi todos sus equipos en una arquitectura ARM. La idea principal es que siempre estén disponibles una cierta cantidad de PODs, para que si alguno de estos "cae", el tráfico de este se redirija a otro o que automaticamente se cree otro consiguiendo asi un entorno de alta disponibilidad. Ademas, para estos PODs se pueden reservar una cantidad de recursos físicos de cada nodo existente dentro de la agrupación del cluster.
 
 Respecto a los demás servicios, su funcionamiento es muy parecido a la propuesta del sistema ideal, obviamente quitándole algunas capas de seguridad, como el proxy o firewall.
