@@ -58,6 +58,7 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <tr> <td> Script Copias </td> <td> En propiedad </td> </tr>
 </table>
 
+<div style="margin: 20px 20px 20px 20px;">
 <table align="right">
 <tr> <td align="center"> <b> Sistemas </b> </td> <td align="center"> <b> Precio </b> </td> </tr>
 <tr> <td> Ubuntu Server </td> <td> Open Source </td> </tr>
@@ -65,7 +66,8 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <tr> <td> Ubuntu Buster Lite </td> <td> Sin Coste </td> </tr>
 <tr> <td> MyCloud OS 5 (Sist.) </td> <td> Comprar NAS </td> </tr>
 </table>
-
+</div>
+  
 <div style="margin: 20px 20px 20px 20px;">
 Tiene dos versiones, la gratuita, que viene con ciertas limitaciones (no de funcionalidad si no de cantidad) y la de pago, que está sin capar.
   
