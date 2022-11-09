@@ -48,7 +48,7 @@ En general, se está usando servicios o herramientas de Open Source o directamen
 
 De la misma manera, aunque estos servicios que se ven en el esquema sean servicios base para el funcionamiento del sistema, sobre estos se pueden montar cualquier otro, ya que mi proyecto se especializa en la alta disponibilidad de K3s y sus pods, en los cuales podríamos montar un servidor Nginx, Apache2, MongoDB, MariaDB, MySQL, Filezilla, etc
 
-<table border="0px">
+<table border="0">
   <tr>
     <td>
       <table align="left">
