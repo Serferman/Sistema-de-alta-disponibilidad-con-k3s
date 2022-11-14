@@ -47,8 +47,8 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <div align="center">
 <table>
 <tr> <td align="center"> <h3> Software </h3> </td> <td align="center"> <h3> Precio </h3> </td> <td align="center"> <h3> Breve descripción </h3> </td> </tr>
-<tr> <td> - K3s </td> <td> Sin Coste </td> <td> <p> Esta bajo una licencia [Apache License 2.0](https://github.com/k3s-io/k3s/blob/master/LICENSE) </p> </td> </tr>
-<tr> <td> - Zerotier </td> <td> Sin Coste </td> <td></td> </tr>
+<tr> <td> - K3s </td> <td> Sin Coste </td> <td> Esta bajo una licencia [Apache License 2.0](https://github.com/k3s-io/k3s/blob/master/LICENSE) </td> </tr>
+<tr> <td> - Zerotier </td> <td> Sin Coste </td> <td> Esta bajo una doble licencia [Zerotier BSL y Apache License 2.0]( https://www.zerotier.com/pricing/) </td> </tr>
 <tr> <td> - OpenSSH </td> <td> Open Source </td> <td></td> </tr>
 <tr> <td> - PowerShield </td> <td> Sin coste </td> <td></td> </tr>
 <tr> <td> - Tar </td> <td> Open Source </td> <td></td> </tr>
@@ -59,11 +59,9 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <tr> <td> - Script apagado </td> <td> En propiedad </td> <td></td> </tr>
 <tr> <td> - Script Copias </td> <td> En propiedad </td> <td></td> </tr>
 </table>
-
+ <p> Esta bajo una licencia [Apache License 2.0](https://github.com/k3s-io/k3s/blob/master/LICENSE) </p>
 <br/>
-
- <a href src="https://github.com/k3s-io/k3s/blob/master/LICENSE"> a</a>
-
+  
 <table>
 <tr> <td align="center"> <h3> Sistemas </h3> </td> <td align="center"> <h3> Precio </h3> </td> <td align="center"> <h3> Breve descripción </h3> </td> </tr>
 <tr> <td> - Ubuntu Server </td> <td> Open Source </td> <td></td> </tr>
