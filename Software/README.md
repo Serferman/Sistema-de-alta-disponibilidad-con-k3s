@@ -43,15 +43,6 @@ Estas son las posibles bases que estableceré al proyecto, pero obviamente todo 
 ## Licencias y coste del software
 En este apartado explicare el coste del software que estoy usando y sus licencias de uso. Los servicios y herramientas usadas son:
 
-<style type="text/css">
-  .sinBorde td {
-    padding: 5px;
-    border-top: 0px;
-    border-right: 0px;
-    border-bottom: 1px solid black;
-    border-left: 0px;
-  }
-</style>
 
 <div align="left">
 <table>
@@ -67,7 +58,7 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <tr> <td> MyCloud OS 5 (Web) </td> <td> Comprar NAS </td> </tr>
 <tr> <td> Script apagado </td> <td> En propiedad </td> </tr>
 <tr> <td> Script Copias </td> <td> En propiedad </td> </tr>
-<tr class="sinBorde"> <td colspan="2"><br/></td> </tr>
+<br/>
 <tr> <td align="center"> <h3> Sistemas </h3> </td> <td align="center"> <h3> Precio </h3> </td> </tr>
 <tr> <td> Ubuntu Server </td> <td> Open Source </td> </tr>
 <tr> <td> Raspberry PI OS </td> <td> Sin Coste </td> </tr>
