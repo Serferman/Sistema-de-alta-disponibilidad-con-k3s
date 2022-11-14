@@ -47,7 +47,7 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <div align="center">
 <table>
 <tr> <td align="center"> <h3> Software </h3> </td> <td align="center"> <h3> Precio </h3> </td> <td align="center"> <h3> Breve descripción </h3> </td> </tr>
-<tr> <td> - K3s </td> <td> Sin Coste </td> <td> Esta bajo una licencia " <a href src="https://github.com/k3s-io/k3s/blob/master/LICENSE">Apache License 2.0 </a>"</td> </tr>
+<tr> <td> - K3s </td> <td> Sin Coste </td> <td> Esta bajo una licencia " <a href src="https://github.com/k3s-io/k3s/blob/master/LICENSE"> Apache License 2.0 </a>"</td> </tr>
 <tr> <td> - Zerotier </td> <td> Sin Coste </td> <td></td> </tr>
 <tr> <td> - OpenSSH </td> <td> Open Source </td> <td></td> </tr>
 <tr> <td> - PowerShield </td> <td> Sin coste </td> <td></td> </tr>
@@ -78,3 +78,5 @@ En general, se está usando servicios o herramientas de Open Source o directamen
 
 De la misma manera, aunque estos servicios que se ven en el esquema sean servicios base para el funcionamiento del sistema, sobre estos se pueden montar cualquier otro, ya que mi proyecto se especializa en la alta disponibilidad de K3s y sus pods, en los cuales podríamos montar un servidor Nginx, Apache2, MongoDB, MariaDB, MySQL, Filezilla, etc 
 </div>
+
+<a href src="https://github.com/k3s-io/k3s/blob/master/LICENSE"> Apache License 2.0 </a>
