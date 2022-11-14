@@ -57,7 +57,7 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <tr> <td> MyCloud OS 5 (Web) </td> <td> Comprar NAS </td> </tr>
 <tr> <td> Script apagado </td> <td> En propiedad </td> </tr>
 <tr> <td> Script Copias </td> <td> En propiedad </td> </tr>
-<tr> <td colspan="2"></td> </tr>
+<tr> <td colspan="2"><br/></td> </tr>
 <tr> <td align="center"> <b> Sistemas </b> </td> <td align="center"> <b> Precio </b> </td> </tr>
 <tr> <td> Ubuntu Server </td> <td> Open Source </td> </tr>
 <tr> <td> Raspberry PI OS </td> <td> Sin Coste </td> </tr>
