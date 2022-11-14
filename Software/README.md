@@ -59,9 +59,11 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <tr> <td> - Script apagado </td> <td> En propiedad </td> <td></td> </tr>
 <tr> <td> - Script Copias </td> <td> En propiedad </td> <td></td> </tr>
 </table>
- <p> Esta bajo una licencia [Apache License 2.0](https://github.com/k3s-io/k3s/blob/master/LICENSE) </p>
+
 <br/>
-  
+
+ <a href src="https://github.com/k3s-io/k3s/blob/master/LICENSE"> </a>
+
 <table>
 <tr> <td align="center"> <h3> Sistemas </h3> </td> <td align="center"> <h3> Precio </h3> </td> <td align="center"> <h3> Breve descripción </h3> </td> </tr>
 <tr> <td> - Ubuntu Server </td> <td> Open Source </td> <td></td> </tr>
