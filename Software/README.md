@@ -59,7 +59,7 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <tr> <td> - Script apagado </td> <td> En propiedad </td> <td></td> </tr>
 <tr> <td> - Script Copias </td> <td> En propiedad </td> <td></td> </tr>
 </table>
- <p> Esta bajo una licencia [Apache License 2.0](https://github.com/k3s-io/k3s/blob/master/LICENSE) </p>
+
 <br/>
   
 <table>
