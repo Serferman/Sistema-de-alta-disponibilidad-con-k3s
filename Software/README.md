@@ -44,7 +44,7 @@ Estas son las posibles bases que estableceré al proyecto, pero obviamente todo 
 En este apartado explicare el coste del software que estoy usando y sus licencias de uso. Los servicios y herramientas usadas son:
 
 
-<div align="left">
+<div align="center">
 <table>
 <tr> <td align="center"> <h3> Software </h3> </td> <td align="center"> <h3> Precio </h3> </td> <td align="center"> <h3> Breve descripción </h3> </td> </tr>
   <tr> <td> - K3s </td> <td> Sin Coste </td> <td></td> </tr>
