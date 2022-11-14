@@ -50,7 +50,7 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <tr> <td> - K3s </td> <td> Sin Coste </td> <td> Esta bajo una licencia [Apache License 2.0](https://github.com/k3s-io/k3s/blob/master/LICENSE) </td> </tr>
 <tr> <td> - Zerotier </td> <td> Sin Coste </td> <td> Esta bajo una doble licencia [Zerotier BSL y Apache License 2.0]( https://www.zerotier.com/pricing/) </td> </tr>
 <tr> <td> - OpenSSH </td> <td> Open Source </td> <td> Esta bajo una licencia [BSD](https://es.wikipedia.org/wiki/OpenSSH)</td> </tr>
-<tr> <td> - PowerShield </td> <td> Sin coste </td> <td></td> </tr>
+<tr> <td> - PowerShield </td> <td> Sin coste </td> <td> Tiene dos versiones, la gratuita, que viene con ciertas limitaciones (no de funcionalidad si no de cantidad) y la de pago, que está sin capar. </td> </tr>
 <tr> <td> - Tar </td> <td> Open Source </td> <td></td> </tr>
 <tr> <td> - Portainer </td> <td> Sin Coste </td> <td> Esta bajo una doble licencia [Zlib y MIT](https://es.wikipedia.org/wiki/Portainers_(Docker)) </td> </tr>
 <tr> <td> - Entware </td> <td> Sin Coste </td> <td></td> </tr>
@@ -71,9 +71,7 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 </table>
 </div>
   
-<div align="right">
-Tiene dos versiones, la gratuita, que viene con ciertas limitaciones (no de funcionalidad si no de cantidad) y la de pago, que está sin capar.
-
+<div align="left">
 En general, se está usando servicios o herramientas de Open Source o directamente gratis, por lo que el coste por software se reduce al mínimo. También hemos de valorar que, si queremos desarrollar este mismo proyecto en un entorno más profesional, muchos de estos servicios se deberán contratar o directamente, montarlos uno mismo, de esta forma te aseguras de que el servicio este acorde a tus necesidades y tenga una mínima garantía de que no fallará.
 
 De la misma manera, aunque estos servicios que se ven en el esquema sean servicios base para el funcionamiento del sistema, sobre estos se pueden montar cualquier otro, ya que mi proyecto se especializa en la alta disponibilidad de K3s y sus pods, en los cuales podríamos montar un servidor Nginx, Apache2, MongoDB, MariaDB, MySQL, Filezilla, etc 
