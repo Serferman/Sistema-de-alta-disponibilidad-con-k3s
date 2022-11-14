@@ -52,7 +52,7 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <tr> <td> - OpenSSH </td> <td> Open Source </td> <td> Esta bajo una licencia [BSD](https://es.wikipedia.org/wiki/OpenSSH)</td> </tr>
 <tr> <td> - PowerShield </td> <td> Sin coste </td> <td></td> </tr>
 <tr> <td> - Tar </td> <td> Open Source </td> <td></td> </tr>
-<tr> <td> - Portainer </td> <td> Sin Coste </td> <td></td> </tr>
+<tr> <td> - Portainer </td> <td> Sin Coste </td> <td> Esta bajo una doble licencia [Zlib y MIT](https://es.wikipedia.org/wiki/Portainers_(Docker)) </td> </tr>
 <tr> <td> - Entware </td> <td> Sin Coste </td> <td></td> </tr>
 <tr> <td> - ComEmu64 </td> <td> Sin Coste </td> <td></td> </tr>
 <tr> <td> - MyCloud OS 5 (Web) </td> <td> Comprar NAS </td> <td></td> </tr>
