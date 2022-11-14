@@ -63,11 +63,11 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <br/>
   
 <table>
-<tr> <td align="center"> <h3> Sistemas </h3> </td> <td align="center"> <h3> Precio </h3> </td> </tr>
-<tr> <td> - Ubuntu Server </td> <td> Open Source </td> </tr>
-<tr> <td> - Raspberry PI OS </td> <td> Sin Coste </td> </tr>
-<tr> <td> - Ubuntu Buster Lite </td> <td> Sin Coste </td> </tr>
-<tr> <td> - MyCloud OS 5 (Sist.) </td> <td> Comprar NAS </td> </tr>
+<tr> <td align="center"> <h3> Sistemas </h3> </td> <td align="center"> <h3> Precio </h3> </td> <td align="center"> <h3> Breve descripción </h3> </td> </tr>
+<tr> <td> - Ubuntu Server </td> <td> Open Source </td> <td></td> </tr>
+<tr> <td> - Raspberry PI OS </td> <td> Sin Coste </td> <td></td> </tr>
+<tr> <td> - Ubuntu Buster Lite </td> <td> Sin Coste </td> <td></td> </tr>
+<tr> <td> - MyCloud OS 5 (Sist.) </td> <td> Comprar NAS </td> <td></td> </tr>
 </table>
 </div>
   
