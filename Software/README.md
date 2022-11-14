@@ -79,4 +79,4 @@ En general, se está usando servicios o herramientas de Open Source o directamen
 De la misma manera, aunque estos servicios que se ven en el esquema sean servicios base para el funcionamiento del sistema, sobre estos se pueden montar cualquier otro, ya que mi proyecto se especializa en la alta disponibilidad de K3s y sus pods, en los cuales podríamos montar un servidor Nginx, Apache2, MongoDB, MariaDB, MySQL, Filezilla, etc 
 </div>
 
- [Apache License 2.0](w3schools.com/html/html_links.asp)
+ [Apache License 2.0](https://github.com/k3s-io/k3s/blob/master/LICENSE)
