@@ -45,7 +45,7 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 
 <div align="left">
 <table>
-<tr> <td align="center"> <b> Software </b> </td> <td align="center"> <b> Precio </b> </td> </tr>
+<tr> <td align="center"> <h2> Software </h2> </td> <td align="center"> <b> Precio </b> </td> </tr>
 <tr> <td> K3s </td> <td> Sin Coste </td> </tr>
 <tr> <td> Zerotier </td> <td> Sin Coste </td> </tr>
 <tr> <td> OpenSSH </td> <td> Open Source </td> </tr>
@@ -73,6 +73,3 @@ En general, se está usando servicios o herramientas de Open Source o directamen
 
 De la misma manera, aunque estos servicios que se ven en el esquema sean servicios base para el funcionamiento del sistema, sobre estos se pueden montar cualquier otro, ya que mi proyecto se especializa en la alta disponibilidad de K3s y sus pods, en los cuales podríamos montar un servidor Nginx, Apache2, MongoDB, MariaDB, MySQL, Filezilla, etc 
 </div>
-
-<h2> hola </h2>
-
