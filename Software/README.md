@@ -62,7 +62,7 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 
 <br/>
 
- <a href src="https://github.com/k3s-io/k3s/blob/master/LICENSE"> </a>
+ <a href src="https://github.com/k3s-io/k3s/blob/master/LICENSE"> a</a>
 
 <table>
 <tr> <td align="center"> <h3> Sistemas </h3> </td> <td align="center"> <h3> Precio </h3> </td> <td align="center"> <h3> Breve descripción </h3> </td> </tr>
