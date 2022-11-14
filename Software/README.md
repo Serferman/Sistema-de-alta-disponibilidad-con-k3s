@@ -45,7 +45,7 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 
 <div align="left">
 <table>
-<tr> <td align="center"> <h3> Software </h3> </td> <td align="center"> <b> Precio </b> </td> </tr>
+<tr> <td align="center"> <h4> Software </h4> </td> <td align="center"> <b> Precio </b> </td> </tr>
 <tr> <td> K3s </td> <td> Sin Coste </td> </tr>
 <tr> <td> Zerotier </td> <td> Sin Coste </td> </tr>
 <tr> <td> OpenSSH </td> <td> Open Source </td> </tr>
