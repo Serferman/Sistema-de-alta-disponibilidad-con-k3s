@@ -54,19 +54,19 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <tr> <td> - Tar </td> <td> Open Source </td> <td></td> </tr>
 <tr> <td> - Portainer </td> <td> Sin Coste </td> <td> Esta bajo una doble licencia [Zlib y MIT](https://es.wikipedia.org/wiki/Portainers_(Docker)) </td> </tr>
 <tr> <td> - Entware </td> <td> Sin Coste </td> <td>Esta bajo una serie de licencias (https://github.com/Entware/Entware/tree/master/LICENSES)</td> </tr>
-<tr> <td> - ComEmu64 </td> <td> Sin Coste </td> <td></td> </tr>
-<tr> <td> - MyCloud OS 5 (Web) </td> <td> Comprar NAS </td> <td></td> </tr>
-<tr> <td> - Script apagado </td> <td> En propiedad </td> <td></td> </tr>
-<tr> <td> - Script Copias </td> <td> En propiedad </td> <td></td> </tr>
+<tr> <td> - ComEmu64 </td> <td> Sin Coste </td> <td>Esta bajo su propia licencia (https://conemu.github.io/en/AboutDialog.html#About-License.png) </td> </tr>
+<tr> <td> - MyCloud OS 5 (Web) </td> <td> Comprar NAS </td> <td> </td> </tr>
+<tr> <td> - Script apagado </td> <td> En propiedad </td> <td> Esta bajo la licencia de este proyecto. </td> </tr>
+<tr> <td> - Script Copias </td> <td> En propiedad </td> <td>Esta bajo la licencia de este proyecto. </td> </tr>
 </table>
 
 <br/>
   
 <table>
 <tr> <td align="center"> <h3> Sistemas </h3> </td> <td align="center"> <h3> Precio </h3> </td> <td align="center"> <h3> Breve descripción </h3> </td> </tr>
-<tr> <td> - Ubuntu Server </td> <td> Open Source </td> <td></td> </tr>
-<tr> <td> - Raspberry PI OS </td> <td> Sin Coste </td> <td></td> </tr>
-<tr> <td> - Ubuntu Buster Lite </td> <td> Sin Coste </td> <td></td> </tr>
+<tr> <td> - Ubuntu Server </td> <td> Open Source </td> <td>Esta bajo unas cuantas licencias entre las que esta [GPL](https://es.wikipedia.org/wiki/Ubuntu) </td> </tr>
+<tr> <td> - Raspberry PI OS </td> <td> Sin Coste </td> <td>Esta bajo unas cuantas licencias entre las que esta [GPL](https://es.wikipedia.org/wiki/Raspberry_Pi_OS) </td> </tr>
+<tr> <td> - Ubuntu Server (Kernel 4.9.241) </td> <td> Sin Coste </td> <td>Informacion sobre el sistema (https://wiki.banana-pi.org/Banana_Pi_BPI-M5#Linux) </td> </tr>
 <tr> <td> - MyCloud OS 5 (Sist.) </td> <td> Comprar NAS </td> <td></td> </tr>
 </table>
 </div>
