@@ -55,7 +55,7 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <tr> <td> - Portainer </td> <td> Sin Coste </td> <td> Esta bajo una doble licencia [Zlib y MIT](https://es.wikipedia.org/wiki/Portainers_(Docker)) </td> </tr>
 <tr> <td> - Entware </td> <td> Sin Coste </td> <td>Esta bajo una serie de licencias (https://github.com/Entware/Entware/tree/master/LICENSES)</td> </tr>
 <tr> <td> - ComEmu64 </td> <td> Sin Coste </td> <td>Esta bajo su propia licencia (https://conemu.github.io/en/AboutDialog.html#About-License.png) </td> </tr>
-<tr> <td> - MyCloud OS 5 (Web) </td> <td> Comprar NAS </td> <td> </td> </tr>
+<tr> <td width="20%"> - MyCloud OS 5 (Web) </td> <td> Comprar NAS </td> <td> </td> </tr>
 <tr> <td> - Script apagado </td> <td> En propiedad </td> <td> Esta bajo la licencia de este proyecto. </td> </tr>
 <tr> <td> - Script Copias </td> <td> En propiedad </td> <td>Esta bajo la licencia de este proyecto. </td> </tr>
 </table>
