@@ -27,7 +27,7 @@
 
 <br/>
 
-### Sistemas Operativos
+### Sistemas Operativos (S.Os)
 
 * **Ubuntu Server** → Este es el típico S.O de Ubuntu Server, la versión escogida es la 20.04 LTS.
 
