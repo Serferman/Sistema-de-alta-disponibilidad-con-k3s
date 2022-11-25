@@ -44,6 +44,8 @@ Respecto a los demás servicios, su funcionamiento es muy parecido a la propuest
 
 Estas son las posibles bases que estableceré al proyecto, pero obviamente todo proyecto es mejorable y adaptativo a lo largo del tiempo, por lo que puedo sumarle o quitarle software al proyecto en medida de lo que las necesidades de este dicten.
 
+<hr/>
+
 ## Licencias y coste del software
 En este apartado explicare el coste del software que estoy usando y sus licencias de uso. Los servicios y herramientas usadas son:
 
