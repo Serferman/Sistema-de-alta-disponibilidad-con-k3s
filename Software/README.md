@@ -47,7 +47,7 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <div align="center">
 <table>
 <tr> <td align="center"> <h3> Software </h3> </td> <td align="center"> <h3> Precio </h3> </td> <td align="center"> <h3> Breve descripción </h3> </td> </tr>
-<tr> <td> - K3s </td> <td> Sin Coste </td> <td> Esta bajo una licencia [Apache License 2.0](https://github.com/k3s-io/k3s/blob/master/LICENSE) </td> </tr>
+<tr> <td  width="20%"> - K3s </td> <td  width="20%"> Sin Coste </td> <td> Esta bajo una licencia [Apache License 2.0](https://github.com/k3s-io/k3s/blob/master/LICENSE) </td> </tr>
 <tr> <td> - Zerotier </td> <td> Sin Coste </td> <td> Esta bajo una doble licencia [Zerotier BSL y Apache License 2.0]( https://www.zerotier.com/pricing/) </td> </tr>
 <tr> <td> - OpenSSH </td> <td> Open Source </td> <td> Esta bajo una licencia [BSD](https://es.wikipedia.org/wiki/OpenSSH)</td> </tr>
 <tr> <td> - PowerShield </td> <td> Sin coste </td> <td> Tiene dos versiones, la gratuita, que viene con ciertas limitaciones (no de funcionalidad si no de cantidad) y la de pago, que está sin capar. </td> </tr>
@@ -55,7 +55,7 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <tr> <td> - Portainer </td> <td> Sin Coste </td> <td> Esta bajo una doble licencia [Zlib y MIT](https://es.wikipedia.org/wiki/Portainers_(Docker)) </td> </tr>
 <tr> <td> - Entware </td> <td> Sin Coste </td> <td>Esta bajo una serie de licencias (https://github.com/Entware/Entware/tree/master/LICENSES)</td> </tr>
 <tr> <td> - ComEmu64 </td> <td> Sin Coste </td> <td>Esta bajo su propia licencia (https://conemu.github.io/en/AboutDialog.html#About-License.png) </td> </tr>
-<tr> <td width="20%"> - MyCloud OS 5 (Web) </td> <td> Comprar NAS </td> <td> </td> </tr>
+<tr> <td> - MyCloud OS 5 (Web) </td> <td> Comprar NAS </td> <td> </td> </tr>
 <tr> <td> - Script apagado </td> <td> En propiedad </td> <td> Esta bajo la licencia de este proyecto. </td> </tr>
 <tr> <td> - Script Copias </td> <td> En propiedad </td> <td>Esta bajo la licencia de este proyecto. </td> </tr>
 </table>
