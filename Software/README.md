@@ -47,7 +47,7 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <div align="center">
 <table>
 <tr> <td align="center"> <h3> Software </h3> </td> <td align="center"> <h3> Precio </h3> </td> <td align="center"> <h3> Breve descripción </h3> </td> </tr>
-<tr> <td  width="18%"> - K3s </td> <td  width="10%"> Sin Coste </td> <td> Esta bajo una licencia [Apache License 2.0](https://github.com/k3s-io/k3s/blob/master/LICENSE) </td> </tr>
+<tr> <td  width="19%"> - K3s </td> <td  width="15%"> Sin Coste </td> <td> Esta bajo una licencia [Apache License 2.0](https://github.com/k3s-io/k3s/blob/master/LICENSE) </td> </tr>
 <tr> <td> - Zerotier </td> <td> Sin Coste </td> <td> Esta bajo una doble licencia [Zerotier BSL y Apache License 2.0]( https://www.zerotier.com/pricing/) </td> </tr>
 <tr> <td> - OpenSSH </td> <td> Open Source </td> <td> Esta bajo una licencia [BSD](https://es.wikipedia.org/wiki/OpenSSH)</td> </tr>
 <tr> <td> - PowerShield </td> <td> Sin coste </td> <td> Tiene dos versiones, la gratuita, que viene con ciertas limitaciones (no de funcionalidad si no de cantidad) y la de pago, que está sin capar. </td> </tr>
