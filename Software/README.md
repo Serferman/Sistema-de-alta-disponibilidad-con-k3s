@@ -3,6 +3,8 @@
 <img src="/diagramas/Diagrama lógico del sistema y sus relaciones/Esquema-por-capas-realista (Propuesta inicial).png" align="left" width=48% height=5% hspace=2% vspace=2% />
 </br>
 
+### Software sobre los S.O 
+
 * **K3s** → Es un software de clusterización que nos permite unir distintos nodos de una red en un "grupo virtual", de esta manera podemos enfocar su potencia de computo individual hacia un objetivo en concreto (Servicios, herramientas, CMS). Todo esto se consigue instalando en el servidor maestro el servicio k3s y mediante unos tokens, que se generan en los nodos esclavos, podremos unirlos al "grupo virtual".
 
 * **Portainer** → Es un software que instalaremos en el NAS WD a través de un archivo binario. Portainer es la interfaz gráfica que brinda el servicio de Docker para poder administrar sus contenedores de una manera gráfica y más sencilla. Esta herramienta se utilizará como complemento para administrar el clúster de una manera gráfica.
@@ -24,6 +26,8 @@
 * **Script copias de seguridad remotas** → Este es un script desarrollado para realizar copias de seguridad de cada nodo del clúster y mandarlas a través de la red al NAS, teniendo así una manera de recuperar los sistemas en caso de corrupción. Para esto también se ha usado el servicio OpenSSH teniendo en cuenta su seguridad y realizando asi, la autenticación mediante clave pública/privada.
 
 <br/>
+
+### Sistemas operativos
 
 * **Ubuntu Server** → Este es el típico S.O de Ubuntu Server, la versión escogida es la 20.04 LTS.
 
