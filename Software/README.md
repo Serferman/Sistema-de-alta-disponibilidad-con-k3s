@@ -73,8 +73,8 @@ En este apartado explicare el coste del software que estoy usando y sus licencia
 <tr> <td align="center"> <h3> Sistemas </h3> </td> <td align="center"> <h3> Precio </h3> </td> <td align="center"> <h3> Breve descripción </h3> </td> </tr>
 <tr> <td width="19%"> - Ubuntu Server </td> <td width="13%"> Open Source </td> <td>Esta bajo unas cuantas licencias entre las que esta [GPL](https://es.wikipedia.org/wiki/Ubuntu) </td> </tr>
 <tr> <td> - Raspberry PI OS </td> <td> Sin Coste </td> <td>Esta bajo unas cuantas licencias entre las que esta [GPL](https://es.wikipedia.org/wiki/Raspberry_Pi_OS) </td> </tr>
-<tr> <td> - Ubuntu Server (Kernel 4.9.241) </td> <td> Sin Coste </td> <td>Informacion sobre el sistema (https://wiki.banana-pi.org/Banana_Pi_BPI-M5#Linux) </td> </tr>
-<tr> <td> - MyCloud OS 5 (Sist.) </td> <td> Comprar NAS </td> <td></td> </tr>
+<tr> <td> - Ubuntu Server (Kernel 4.9.241) </td> <td> Sin Coste </td> <td> Informacion sobre el sistema (https://wiki.banana-pi.org/Banana_Pi_BPI-M5#Linux) </td> </tr>
+<tr> <td> - MyCloud OS 5 (Sist.) </td> <td> Comprar NAS </td> <td> Información sobre el comando Tar (https://es.wikipedia.org/wiki/Tar#:~:text=Un%20archivo%20tar%20contiene%20flujos,comprimen%20completamente%20el%20archivo%20tar.) </td> </tr>
 </table>
 </div>
   
