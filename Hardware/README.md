@@ -167,7 +167,7 @@ Con relación a las ampliaciones lógicas, debemos de tener en cuenta que el nú
 * Instalar un servicio de clusterización complementario (Rancher) que sea capaz de administrar el clúster principal por una interfaz gráfica.
 * Instalar y configurar en uno de los nodos que tenga dos tarjetas de red, un sistema operativo firewall (IPFire, PFsense) y configurarlo.
 
-###Restricciones o limitaciones físicas
+### Restricciones o limitaciones físicas
 - El formato del armario debe de ser 10 pulgadas, para facilitar su implantación en cualquier lugar.
 - El servidor maestro debe de estar basado en la arquitectura X86 y, además, debe de tener su propia caja adaptada para el formato del rack, por lo que ha de imprimirse en 3D.
 - El proyecto debe de ser adaptativo, por lo que la red debe estar basada tanto para “1000 Mbps” como para “100 Mbps”, esto implicar tener en cuenta las limitaciones del tráfico de red en el diseño, para que no se limiten unos a otros.
