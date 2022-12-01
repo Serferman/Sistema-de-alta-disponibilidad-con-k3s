@@ -61,6 +61,7 @@ Todo el apartado de comunicación y redes usa hardware, cableado, etc. Todo lo m
 <tr> <td>Articulo</td> <td>Cantidad</td> <td>Precio unidad</td> <td>Importe</td></tr>
 <tr> <td>Router Mi AIoT AC2350</td> <td>1</td> <td>24,76€</td> <td>24,76€</td></tr>
 <tr> <td>Switch D-Link DGS-1100-08</td> <td>1</td> <td>36,33€</td> <td>36,33€</td></tr>
+<tr> <td>Switch Zyxel gs1100-16</td> <td>1</td> <td>99.98€</td> <td>57.25€</td></tr>
 <tr> <td>Modelo 3D (Soporte Switch 10”)</td> <td>1</td> <td>16,10€</td> <td>16,10€</td></tr>
 <tr> <td>Patch Panel deleyCON</td> <td>1</td> <td>20,75€</td> <td>20,75€</td></tr>
 <tr> <td>Cable de par trenzado (Cat6a) (SFTP) (10M)</td> <td>1</td> <td>18,32€</td> <td>18,32€</td></tr>
