@@ -5,6 +5,9 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
   “sudo apt-get install openssh-server” 
 </b></div>
 
+<table>
+  <tr> 
+    <td>
 <div>
   Raspberry Pi
 </div>
@@ -19,6 +22,9 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
 8º - Ahora, abriremos la Powershell y ejecutaremos el comando “Letra_Unidad_SD” para movernos a la unidad.
 9º - Una vez ahí, ejecutaremos el comando “new-item ssh” o “touch ssh” para crear un archivo para el servicio SSH.
 10º - Para finalizar, insertaremos la Micro-SD con la configuración dentro de la Raspberry PI.
+    </td>
+  </tr> 
+</table>
 
 ## Hardening del servicio SSH 
 ### Creación del par de claves
