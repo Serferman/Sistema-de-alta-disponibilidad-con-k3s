@@ -112,5 +112,5 @@ Además, dependiendo de la versión del software de clusterización **k3s** que 
 
 ## Diagrama de Pert
 <div align="center">
-  <img src="diagramas/Diagramas de Pert y Gantt/Diagrama de Pert.png" align="right" width=40% height=12% padding="30px"/>
+  <img src="diagramas/Diagramas de Pert y Gantt/Diagrama de Pert.png" />
 </div>
