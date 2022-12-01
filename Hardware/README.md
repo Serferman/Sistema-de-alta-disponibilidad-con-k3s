@@ -167,3 +167,13 @@ Con relación a las ampliaciones lógicas, debemos de tener en cuenta que el nú
 * Instalar un servicio de clusterización complementario (Rancher) que sea capaz de administrar el clúster principal por una interfaz gráfica.
 * Instalar y configurar en uno de los nodos que tenga dos tarjetas de red, un sistema operativo firewall (IPFire, PFsense) y configurarlo.
 
+###Restricciones o limitaciones físicas
+- El formato del armario debe de ser 10 pulgadas, para facilitar su implantación en cualquier lugar.
+- El servidor maestro debe de estar basado en la arquitectura X86 y, además, debe de tener su propia caja adaptada para el formato del rack, por lo que ha de imprimirse en 3D.
+- El proyecto debe de ser adaptativo, por lo que la red debe estar basada tanto para “1000 Mbps” como para “100 Mbps”, esto implicar tener en cuenta las limitaciones del tráfico de red en el diseño, para que no se limiten unos a otros.
+- Siguiendo la línea de la adaptabilidad del sistema, los nodos que se implementarán dentro del rack pueden ser distintos, por lo que la corriente eléctrica que necesitan es distinta, esto se ha tenido en cuenta en el diseño.
+- Como muchos dispositivos se van a conectar en el interior del rack, se debe buscar tener en el menor espacio posible, la mayor cantidad de enchufes. Por lo tanto, la cantidad de enchufes restringirá la conectividad eléctrica del sistema (En un futuro se puede suplir usando dispositivos intermedios entre el SAI y los Nodos).
+- Dado que habrá muchos dispositivos, se debe de buscar una forma de ventilar el interior del rack. Por desgracia, la única forma es por la parte superior del mismo, a la que se le puede anclar un ventilador industrial, aun así, es difícil refrigerar únicamente el rack con esto, por lo que cada dispositivo ha tenido que ser suplido con refrigeraciones extras. 
+- El NAS debe tener un formato compacto y pequeño, ya que si fuera muy grande este no cabría dentro del rack de 10 pulgadas.
+- El script que ha sido desarrollado para apagar los sistemas en caso de corte de corriente no puede ser ampliado hacia el ámbito del encendido de los sistemas, porque los SBCs carecen de un sistema “Wake On LAN” nativo.
+- Algunos de los SBCs son realmente especiales, esto es porque los fabricantes modifican sistemas operativos de código libre y los adaptan a estos, consiguiendo que sean únicamente compatibles.
