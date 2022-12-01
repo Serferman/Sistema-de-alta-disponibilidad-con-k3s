@@ -1,9 +1,9 @@
 ## Creación del servicio SSH
 Para instalar el servicio SSH no debería haber muchas dificultades, ya que el proceso que se debe de realizar no es muy complicado. El principal problema es que estamos tratando con diferentes tipos de ordenadores, por lo que la instalación/activación del servicio puede variar. La manera más simple y general de instalarlo es con el siguiente comando:
 
-<div align="center">
-  “sudo apt-get install openssh-server”
-</div>
+<div align="center"> <b>
+  “sudo apt-get install openssh-server” 
+</b></div>
 
 <div>
   Raspberry Pi
