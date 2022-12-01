@@ -28,7 +28,7 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
    9. Una vez ahí, ejecutaremos el comando <b>“new-item ssh”</b> o <b>“touch ssh”</b> para crear un archivo para el servicio SSH.
   10. Para finalizar, insertaremos la Micro-SD con la configuración dentro de la Raspberry PI.
   
-    </td>
+    
   </tr>
 </table>
 
