@@ -13,7 +13,11 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
     
 <br/>
 
-  | 1. Posteriormente a instalar el S.O en la Micro-SD, debemos insertarla en la Raspberry y esperar 2 – 3 minutos, de esta forma dejaremos tiempo para que se creen|     |los archivos del sistema.|
+<table>
+  <tr>
+    <td>
+
+   1. Posteriormente a instalar el S.O en la Micro-SD, debemos insertarla en la Raspberry y esperar 2 – 3 minutos, de esta forma dejaremos tiempo para que se creen los archivos del sistema.
    2. Extraemos la tarjeta de la Raspberry y la ponemos dentro de un adaptador SD.
    3. Insertamos el adaptador en un ordenador y buscamos la carpeta “boot” dentro de la unidad de la tarjeta.
    4. Dentro de esta carpeta buscaremos los archivos <b>“cmdline.txt”</b> y <b>“config.txt”</b>.
@@ -23,7 +27,10 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
    8. Ahora, abriremos la Powershell y ejecutaremos el comando <b>“Letra_Unidad_SD”</b> para movernos a la unidad.
    9. Una vez ahí, ejecutaremos el comando <b>“new-item ssh”</b> o <b>“touch ssh”</b> para crear un archivo para el servicio SSH.
   10. Para finalizar, insertaremos la Micro-SD con la configuración dentro de la Raspberry PI.
-   
+  
+    </td>
+  </tr>
+</table>
 
 <br/>
 
