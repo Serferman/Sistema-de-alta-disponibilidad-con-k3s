@@ -167,3 +167,14 @@ En este apartado, se buscarán ampliaciones físicas teniendo en cuenta que las 
 - El NAS debe tener un formato compacto y pequeño, ya que si fuera muy grande este no cabría dentro del rack de 10 pulgadas.
 - El script que ha sido desarrollado para apagar los sistemas en caso de corte de corriente no puede ser ampliado hacia el ámbito del encendido de los sistemas, porque los SBCs carecen de un sistema “Wake On LAN” nativo.
 - Algunos de los SBCs son realmente especiales, esto es porque los fabricantes modifican sistemas operativos de código libre y los adaptan a estos, consiguiendo que sean únicamente compatibles.
+
+<br/>
+
+## Riesgos físicos
+Los riesgos físicos, que podemos contemplar van desde el posible fallo de cualquier pieza del sistema montado en el rack, hasta la infiltración de un usuario no autorizado a la sala de sistemas.
+
+Debemos establecer un protocolo en caso de falla en cualquier componente del sistema. En este se indicará de forma general, que cualquier componente defectuoso debe ser aislado y remplazado en la mayor brevedad posible. Hemos de tener en cuenta, que no es lo mismo remplazar un cable que un servidor, por lo que la situación se debe analizar sobre el terreno y ante la misma, llegar a la conclusión de si arreglarlo in situ o reemplazarlo directamente.
+
+Otro riesgo que debemos valorar es el equipamiento que se brinda a los trabajadores, debemos comprobar que el equipamiento para determinados trabajos es el adecuado (soldadores, mascarillas para el polvo, pulseras antiestáticas, guantes de goma, etc..) y que este no esté en mal estado, ya que podría ocasionar un accidente laboral.
+
+Por último, no tenemos que olvidarnos de los riesgos/peligros relacionados con el perímetro. Se debe crear un protocolo de acceso seguro a la habitación de servidores. En nuestro caso, aseguraremos la sala mediante una puerta blindada, una llave y una cámara enfocando a la puerta, para saber quién entra y sale en todo momento.
