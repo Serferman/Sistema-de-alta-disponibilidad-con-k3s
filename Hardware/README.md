@@ -138,8 +138,7 @@ En la parte inferior de este apartado, observamos dos diagramas que hacen refere
   <img src="/diagramas/Diagramas detallados electrico y de conectividad del Rack 10''/Esquema conjunto (Conectividad).png" width=80% height=40% />
 </div>
 
-## Expansiones o ampliaciones
-### Expansiones o ampliaciones físicas
+## Expansiones o ampliaciones físicas
 En este apartado, se buscarán ampliaciones físicas teniendo en cuenta que las características que buscadas son:
 
 * Mayor potencia.
@@ -158,15 +157,6 @@ En este apartado, se buscarán ampliaciones físicas teniendo en cuenta que las 
  </tr>
 </table>
  
-### Expansiones o ampliaciones lógicas
-Con relación a las ampliaciones lógicas, debemos de tener en cuenta que el núcleo del sistema es el software de clusterización, por lo que todo lo que se añada al sistema, será complementario al mismo o con la finalidad de mejorar o proteger el sistema. Se tendrá en cuenta las siguientes características:
-
-* Mayor seguridad en cada nodo y en la red.
-* Capacidad de realizar copias de seguridad parciales (De los datos o servicios).
-* Instalar en el sistema, un sistema de balanceo de carga especifico.
-* Instalar un servicio de clusterización complementario (Rancher) que sea capaz de administrar el clúster principal por una interfaz gráfica.
-* Instalar y configurar en uno de los nodos que tenga dos tarjetas de red, un sistema operativo firewall (IPFire, PFsense) y configurarlo.
-
 ## Restricciones o limitaciones físicas
 - El formato del armario debe de ser 10 pulgadas, para facilitar su implantación en cualquier lugar.
 - El servidor maestro debe de estar basado en la arquitectura X86 y, además, debe de tener su propia caja adaptada para el formato del rack, por lo que ha de imprimirse en 3D.
