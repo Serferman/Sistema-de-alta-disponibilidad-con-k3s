@@ -7,7 +7,7 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
 
 <br/>
 
-<div align="center">
+<div align="center" size="11">
   Raspberry Pi
 </div>
     
