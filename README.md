@@ -109,3 +109,8 @@ Además, dependiendo de la versión del software de clusterización **k3s** que 
 - El proxy debe estar sobre un SBC con la mayor velocidad posible en red (Opcional).
 - La cantidad de puertos que debe de tener tanto el Switch como el panel de parcheo, deben de ser más de 6 puertos, ya que estos son los que necesitamos (Actualmente) para que nuestro clúster quede totalmente conectado. En un futuro, se podrán cambiar por un switch de 16 puertos y un patch panel de 12 puertos para ampliar el proyecto. 
 - El SAI debe de ser compacto y pequeño, para que este quepa dentro del rack de 10”. Además, debía tener las suficientes tomas de corriente para suplir las necesidades actuales y futuras. Por último, debe de ser gestionable, ya sea mediante USB o RJ45
+
+## Diagrama de Pert
+<div align="center">
+  <img src="diagramas/Diagramas de Pert y Gantt/Diagrama de Pert.png" align="right" width=40% height=12% padding="30px"/>
+</div>
