@@ -89,3 +89,23 @@ Respecto a los servicios que se podría montar encima del software de clusteriza
   * **Cualquier CMS** (Wordpress), (Drupal), (Joomla), (Moodle), etc ...
 
 Además, dependiendo de la versión del software de clusterización **k3s** que tengamos instalada, se utilizará la base de datos “SQLite” o “ETCD”, estas son bases de datos enfocadas a distribuciones ligeras.
+
+## Requisitos funcionales y no funcionales
+### Requisitos funcionales o de funcionamiento del sistema.
+- Permitir el despliegue de servicios (Pods), los cuales pueden ser de cualquier tipo.
+- Permitir una replicación fija de la cantidad de contenedores con los servicios (Pods).
+- Permitir el acceso remoto al sistema mediante protocolos o servicios seguros.
+- Permitir la monitorización del Clúster, Sistema o Server mediante cualquier servicio implementado directamente en el servidor o en un Pod.
+- Permitir la realización de copias de seguridad de los servidores a través de la red en el NAS.
+- Permitir el apagado de los S.Os de los diferentes equipos del clúster a través de la red, mediante un script desarrollado para ejecutarse en el Servidor maestro, en respuesta a un mensaje del SAI, el cual se manda al detectar un corte de corriente.
+- Impedir los accesos no autorizados al sistema (en medida de lo posible) mediante el uso de técnicas y herramientas/servicios/protocolos seguros.
+
+### Requisitos no funcionales
+- El servidor maestro debe estar basado en la arquitectura X86 para poder orquestar el clúster de una manera centralizada y más familiar.
+- Los nodos Workers deben estar basados en una arquitectura ARM, ya que esta estructura tiene bajo consumo energético en relación con la potencia de cómputo que procesan.
+- Todo el sistema debe estar basado y optimizado para cualquier armario rack de 10”, de esta manera hacemos que el sistema ocupe menos espacio, en relación con los sistemas adaptados para sus hermanos mayores (rack 19”).
+- El NAS debe ser pequeño, compacto y ser capaz de conectarse al maestro mediante USB.
+- La red debe estar basada en la Cat6, y desde esta, hacia arriba “Cat 6a, Cat 7, Cat 8”, de esta forma fijamos que la infraestructura se base como mínimo en los 1000 Mbps.
+- El proxy debe estar sobre un SBC con la mayor velocidad posible en red (Opcional).
+- La cantidad de puertos que debe de tener tanto el Switch como el panel de parcheo, deben de ser más de 6 puertos, ya que estos son los que necesitamos (Actualmente) para que nuestro clúster quede totalmente conectado. En un futuro, se podrán cambiar por un switch de 16 puertos y un patch panel de 12 puertos para ampliar el proyecto. 
+- El SAI debe de ser compacto y pequeño, para que este quepa dentro del rack de 10”. Además, debía tener las suficientes tomas de corriente para suplir las necesidades actuales y futuras. Por último, debe de ser gestionable, ya sea mediante USB o RJ45
