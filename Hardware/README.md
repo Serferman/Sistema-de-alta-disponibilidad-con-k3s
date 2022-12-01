@@ -61,21 +61,6 @@ Las principales diferencias respecto a la propuesta inicial son:
 
 <br/>
 
-### Selección, valoración y posibles mejoras de la solución elegida.
-<div align="center">
-  <img src="/diagramas/Diagramas detallados electrico y de conectividad del Rack 10''/Esquema conjunto (Electricidad).png" width=80% height=40% />
-</div>
-
-Como se puede observar, en la parte superior tenemos dos diagramas sobre el circuito eléctrico del proyecto. El primero hace referencia a la fase actual del proyecto, es decir, el nivel que el proyecto está desarrollado ahora mismo y el segundo sería la situación ideal en la que estaría nuestro proyecto en caso de estar completamente desarrollado en el ámbito eléctrico.
-
-En la parte inferior de este apartado, observamos dos diagramas que hacen referencia a la conectividad de red (Ethernet) y de datos (USB). De la misma forma que los esquemas anteriores, el primero hace referencia al diseño que ya está montado y desarrollado, por otro lado, el segundo es la situación ideal que tendría el proyecto de cara a la conectividad de este
-
-<div align="center">
-  <img src="/diagramas/Diagramas detallados electrico y de conectividad del Rack 10''/Esquema conjunto (Conectividad).png" width=80% height=40% />
-</div>
-
-<br/>
-
 ## Requisitos del sistema.
 ### Técnicos o hardware
 * 1x Armario rack 10” 12U.
@@ -139,6 +124,21 @@ En la parte inferior de este apartado, observamos dos diagramas que hacen refere
 * 1x Script Apagado.
 * 5x Scripts Copias remotas (Tar).
 * 1x Acceso a MY Cloud OS 5.
+
+<br/>
+
+### Selección, valoración y posibles mejoras de la solución elegida.
+<div align="center">
+  <img src="/diagramas/Diagramas detallados electrico y de conectividad del Rack 10''/Esquema conjunto (Electricidad).png" width=80% height=40% />
+</div>
+
+Como se puede observar, en la parte superior tenemos dos diagramas sobre el circuito eléctrico del proyecto. El primero hace referencia a la fase actual del proyecto, es decir, el nivel que el proyecto está desarrollado ahora mismo y el segundo sería la situación ideal en la que estaría nuestro proyecto en caso de estar completamente desarrollado en el ámbito eléctrico.
+
+En la parte inferior de este apartado, observamos dos diagramas que hacen referencia a la conectividad de red (Ethernet) y de datos (USB). De la misma forma que los esquemas anteriores, el primero hace referencia al diseño que ya está montado y desarrollado, por otro lado, el segundo es la situación ideal que tendría el proyecto de cara a la conectividad de este
+
+<div align="center">
+  <img src="/diagramas/Diagramas detallados electrico y de conectividad del Rack 10''/Esquema conjunto (Conectividad).png" width=80% height=40% />
+</div>
 
 <br/>
 
