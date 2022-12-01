@@ -4,6 +4,7 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
 <div align="center"> <b>
   “sudo apt-get install openssh-server” 
 </b></div>
+
 <br/>
 
   <div><i>
