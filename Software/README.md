@@ -56,11 +56,15 @@ Con relación a las ampliaciones lógicas, debemos de tener en cuenta que el nú
 * Instalar un servicio de clusterización complementario (Rancher) que sea capaz de administrar el clúster principal por una interfaz gráfica.
 * Instalar y configurar en uno de los nodos que tenga dos tarjetas de red, un sistema operativo firewall (IPFire, PFsense) y configurarlo.
 
+<br/>
+
 ## Restricciones o limitaciones lógicas
 - Toda conectividad remota existente debe de ser segura, mediante protocolos o técnicas seguras.
 - El servicio de clusterización usa una base de datos “ETCD” que se ejecuta en el servidor maestro por defecto, pero no se puede acceder a ella. Si queremos acceder, deberíamos externalizarla en otro nodo distinto.
 - Como K3s es un proyecto reciente, en comparación a otros softwares de clustering, tiene fases en común con muchos de estos sistemas, pero con la pequeña diferencia que estas partes/fases no están en sus versiones completas, por lo que muchas funcionalidades no se pueden explotar.
 - El sistema que trae el NAS (My cloud OS 5), no tiene un gran abanico de compatibilidad con los servicios de almacenamiento en nube más conocidos como “Mega”, “Drive”, “Dropbox”, etc
+
+<br/>
 
 ## Licencias y coste del software
 En este apartado explicare el coste del software que estoy usando y sus licencias de uso. Los servicios y herramientas usadas son:
