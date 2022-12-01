@@ -66,6 +66,17 @@ Con relación a las ampliaciones lógicas, debemos de tener en cuenta que el nú
 
 <br/>
 
+## Riesgos lógicos
+Si hablamos de los riesgos lógicos, uno de los principales es el robo o perdida de datos. Si existe una brecha en el sistema que ha sido explotada por un atacante y los datos se pierden o se encriptan impidiendo el acceso a ellos, deben existir copias de seguridad tanto en servidores de almacenamiento en red como en dispositivos de almacenamiento externos rutinarios (diarios/ semanales/ mensuales/ trimestrales). 
+
+En el caso de este proyecto, el procedimiento es simple, se harán copias de seguridad incrementales de los sistemas de cada equipo y se exportarán en los dispositivos de almacenamiento externoscada 2 semanas. De esta forma tenemos los datos guardados a través de la red y no dejamos mucho tiempo entre exportación y exportación los mismos en un dispositivo externo.
+
+También tendré en cuenta las bombas lógicas, las cuales tienen una gran dificultad para ser detectadas, por lo que la única forma de evitarlas es tener un buen protocolo de almacenaje de lascopias de seguridad, es decir, establecer un rango de tiempo amplio en el que se almacenará los datos antes de ser borrados.
+
+En el caso de este proyecto, los datos serán almacenados en los dispositivos externos hasta un plazo de 8 meses. Se almacenarán este tiempo teniendo en cuenta que el objetivo de un atacante no es tener la bomba lógica durante mucho tiempo, si no el suficiente para que el administrador no sepaen qué momento el sistema ha sido infectado con el malware
+
+<br/>
+
 ## Licencias y coste del software
 En este apartado explicare el coste del software que estoy usando y sus licencias de uso. Los servicios y herramientas usadas son:
 
