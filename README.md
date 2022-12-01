@@ -110,8 +110,6 @@ Además, dependiendo de la versión del software de clusterización **k3s** que 
 - Permitir el apagado de los S.Os de los diferentes equipos del clúster a través de la red, mediante un script desarrollado para ejecutarse en el Servidor maestro, en respuesta a un mensaje del SAI, el cual se manda al detectar un corte de corriente.
 - Impedir los accesos no autorizados al sistema (en medida de lo posible) mediante el uso de técnicas y herramientas/servicios/protocolos seguros.
 
-<br/>
-
 ### Requisitos no funcionales
 - El servidor maestro debe estar basado en la arquitectura X86 para poder orquestar el clúster de una manera centralizada y más familiar.
 - Los nodos Workers deben estar basados en una arquitectura ARM, ya que esta estructura tiene bajo consumo energético en relación con la potencia de cómputo que procesan.
