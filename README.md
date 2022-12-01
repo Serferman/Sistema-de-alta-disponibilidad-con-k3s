@@ -13,11 +13,15 @@ Además, gracias a un SAI semi gestionable, dispondremos de una situación de pr
 
 Por último, todo esto será administrado mediante un servicio VPN externo (Zerotier o Hamachi) y SSH (OpenSSH o DropBear). 
 
+<br/>
+
 ## ¿Cuáles son los objetivos?
 
 El motivo principal de la realización de este proyecto es mostrar a las empresas la posibilidad de tener una estructura de servidores propia, sin que esto conlleve realizar un gran desembolso de dinero para estas. Aun asi, la tendencia actual es tener todos los servicios en la nube, normalmente mediante las plataformas Azure o AWS.
 
 La principal ventaja que obtendrían las empresas es la escalabilidad que tiene el sistema de clusterización y su alta disponibilidad en relación con los servicios que se pueden brindar. 
+
+<br/>
 
 ## ¿Qué es lo que quiere decir "tener alta disponibilidad"?
 Esto nos quiere decir que, cuando tengamos una gran fluctuación de peticiones de entrada y salida en nuestro servidor, podemos distribuir la carga entre distintos servidores mediante un balanceador de carga del sistema de clusterización, evitando así la saturación del sistema y la probable caída del servicio que estemos brindando.
@@ -26,6 +30,8 @@ Esto nos quiere decir que, cuando tengamos una gran fluctuación de peticiones d
   <img src="diagramas/Un pod.png" width=45% height=14% padding="30px"/>
   <img src="diagramas/Varios pods.png" width=45% height=14% padding="30px"/>
 </div>
+
+<br/>
 
 ## Objetivos básicos/fundamentales y adaptativos/opcionales
 
@@ -36,6 +42,8 @@ Esto nos quiere decir que, cuando tengamos una gran fluctuación de peticiones d
 * Abaratar costes para el desarrollo de una estructura de servidores propietaria.
 * Facilitar la escalabilidad del sistema y la alta disponibilidad de este y sus servicios en función de las necesidades que tengamos.
 * Proporcionar una monitorización más personalizada, esto iría en relación con la magnitud que tenga nuestro clúster/proyecto, ya que en ciertos puntos podríamos poner proxy’s o firewalls. (Objetivo adaptativo dependiendo de la magnitud del proyecto y sus necesidades)
+
+<br/>
 
 ## Análisis general del sistema.
 ### Análisis breve de las tecnologías que se utilizarán.
@@ -90,6 +98,8 @@ Respecto a los servicios que se podría montar encima del software de clusteriza
 
 Además, dependiendo de la versión del software de clusterización **k3s** que tengamos instalada, se utilizará la base de datos “SQLite” o “ETCD”, estas son bases de datos enfocadas a distribuciones ligeras.
 
+<br/>
+
 ## Requisitos funcionales y no funcionales
 ### Requisitos funcionales o de funcionamiento del sistema.
 - Permitir el despliegue de servicios (Pods), los cuales pueden ser de cualquier tipo.
@@ -99,6 +109,8 @@ Además, dependiendo de la versión del software de clusterización **k3s** que 
 - Permitir la realización de copias de seguridad de los servidores a través de la red en el NAS.
 - Permitir el apagado de los S.Os de los diferentes equipos del clúster a través de la red, mediante un script desarrollado para ejecutarse en el Servidor maestro, en respuesta a un mensaje del SAI, el cual se manda al detectar un corte de corriente.
 - Impedir los accesos no autorizados al sistema (en medida de lo posible) mediante el uso de técnicas y herramientas/servicios/protocolos seguros.
+
+<br/>
 
 ### Requisitos no funcionales
 - El servidor maestro debe estar basado en la arquitectura X86 para poder orquestar el clúster de una manera centralizada y más familiar.
@@ -110,10 +122,14 @@ Además, dependiendo de la versión del software de clusterización **k3s** que 
 - La cantidad de puertos que debe de tener tanto el Switch como el panel de parcheo, deben de ser más de 6 puertos, ya que estos son los que necesitamos (Actualmente) para que nuestro clúster quede totalmente conectado. En un futuro, se podrán cambiar por un switch de 16 puertos y un patch panel de 12 puertos para ampliar el proyecto. 
 - El SAI debe de ser compacto y pequeño, para que este quepa dentro del rack de 10”. Además, debía tener las suficientes tomas de corriente para suplir las necesidades actuales y futuras. Por último, debe de ser gestionable, ya sea mediante USB o RJ45
 
+<br/>
+
 ## Diagrama de Pert
 <div align="center">
   <img src="diagramas/Diagramas de Pert y Gantt/Diagrama de Pert.png" />
 </div>
+
+<br/>
 
 ## Diagrama de Gantt
 <div align="center">
