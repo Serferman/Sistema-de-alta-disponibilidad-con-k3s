@@ -66,7 +66,7 @@ Con relación a las ampliaciones lógicas, debemos de tener en cuenta que el nú
 
 <br/>
 
-## Riesgos lógicos
+## Peligros o riesgos lógicos
 Si hablamos de los riesgos lógicos, uno de los principales es el robo o perdida de datos. Si existe una brecha en el sistema que ha sido explotada por un atacante y los datos se pierden o se encriptan impidiendo el acceso a ellos, deben existir copias de seguridad tanto en servidores de almacenamiento en red como en dispositivos de almacenamiento externos rutinarios (diarios/ semanales/ mensuales/ trimestrales). 
 
 En el caso de este proyecto, el procedimiento es simple, se harán copias de seguridad incrementales de los sistemas de cada equipo y se exportarán en los dispositivos de almacenamiento externoscada 2 semanas. De esta forma tenemos los datos guardados a través de la red y no dejamos mucho tiempo entre exportación y exportación los mismos en un dispositivo externo.
