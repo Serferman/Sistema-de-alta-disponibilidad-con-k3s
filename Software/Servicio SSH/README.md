@@ -29,32 +29,32 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
 
 ## Hardening del servicio SSH 
 ### Creación del par de claves
-1º - Abrimos la terminal del sistema operativo desde el que queramos conectarnos.
-2º - Ejecutaremos el comando “ssh-keygen” o “ssh-keygen -b 4096 -t rsa”.
-3º - Seguidamente nos pedirá un nombre para el par de claves y una contraseña para estas. Para procesos automáticos no hará falta ponerle una contraseña a la clave, ya que únicamente la autenticación por clave ya tiene una seguridad alta.
+1. Abrimos la terminal del sistema operativo desde el que queramos conectarnos.
+2. Ejecutaremos el comando “ssh-keygen” o “ssh-keygen -b 4096 -t rsa”.
+3. Seguidamente nos pedirá un nombre para el par de claves y una contraseña para estas. Para procesos automáticos no hará falta ponerle una contraseña a la clave, ya que únicamente la autenticación por clave ya tiene una seguridad alta.
 
-Traspaso de claves desde Windows y Linux
+### Traspaso de claves desde Windows y Linux
 
-Windows a Linux.
-1º - Antes de empezar con el proceso, debemos de crear la carpeta “.ssh” en el servidor Linux.
-2º - Posteriormente, debemos crear el archivo “authorized_keys” dentro de la carpeta “.ssh” con el comando “touch authorized_keys”
-3º - Debemos ejecutar el comando “scp [Clave_publica] [Usuario_ser]@[IP_Servidor]: [Ruta_donde_queremos_transferirlo]/”
-4º - Una vez tenemos la clave dentro de la carpeta “.ssh” debemos ejecutar el comando “cat [Clave_publica] > authorized_keys”.
+#### Windows a Linux.
+1. Antes de empezar con el proceso, debemos de crear la carpeta “.ssh” en el servidor Linux.
+2. Posteriormente, debemos crear el archivo “authorized_keys” dentro de la carpeta “.ssh” con el comando “touch authorized_keys”
+3. Debemos ejecutar el comando “scp [Clave_publica] [Usuario_ser]@[IP_Servidor]: [Ruta_donde_queremos_transferirlo]/”
+4. Una vez tenemos la clave dentro de la carpeta “.ssh” debemos ejecutar el comando “cat [Clave_publica] > authorized_keys”.
 
-Linux a Linux
-1º - Debemos ejecutar el comando “sudo ssh-copy-id -i [ruta]/[Clave_publica][Usuario_ser]@[IP_Servidor]”
+#### Linux a Linux
+1. Debemos ejecutar el comando “sudo ssh-copy-id -i [ruta]/[Clave_publica][Usuario_ser]@[IP_Servidor]”
 
-Comprobación del traspaso de claves al servidor Linux
-1º - Para comprobar que la clave se ha traspasado, debemos iniciar sesión en el servidor Linux y movernos a la carpeta “[home]/[Usuario]”.
-2º - Una vez ahí, ejecutaremos el comando “ls -la” para que nos liste todos los archivos, estén ocultos o no.
-3º - Ahora entraremos a la carpeta con el comando “cd .ssh”.
-4º - Posteriormente, dentro de la carpeta veremos un archivo llamado “authorized_keys”.
-5º - Para comprobar su contenido, basta con ejecutar el comando “sudo cat authorized_keys
+### Comprobación del traspaso de claves al servidor Linux
+1. Para comprobar que la clave se ha traspasado, debemos iniciar sesión en el servidor Linux y movernos a la carpeta “[home]/[Usuario]”.
+2. Una vez ahí, ejecutaremos el comando “ls -la” para que nos liste todos los archivos, estén ocultos o no.
+3. Ahora entraremos a la carpeta con el comando “cd .ssh”.
+4. Posteriormente, dentro de la carpeta veremos un archivo llamado “authorized_keys”.
+5. Para comprobar su contenido, basta con ejecutar el comando “sudo cat authorized_keys
 
-Cambio de autenticación de “usuario” y “contraseña” a par de clave
-1º - Debemos movernos dentro de la carpeta “/etc/ssh”.
-2º - Una vez ahí, abrimos el archivo “ssh_config”, ejecutando el comando “sudo nano sshd_config”.
-3º - Dentro del archivo de configuración, debemos buscar las siguientes líneas y descomentarlas.
+### Cambio de autenticación de “usuario” y “contraseña” a par de clave
+1. Debemos movernos dentro de la carpeta “/etc/ssh”.
+2. Una vez ahí, abrimos el archivo “ssh_config”, ejecutando el comando “sudo nano sshd_config”.
+3. Dentro del archivo de configuración, debemos buscar las siguientes líneas y descomentarlas.
 - PermitRootLogin no (No permitimos que el usuario root (Pi), pueda iniciar sesion)
 - PubkeyAuthentication yes (Permitimos la autenticación mediante Clave publica)
 - PasswordAuthentication no (No permitimos la autenticación mediante contraseña)
