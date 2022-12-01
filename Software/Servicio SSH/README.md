@@ -11,6 +11,8 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
     Raspberry Pi
   </u></div>
     
+<br/>
+
       1. Posteriormente a instalar el S.O en la Micro-SD, debemos insertarla en la Raspberry y esperar 2 – 3 minutos, de esta forma dejaremos tiempo para que se creen los archivos del sistema.
       2. Extraemos la tarjeta de la Raspberry y la ponemos dentro de un adaptador SD.
       3. Insertamos el adaptador en un ordenador y buscamos la carpeta “boot” dentro de la unidad de la tarjeta.
