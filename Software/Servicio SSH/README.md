@@ -49,19 +49,21 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
 
 ### Traspaso de claves desde Windows y Linux
 
-#### Windows a Linux.
+<div align="right">
+ <h4>Windows a Linux.</h4>
 
-<table>
-<tr>
-<td>
+  <table width="50%">
+   <tr>
+    <td>
   
   1. Antes de empezar con el proceso, debemos de crear la carpeta “.ssh” en el servidor Linux.
   2. Posteriormente, debemos crear el archivo “authorized_keys” dentro de la carpeta “.ssh” con el comando “touch authorized_keys”
   3. Debemos ejecutar el comando “scp [Clave_publica] [Usuario_ser]@[IP_Servidor]: [Ruta_donde_queremos_transferirlo]/”
   4. Una vez tenemos la clave dentro de la carpeta “.ssh” debemos ejecutar el comando “cat [Clave_publica] > authorized_keys”.
-</td>
-</tr>
-</table>
+    </td>
+   </tr>
+  </table>
+</div>
 
 #### Linux a Linux
 <table>
