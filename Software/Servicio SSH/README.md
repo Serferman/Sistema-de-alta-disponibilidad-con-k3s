@@ -11,9 +11,9 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
 <tr>
 <td>
 
-<div align="center" style="width:40%"> <h2>
-  Raspberry Pi 
-</h2></div>
+<div align="center"> <h3>
+  Sistemas operativos "Raspberry Pi OS"
+  </h3></div>
 
    1. Posteriormente a instalar el S.O en la Micro-SD, debemos insertarla en la Raspberry y esperar 2 – 3 minutos, de esta forma dejaremos tiempo para que se creen los archivos del sistema.
    2. Extraemos la tarjeta de la Raspberry y la ponemos dentro de un adaptador SD.
@@ -34,20 +34,44 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
 
 ## Hardening del servicio SSH 
 ### Creación del par de claves
-1. Abrimos la terminal del sistema operativo desde el que queramos conectarnos.
-2. Ejecutaremos el comando “ssh-keygen” o “ssh-keygen -b 4096 -t rsa”.
-3. Seguidamente nos pedirá un nombre para el par de claves y una contraseña para estas. Para procesos automáticos no hará falta ponerle una contraseña a la clave, ya que únicamente la autenticación por clave ya tiene una seguridad alta.
+
+<table>
+<tr>
+<td>
+  
+  1. Abrimos la terminal del sistema operativo desde el que queramos conectarnos.
+  2. Ejecutaremos el comando “ssh-keygen” o “ssh-keygen -b 4096 -t rsa”.
+  3. Seguidamente nos pedirá un nombre para el par de claves y una contraseña para estas. Para procesos automáticos no hará falta ponerle una contraseña a la clave, ya que únicamente la autenticación por clave ya tiene una seguridad alta. 
+</td>
+</tr>
+</table>
+
 
 ### Traspaso de claves desde Windows y Linux
 
 #### Windows a Linux.
-1. Antes de empezar con el proceso, debemos de crear la carpeta “.ssh” en el servidor Linux.
-2. Posteriormente, debemos crear el archivo “authorized_keys” dentro de la carpeta “.ssh” con el comando “touch authorized_keys”
-3. Debemos ejecutar el comando “scp [Clave_publica] [Usuario_ser]@[IP_Servidor]: [Ruta_donde_queremos_transferirlo]/”
-4. Una vez tenemos la clave dentro de la carpeta “.ssh” debemos ejecutar el comando “cat [Clave_publica] > authorized_keys”.
+
+<table>
+<tr>
+<td>
+  
+  1. Antes de empezar con el proceso, debemos de crear la carpeta “.ssh” en el servidor Linux.
+  2. Posteriormente, debemos crear el archivo “authorized_keys” dentro de la carpeta “.ssh” con el comando “touch authorized_keys”
+  3. Debemos ejecutar el comando “scp [Clave_publica] [Usuario_ser]@[IP_Servidor]: [Ruta_donde_queremos_transferirlo]/”
+  4. Una vez tenemos la clave dentro de la carpeta “.ssh” debemos ejecutar el comando “cat [Clave_publica] > authorized_keys”.
+</td>
+</tr>
+</table>
 
 #### Linux a Linux
-1. Debemos ejecutar el comando “sudo ssh-copy-id -i [ruta]/[Clave_publica][Usuario_ser]@[IP_Servidor]”
+<table>
+<tr>
+<td>
+  
+  1. Debemos ejecutar el comando “sudo ssh-copy-id -i [ruta]/[Clave_publica][Usuario_ser]@[IP_Servidor]”
+</td>
+</tr>
+</table>
 
 ### Comprobación del traspaso de claves al servidor Linux
 1. Para comprobar que la clave se ha traspasado, debemos iniciar sesión en el servidor Linux y movernos a la carpeta “[home]/[Usuario]”.
