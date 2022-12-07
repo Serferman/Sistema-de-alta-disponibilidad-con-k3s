@@ -30,6 +30,7 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
  </tr>
 </table>
 
+<br/>
 
 ## Hardening del servicio SSH ##
 ### Creación del par de claves ###
@@ -45,42 +46,44 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
  </tr>
 </table>
 
+<br/>
 
 ### Traspaso de claves desde Windows y Linux ###
 <table>
-  <tr>
-    <td>
-        
-        <div align="center">
-          <h3>Windows a Linux.</h3>
-        </div>
-        
-    </td>
-    <td>
-        
-        <div align="center">
-          <h3>Linux a Linux</h3>
-        </div>
-        
-    </td>
-  </tr>
-  <tr>
-    <td>
+ <tr>
+  <td>
+    
+   <div align="center">
+    <h3>Windows a Linux.</h3>
+   </div>
+    
+  </td>
+  <td>
+    
+   <div align="center">
+    <h3>Linux a Linux</h3>
+   </div>
+    
+  </td>
+ </tr>
+ <tr>
+  <td>
       
 1. Antes de empezar con el proceso, debemos de crear la carpeta <b>“.ssh”</b> en el servidor Linux. 
 2. Posteriormente, debemos crear el archivo <b>“authorized_keys”</b> dentro de la carpeta <b>“.ssh”</b> con el comando <b>“touch authorized_keys”</b>.
 3. Debemos ejecutar el comando <b>“scp [Clave_publica] [Usuario_ser]@[IP_Servidor]: [Ruta_donde_queremos_transferirlo]/”</b>.
 4. Una vez tenemos la clave dentro de la carpeta <b>“.ssh”</b> debemos ejecutar el comando <b>“cat [Clave_publica] > authorized_keys”</b>.
     
-    </td>
-    <td>    
+  </td>
+  <td>    
     
 1.‎ Debemos ejecutar el comando <b>“sudo ssh-copy-id -i [ruta]/[Clave_publica][Usuario_ser]@[IP_Servidor]”</b>.
     
-    </td>
-  </tr>
+  </td>
+ </tr>
 </table>
 
+<br/>
 
 ### Comprobación del traspaso de claves al servidor Linux ###
 <table>
@@ -97,6 +100,7 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
  </tr>
 </table>
     
+<br/>
     
 ### Cambio de autenticación de “usuario” y “contraseña” a par de clave ###
 <div align="center">
@@ -119,6 +123,7 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
  </table>
 </div>
 
+<br/>
 
 ### Hardening del servicio SSH en cada nodo (sshd_config) ###
 <table>
@@ -153,7 +158,8 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
  </tr>
 </table>
    
-   
+<br/>
+ 
 ### Crear banner para el inicio de sesión por SSH ###
 <table>
  <tr>
@@ -167,7 +173,8 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
  </tr>
 </table>
   
-  
+<br/>
+
 ### Requisitos para iniciar sesión por clave. ###
 <table>
  <tr>
@@ -184,26 +191,29 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
  </tr>
 </table>
 
+<br/>
 
 ### Administración del servicio SSH (Una vez terminada la configuración). ###
-<table>
- <tr>
-  <td>
+<div align ="center">
+ <table>
+  <tr>
+   <td>
 
   1. Para reiniciar el servicio SSH debemos ejecutar el siguiente comando: <br/>
    
-   <div align="center"><b>
-    “sudo systemctl restart ssh.service”
-   </b></div>
-   <br/>
+    <div align="center"><b>
+     “sudo systemctl restart ssh.service”
+    </b></div>
+    <br/>
    
   2. Para saber el estado del servicio SSH debemos ejecutar el siguiente comando: <br/>
    
-   <div align="center"><b>
-    “sudo systemctl status ssh.service”
-   </b></div>
-  <br/>
+    <div align="center"><b>
+     “sudo systemctl status ssh.service”
+    </b></div>
+   <br/>
   
-  </td>
- </tr>
-</table>
+   </td>
+  </tr>
+ </table>
+</div>
