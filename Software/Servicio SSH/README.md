@@ -1,4 +1,4 @@
-## Creación del servicio SSH
+## Creación del servicio SSH ##
 Para instalar el servicio SSH no debería haber muchas dificultades, ya que el proceso que se debe de realizar no es muy complicado. El principal problema es que estamos tratando con diferentes tipos de ordenadores, por lo que la instalación/activación del servicio puede variar. La manera más simple y general de instalarlo es con el siguiente comando:
 
 <div align="center"> <b>
@@ -8,12 +8,12 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
 <br/>
 
 <table>
-<tr>
-<td>
+ <tr>
+  <td>
 
-<div align="center"> <h3>
-  Sistemas operativos "Raspberry Pi OS"
-  </h3></div>
+   <div align="center"> <h3>
+    Sistemas operativos "Raspberry Pi OS"
+   </h3></div>
 
    1. Posteriormente a instalar el S.O en la Micro-SD, debemos insertarla en la Raspberry y esperar 2 – 3 minutos, de esta forma dejaremos tiempo para que se creen los archivos del sistema.
    2. Extraemos la tarjeta de la Raspberry y la ponemos dentro de un adaptador SD.
@@ -26,14 +26,13 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
    9. Una vez ahí, ejecutaremos el comando <b>“new-item ssh”</b> o <b>“touch ssh”</b> para crear un archivo para el servicio SSH.
   10. Para finalizar, insertaremos la Micro-SD con la configuración dentro de la Raspberry PI.
   
-</td>
-</tr>
+  </td>
+ </tr>
 </table>
 
-<br/>
 
-## Hardening del servicio SSH 
-### Creación del par de claves
+## Hardening del servicio SSH ##
+### Creación del par de claves ###
 <table>
  <tr>
   <td>
@@ -41,23 +40,28 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
   1. Abrimos la terminal del sistema operativo desde el que queramos conectarnos.
   2. Ejecutaremos el comando <b>“ssh-keygen”</b> o <b>“ssh-keygen -b 4096 -t rsa”</b>.
   3. Seguidamente nos pedirá un nombre para el par de claves y una contraseña para estas. Para procesos automáticos no hará falta ponerle una contraseña a la clave, ya que únicamente la autenticación por clave ya tiene una seguridad alta. 
+  
   </td>
  </tr>
 </table>
 
 
-### Traspaso de claves desde Windows y Linux
+### Traspaso de claves desde Windows y Linux ###
 <table>
   <tr>
     <td>
+        
         <div align="center">
           <h3>Windows a Linux.</h3>
         </div>
+        
     </td>
     <td>
+        
         <div align="center">
           <h3>Linux a Linux</h3>
         </div>
+        
     </td>
   </tr>
   <tr>
@@ -70,13 +74,15 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
     
     </td>
     <td>    
+    
 1.‎ Debemos ejecutar el comando <b>“sudo ssh-copy-id -i [ruta]/[Clave_publica][Usuario_ser]@[IP_Servidor]”</b>.
+    
     </td>
   </tr>
 </table>
 
 
-### Comprobación del traspaso de claves al servidor Linux
+### Comprobación del traspaso de claves al servidor Linux ###
 <table>
  <tr>
   <td>
@@ -91,7 +97,8 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
  </tr>
 </table>
     
-### Cambio de autenticación de “usuario” y “contraseña” a par de clave
+    
+### Cambio de autenticación de “usuario” y “contraseña” a par de clave ###
 <div align="center">
  <table>
   <tr>
@@ -101,9 +108,11 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
   2. Una vez ahí, abrimos el archivo <b> “ssh_config” </b>, ejecutando el comando <b> “sudo nano sshd_config” </b>.
   3. Dentro del archivo de configuración, debemos buscar las siguientes líneas y descomentarlas.
   
+  <br/>
   - <b> PermitRootLogin no </b> (No permitimos que el usuario root (Pi), pueda iniciar sesion)
   - <b> PubkeyAuthentication yes </b> (Permitimos la autenticación mediante Clave publica)
   - <b> PasswordAuthentication no </b> (No permitimos la autenticación mediante contraseña)
+  <br/>
     
    </td>
   </tr>
@@ -138,13 +147,15 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
 - <b> KerberosAuthentication no </b>
 - <b> GSSAPIAuthentication no </b>
 - <b> Banner [Ruta]/[Archivo_banner] </b> --> Establecer una carta de presentación por SSH en cada nodo.
+ <br/>
 
   </td>
  </tr>
 </table>
    
-Crear banner para el inicio de sesión por SSH
-<table
+   
+### Crear banner para el inicio de sesión por SSH ###
+<table>
  <tr>
   <td>
   
@@ -156,25 +167,43 @@ Crear banner para el inicio de sesión por SSH
  </tr>
 </table>
   
+  
 ### Requisitos para iniciar sesión por clave. ###
-
 <table>
  <tr>
   <td>
     
-1º - Para iniciar sesión por clave pública y privada, debemos indicar varios atributos en el comando de conexión SSH, por lo tanto, el comando quedaría tal que así: <br/>
+1.‎Para iniciar sesión por clave pública y privada, debemos indicar varios atributos en el comando de conexión SSH, por lo tanto, el comando quedaría tal que así: <br/>
     
-    <div align="center">
-      <b> “sudo ssh -i [Clave_privada] [Usuario_server]@[IP_Server] -p [Puerto]” </b>
-    </div>
-    
+   <div align="center">
+    <b> “sudo ssh -i [Clave_privada] [Usuario_server]@[IP_Server] -p [Puerto]” </b>
+   </div>
+   <br/>
+   
   </td>
  </tr>
 </table>
-    
-### Administración del servicio SSH (Una vez terminada la configuración). ###
 
-1º - Para reiniciar el servicio SSH debemos ejecutar el siguiente comando:
-“sudo systemctl restart ssh.service”
-2º - Para saber el estado del servicio SSH debemos ejecutar el siguiente comando:
-“sudo systemctl status ssh.service”
+
+### Administración del servicio SSH (Una vez terminada la configuración). ###
+<table>
+ <tr>
+  <td>
+
+  1. Para reiniciar el servicio SSH debemos ejecutar el siguiente comando: <br/>
+   
+   <div align="center"><b>
+    “sudo systemctl restart ssh.service”
+   </b></div>
+   <br/>
+   
+  2. Para saber el estado del servicio SSH debemos ejecutar el siguiente comando: <br/>
+   
+   <div align="center"><b>
+    “sudo systemctl status ssh.service”
+   </b></div>
+  <br/>
+  
+  </td>
+ </tr>
+</table>
