@@ -34,16 +34,15 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
 
 ## Hardening del servicio SSH 
 ### Creación del par de claves
-
 <table>
-<tr>
-<td>
+ <tr>
+  <td>
   
   1. Abrimos la terminal del sistema operativo desde el que queramos conectarnos.
-  2. Ejecutaremos el comando “ssh-keygen” o “ssh-keygen -b 4096 -t rsa”.
+  2. Ejecutaremos el comando <b>“ssh-keygen”</b> o <b>“ssh-keygen -b 4096 -t rsa”</b>.
   3. Seguidamente nos pedirá un nombre para el par de claves y una contraseña para estas. Para procesos automáticos no hará falta ponerle una contraseña a la clave, ya que únicamente la autenticación por clave ya tiene una seguridad alta. 
-</td>
-</tr>
+  </td>
+ </tr>
 </table>
 
 
@@ -52,86 +51,98 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
   <tr>
     <td>
         <div align="center">
-          <h4>Windows a Linux.</h4>
+          <h3>Windows a Linux.</h3>
         </div>
     </td>
     <td>
         <div align="center">
-         <h4>Linux a Linux</h4>
+          <h3>Linux a Linux</h3>
         </div>
     </td>
-  <tr>
+  </tr>
   <tr>
     <td>
-  1. Antes de empezar con el proceso, debemos de crear la carpeta “.ssh” en el servidor Linux.
-  2. Posteriormente, debemos crear el archivo “authorized_keys” dentro de la carpeta “.ssh” con el comando “touch authorized_keys”
-  3. Debemos ejecutar el comando “scp [Clave_publica] [Usuario_ser]@[IP_Servidor]: [Ruta_donde_queremos_transferirlo]/”
-  4. Una vez tenemos la clave dentro de la carpeta “.ssh” debemos ejecutar el comando “cat [Clave_publica] > authorized_keys”.
+      
+1. Antes de empezar con el proceso, debemos de crear la carpeta <b>“.ssh”</b> en el servidor Linux. 
+2. Posteriormente, debemos crear el archivo <b>“authorized_keys”</b> dentro de la carpeta <b>“.ssh”</b> con el comando <b>“touch authorized_keys”</b>.
+3. Debemos ejecutar el comando <b>“scp [Clave_publica] [Usuario_ser]@[IP_Servidor]: [Ruta_donde_queremos_transferirlo]/”</b>.
+4. Una vez tenemos la clave dentro de la carpeta <b>“.ssh”</b> debemos ejecutar el comando <b>“cat [Clave_publica] > authorized_keys”</b>.
+    
     </td>
-    <td>
-  1. Debemos ejecutar el comando “sudo ssh-copy-id -i [ruta]/[Clave_publica][Usuario_ser]@[IP_Servidor]”
+    <td>    
+1.‎ Debemos ejecutar el comando <b>“sudo ssh-copy-id -i [ruta]/[Clave_publica][Usuario_ser]@[IP_Servidor]”</b>.
     </td>
-  <tr>
+  </tr>
 </table>
 
-<div align="right">
-
-  
-  <table>
-   <tr>
-    <td>
-  
-
-   
-     </td>
-   </tr>
-  </table>
-</div>
-
-<div align="right">
-
-  
-  <table>
-   <tr>
-    <td>
-  
-
-    </td>
-   </tr>
-  </table>
-</div>
 
 ### Comprobación del traspaso de claves al servidor Linux
-1. Para comprobar que la clave se ha traspasado, debemos iniciar sesión en el servidor Linux y movernos a la carpeta “[home]/[Usuario]”.
-2. Una vez ahí, ejecutaremos el comando “ls -la” para que nos liste todos los archivos, estén ocultos o no.
-3. Ahora entraremos a la carpeta con el comando “cd .ssh”.
-4. Posteriormente, dentro de la carpeta veremos un archivo llamado “authorized_keys”.
-5. Para comprobar su contenido, basta con ejecutar el comando “sudo cat authorized_keys
-
+<table>
+ <tr>
+  <td>
+    
+  1. Para comprobar que la clave se ha traspasado, debemos iniciar sesión en el servidor Linux y movernos a la carpeta <b>“[home]/[Usuario]”</b>.
+  2. Una vez ahí, ejecutaremos el comando <b>“ls -la”</b> para que nos liste todos los archivos, estén ocultos o no.
+  3. Ahora entraremos a la carpeta con el comando “<b>cd .ssh”</b>.
+  4. Posteriormente, dentro de la carpeta veremos un archivo llamado <b>“authorized_keys”</b>.
+  5. Para comprobar su contenido, basta con ejecutar el comando <b>“sudo cat authorized_keys"</b>.
+    
+  </td>
+ </tr>
+</table>
+    
 ### Cambio de autenticación de “usuario” y “contraseña” a par de clave
-1. Debemos movernos dentro de la carpeta “/etc/ssh”.
-2. Una vez ahí, abrimos el archivo “ssh_config”, ejecutando el comando “sudo nano sshd_config”.
-3. Dentro del archivo de configuración, debemos buscar las siguientes líneas y descomentarlas.
-- PermitRootLogin no (No permitimos que el usuario root (Pi), pueda iniciar sesion)
-- PubkeyAuthentication yes (Permitimos la autenticación mediante Clave publica)
-- PasswordAuthentication no (No permitimos la autenticación mediante contraseña)
+<div align="center">
+ <table>
+  <tr>
+   <td>
+    
+  1. Debemos movernos dentro de la carpeta “/etc/ssh”.
+  2. Una vez ahí, abrimos el archivo “ssh_config”, ejecutando el comando “sudo nano sshd_config”.
+  3. Dentro del archivo de configuración, debemos buscar las siguientes líneas y descomentarlas.
+  
+  - PermitRootLogin no (No permitimos que el usuario root (Pi), pueda iniciar sesion)
+  - PubkeyAuthentication yes (Permitimos la autenticación mediante Clave publica)
+  - PasswordAuthentication no (No permitimos la autenticación mediante contraseña)
+    
+   </td>
+  </tr>
+ </table>
+</div>
 
-Hardening del servicio SSH en cada nodo (sshd_config)
-Port [Puertos] --> Los puertos que se utilizarán para conectarnos al servicio SSH.
-LoginGraceTime 60 --> Tiempo máximo de conexión para la contraseña.
-MaxAuthTries 3
-AllowUsers [RemoteUser] [RemotePowerOffUser] [RemoteCopyUser]--> Usuarios permitidos para autenticarse en el sistema
-HostbasedAuthentication no --> Autenticaciones basada en host NO.
-IgnoreRhosts yes
-X11Forwarding no --> No ejecutar aplicaciones gráficas
-ClientAliveInterval (300) --> Cada 300 segundos mandará un mensaje al cliente comprobando que esté operativo.
-ClientAliveCountMax (X) --> Veces que mandará un mensaje de comprobación al cliente cada (300).
-MaxStartups (2) --> Conexiones Simultaneas
-ChallengeRespondeAuthentication no
-KerberosAuthentication no
-GSSAPIAuthentication no
-Banner [Ruta]/[Archivo_banner] --> Establecer una carta de presentación por SSH en cada nodo.
 
+### Hardening del servicio SSH en cada nodo (sshd_config) ###
+<table>
+ <tr>
+  <td>
+      
+- <b> Port [Puertos] </b>--> Los puertos que se utilizarán para conectarnos al servicio SSH.
+- <b> LoginGraceTime 60 </b>--> Tiempo máximo de conexión para la contraseña.
+- <b> MaxAuthTries 3</b>
+- <b> AllowUsers [RemoteUser] [RemotePowerOffUser] [RemoteCopyUser] </b>--> Usuarios permitidos para autenticarse en el sistema.
+ <br/>
+    
+- <b> HostbasedAuthentication no </b> --> Autenticaciones basada en host NO.
+- <b> IgnoreRhosts yes </b>
+ <br/>
+    
+- <b> X11Forwarding no </b>--> No ejecutar aplicaciones gráficas
+- <b> ClientAliveInterval (300) </b>--> Cada 300 segundos mandará un mensaje al cliente comprobando que esté operativo.
+- <b> ClientAliveCountMax (X) </b>--> Veces que mandará un mensaje de comprobación al cliente cada (300).
+ <br/>
+    
+- <b> MaxStartups (2) </b>--> Conexiones Simultaneas
+ <br/>
+    
+- <b> ChallengeRespondeAuthentication no </b>
+- <b> KerberosAuthentication no </b>
+- <b> GSSAPIAuthentication no </b>
+- <b> Banner [Ruta]/[Archivo_banner] </b> --> Establecer una carta de presentación por SSH en cada nodo.
+
+  </td>
+ </tr>
+</table>
+   
 Crear banner para el inicio de sesión por SSH
 1º - Primero, debemos de movernos a la carpeta que contendrá nuestro banner, para ello ejecutaremos 
 “cd [ruta]”.
