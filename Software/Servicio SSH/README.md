@@ -112,11 +112,9 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
   2. Una vez ahí, abrimos el archivo <b> “ssh_config” </b>, ejecutando el comando <b> “sudo nano sshd_config” </b>.
   3. Dentro del archivo de configuración, debemos buscar las siguientes líneas y descomentarlas.
   
-  <br/>
   - <b> PermitRootLogin no </b> (No permitimos que el usuario root (Pi), pueda iniciar sesion)
   - <b> PubkeyAuthentication yes </b> (Permitimos la autenticación mediante Clave publica)
   - <b> PasswordAuthentication no </b> (No permitimos la autenticación mediante contraseña)
-  <br/>
     
    </td>
   </tr>
@@ -180,7 +178,7 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
  <tr>
   <td>
     
-1.‎Para iniciar sesión por clave pública y privada, debemos indicar varios atributos en el comando de conexión SSH, por lo tanto, el comando quedaría tal que así: <br/>
+1.‎Para iniciar sesión por clave pública y privada, debemos indicar varios atributos en el comando de conexión SSH, por lo tanto, el comando quedaría tal que así: 
     
    <div align="center">
     <b> “sudo ssh -i [Clave_privada] [Usuario_server]@[IP_Server] -p [Puerto]” </b>
