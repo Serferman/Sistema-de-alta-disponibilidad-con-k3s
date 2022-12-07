@@ -1,0 +1,32 @@
+#!/bin/bash
+#Declaración de variables
+Cont=0
+#Declaración de constantes
+IP=("192.168.2." "192.168.2." "192.168.2." "192.168.2." "192.168.2.")
+Usuarios=("poweroffuser" "poweroffuser" "poweroffuser" "poweroffuser" "poweroffuser")
+Puertos=(“5451X” “5451X” “5451X” “5451X” “5451X”)
+NumeroNodos=5
+TiempoDeEspera=5
+#Declaración de las estructuras de control
+ echo ""
+ echo " Empezamos con el apagado secuencial"
+ echo " -----------------------------------"
+ while [ $Cont -le $NumeroNodos ]
+ do
+ echo " Haciendo ping a" "${IP[Cont]}"
+ echo " -----------------------------"
+ echo ""
+ if $( ping -c 4 "${IP[Cont]}" >/dev/null )
+ then
+ ssh -i [Ruta]/[Clave_privada] "${Usuarios[Cont]}"@"${IP[Cont]}" -p "${IP[Puertos]}" sudo -S poweroff
+ echo " El servidor" "${IP[Cont]}" "esta siendo APAGADO o COMPROBADO,"
+ echo " daremos un tiempo de gracia de $TiempoDeEspera segundos"
+ echo " ------------------------------------------"
+ echo ""
+ sleep $TiempoDeEspera
+ else
+ echo "No hay PING a esta IP" "${IP[Cont]}"", por lo que pasaremos a la siguiente"
+ echo ""
+ Cont=$((Cont+1))
+ fi
+ done
