@@ -97,13 +97,13 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
   <tr>
    <td>
     
-  1. Debemos movernos dentro de la carpeta “/etc/ssh”.
-  2. Una vez ahí, abrimos el archivo “ssh_config”, ejecutando el comando “sudo nano sshd_config”.
+  1. Debemos movernos dentro de la carpeta <b> “/etc/ssh” </b>.
+  2. Una vez ahí, abrimos el archivo <b> “ssh_config” </b>, ejecutando el comando <b> “sudo nano sshd_config” </b>.
   3. Dentro del archivo de configuración, debemos buscar las siguientes líneas y descomentarlas.
   
-  - PermitRootLogin no (No permitimos que el usuario root (Pi), pueda iniciar sesion)
-  - PubkeyAuthentication yes (Permitimos la autenticación mediante Clave publica)
-  - PasswordAuthentication no (No permitimos la autenticación mediante contraseña)
+  - <b> PermitRootLogin no </b> (No permitimos que el usuario root (Pi), pueda iniciar sesion)
+  - <b> PubkeyAuthentication yes </b> (Permitimos la autenticación mediante Clave publica)
+  - <b> PasswordAuthentication no </b> (No permitimos la autenticación mediante contraseña)
     
    </td>
   </tr>
@@ -144,17 +144,36 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
 </table>
    
 Crear banner para el inicio de sesión por SSH
-1º - Primero, debemos de movernos a la carpeta que contendrá nuestro banner, para ello ejecutaremos 
-“cd [ruta]”.
-2º - Ahora ejecutaremos el siguiente comando para crear un archivo “sudo touch banner”.
-3º - Para finalizar, abriremos el archivo banner e insertaremos cualquier contenido que queramos que se vea “sudo nano banner”.
+<table
+ <tr>
+  <td>
+  
+  1. Primero, debemos de movernos a la carpeta que contendrá nuestro banner, para ello ejecutaremos <b> “cd [ruta]” </b>.
+  2. Ahora ejecutaremos el siguiente comando para crear un archivo <b> “sudo touch banner” </b>.
+  3. Para finalizar, abriremos el archivo banner e insertaremos cualquier contenido que queramos que se vea <b> “sudo nano banner” </b>.
+  
+  </td>
+ </tr>
+</table>
+  
+### Requisitos para iniciar sesión por clave. ###
 
-Requisitos para iniciar sesión por clave
-1º - Para iniciar sesión por clave pública y privada, debemos indicar varios atributos en el comando de 
-conexión SSH, por lo tanto, el comando quedaría tal que así:
-“sudo ssh -i [Clave_privada] [Usuario_server]@[IP_Server] -p [Puerto]”
+<table>
+ <tr>
+  <td>
+    
+1º - Para iniciar sesión por clave pública y privada, debemos indicar varios atributos en el comando de conexión SSH, por lo tanto, el comando quedaría tal que así: <br/>
+    
+    <div align="center">
+      <b> “sudo ssh -i [Clave_privada] [Usuario_server]@[IP_Server] -p [Puerto]” </b>
+    </div>
+    
+  </td>
+ </tr>
+</table>
+    
+### Administración del servicio SSH (Una vez terminada la configuración). ###
 
-Administración del servicio SSH (Una vez terminada la configuración)
 1º - Para reiniciar el servicio SSH debemos ejecutar el siguiente comando:
 “sudo systemctl restart ssh.service”
 2º - Para saber el estado del servicio SSH debemos ejecutar el siguiente comando:
