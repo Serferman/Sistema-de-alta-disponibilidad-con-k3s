@@ -201,16 +201,16 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
 
   1. Para reiniciar el servicio SSH debemos ejecutar el siguiente comando: <br/>
    
-    <div align="center"><b>
-     “sudo systemctl restart ssh.service”
-    </b></div>
-    <br/>
+   <div align="center"><b>
+    “sudo systemctl restart ssh.service”
+   </b></div>
+   <br/>
    
   2. Para saber el estado del servicio SSH debemos ejecutar el siguiente comando: <br/>
    
-    <div align="center"><b>
-     “sudo systemctl status ssh.service”
-    </b></div>
+   <div align="center"><b>
+    “sudo systemctl status ssh.service”
+   </b></div>
    <br/>
   
    </td>
