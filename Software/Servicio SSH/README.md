@@ -175,7 +175,7 @@ Para instalar el servicio SSH no debería haber muchas dificultades, ya que el p
   
 <br/>
 
-### Requisitos para iniciar sesión por clave. ###
+### Sintaxis para iniciar sesión SSH por clave publica/rivada. ###
 <table>
  <tr>
   <td>
