@@ -77,7 +77,8 @@
    <div align="center">
     REALIZAR EN EL SERVIDOR MAESTRO Y TRASPASARLA A LOS ESCLAVOS Y A SI MISMO
    </div>
-     
+   <br/>  
+    
   1. Creación de las claves mediante el comando <b> “ssh-keygen -b 4096 -t rsa”</b>.
   2. Ahora debemos cambiarle los permisos y la propiedad a la clave privada mediante los siguientes comandos:
   - <b> "sudo chown [Usuario_maestro]:[Grupo_Apagado] [Clave_privada]" </b>
