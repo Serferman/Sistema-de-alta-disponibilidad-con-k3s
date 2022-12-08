@@ -42,6 +42,7 @@
    <div align="center">
     REALIZAR TANTO EN EL SERVIDOR MAESTRO COMO EN LOS SERVIDORES ESCLAVOS
    </div>
+   <br/>
     
   1. Crearemos un usuario mediante el comando <b> “sudo adduser [usuario]”</b>.
   2. Crearemos un grupo mediante el comando <b> “sudo groupadd [grupo]”</b>.
