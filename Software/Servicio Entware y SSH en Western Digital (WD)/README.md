@@ -26,12 +26,10 @@
  
  1. Primero, debemos iniciar sesión en el NAS mediante el comando <b> “sshd@[IP]”</b>.
  2. Una vez dentro del sistema, nos moveremos al directorio de <b> “Entware” </b> y ahí, abriremos el archivo <b> “init.d” </b> mediante el comando <b> “sudo vi init.d”</b>.
- 3. Al final de este archivo tenemos que añadir 2 sentencias de comandos:
- 
- <b> “cat /mnt/HD/HD_a2/Nas_Prog/entware/[File_conf_sshd_modificado] > /etc/ssh/[sshd_config]” </b>
-<br/>
- <b> “kill -HUP 'cat /var/run/sshd.pid'” </b> 
- 
+
+ - <b> “cat /mnt/HD/HD_a2/Nas_Prog/entware/[File_conf_sshd_modificado] > /etc/ssh/[sshd_config]” </b>
+ - <b> “kill -HUP 'cat /var/run/sshd.pid'” </b> 
+
  4. Una vez escritos los comandos dentro del archivo <b> “init.d”</b>, debemos guardarlo y salir de él.
  5. Ahora en la misma carpeta, crearemos un archivo de texto, para insertar la configuración clonada del archivo <b> “sshd_config”</b>. Todo esto mediante el comando <b> “touch sshd_config_mod”</b>
  6. Una vez hayamos insertado los datos en el archivo modificado, debemos guardarlo.
@@ -41,9 +39,10 @@
 </table>
 
 ### Archivo de configuración modificado del servicio SSH en el NAS. ###
-<table>
- <tr>
-  <td>
+<div align="center">
+ <table>
+  <tr>
+   <td>
     
  - <b>Port []</b> 
  - <b>Protocol 2 </b>
@@ -58,7 +57,7 @@
  - <b>TCPKeepAlive yes </b>
  - <b>MasAuthTries 5 </b>
  - <b>Subsystem sftp /usr/bin/sftp-server </b>
-    
-  </td>
- </tr>
-</table>
+   </td>
+  </tr>
+ </table>
+</div>
