@@ -94,9 +94,9 @@
   2. Una vez descargado, lo instalaremos en el apartado de "Aplicaciones" de la interfaz gráfica del NAS.
   3. Ahora debemos de activar el servicio SSH en el NAS. Para ello:
   
-  - Nos vamos a "Configuración".
-  - Después a "Red".
-  - Buscaremos el apartado "Servicio de red" y activamos SSH 
+  - Nos vamos a <b> "Configuración"</b>.
+  - Después a <b> "Red"</b>.
+  - Buscaremos el apartado <b> "Servicio de red" </b> y activamos SSH. 
   
   4. Ahora desde una terminal o CMD, intentamos conectarnos ejecutando el comando "ssh sshd@(IP_del_Servidor)"
   5. Por último, para conectarnos a la red debemos ejecutar "zerotier-cli join [Network_ID]"  
