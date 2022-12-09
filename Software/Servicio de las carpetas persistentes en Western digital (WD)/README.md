@@ -1,6 +1,6 @@
 ## Proceso para crear carpetas permanentes en el NAS y fortalecer su acceso SSH. ##
 ### Instalación de “Entware” en el NAS. ###
-Proceso para mantener la configuración del servidor SSH en el NAS.
+
 1.- Bajar el binario " https://dl.cloudsmith.io/public/wdcommunity/EX2Ultra/raw/names/entware/versions/21.04.07/entware_21.04.07_EX2Ultra.bin".
 2.- Una vez descargado, lo instalaremos en la parte de "Aplicaciones" de la interfaz gráfica del NAS.
 3.- Una vez ahí, debemos pulsar sobre “Instalar una aplicación manualmente”.
@@ -12,6 +12,8 @@ sobre “configurar” para poder al apartado de instalación de aplicaciones de
 - Search → Nos permite hacer una búsqueda de cualquier paquete.
 - Install → Nos permite instalar un paquete que previamente ha sido encontrado.
 - Remove → Nos permite eliminar un paquete que previamente ha sido instalado.
+
+### Proceso para mantener la configuración del servidor SSH en el NAS. ###
 1º - Primero, debemos iniciar sesión en el NAS mediante el comando “sshd@[IP]”.
 2º - Una vez dentro del sistema, nos moveremos al directorio de “Entware” y ahí, abriremos el archivo 
 “init.d” mediante el comando “sudo vi init.d”.
@@ -22,8 +24,7 @@ sobre “configurar” para poder al apartado de instalación de aplicaciones de
 5º - Ahora en la misma carpeta, crearemos un archivo de texto, para insertar la configuración clonada 
 del archivo “sshd_config”. Todo esto mediante el comando “touch sshd_config_mod”
 6º - Una vez hayamos insertado los datos en el archivo modificado, debemos guardarlo.
-Sergio Fernández Pardo
-pág. 11
+
 Archivo de configuración modificado del servicio SSH en el NAS. 
 Copias de Seguridad remotas (TAR)
 Configurar el sistema para ejecutar el Script de copias remotas automáticamente.
