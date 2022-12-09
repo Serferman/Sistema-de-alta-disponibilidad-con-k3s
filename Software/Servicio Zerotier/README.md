@@ -6,7 +6,7 @@
  </tr>
   
  <tr>
-  <td align="center"><b> Master (Server ITX) </b></td>
+  <td align="center"><b> Master (Server_ITX) </b></td>
   <td> 192.168.192.X </td>
   <td>
 
