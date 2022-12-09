@@ -1,17 +1,21 @@
 ## Proceso para crear carpetas permanentes en el NAS y fortalecer su acceso SSH. ##
 ### Instalación de “Entware” en el NAS. ###
-
-1.- Bajar el binario " https://dl.cloudsmith.io/public/wdcommunity/EX2Ultra/raw/names/entware/versions/21.04.07/entware_21.04.07_EX2Ultra.bin".
-2.- Una vez descargado, lo instalaremos en la parte de "Aplicaciones" de la interfaz gráfica del NAS.
-3.- Una vez ahí, debemos pulsar sobre “Instalar una aplicación manualmente”.
-4º - Al pulsar sobre esta, se nos abrirá el explorador de archivos de nuestro sistema, para que busquemos 
-el archivo que queremos instalar.
-5º - Una vez se instale correctamente el software, seleccionaremos la nueva aplicación y pulsaremos 
-sobre “configurar” para poder al apartado de instalación de aplicaciones de “Entware”. 
-6º - Una vez ahí, podremos apreciar 3 recuadros:
-- Search → Nos permite hacer una búsqueda de cualquier paquete.
-- Install → Nos permite instalar un paquete que previamente ha sido encontrado.
-- Remove → Nos permite eliminar un paquete que previamente ha sido instalado.
+<table>
+ <tr>
+  <td>
+  1. Bajar el binario " https://dl.cloudsmith.io/public/wdcommunity/EX2Ultra/raw/names/entware/versions/21.04.07/entware_21.04.07_EX2Ultra.bin".
+  2. Una vez descargado, lo instalaremos en la parte de "Aplicaciones" de la interfaz gráfica del NAS.
+  3. Una vez ahí, debemos pulsar sobre “Instalar una aplicación manualmente”.
+  4. Al pulsar sobre esta, se nos abrirá el explorador de archivos de nuestro sistema, para que busquemos el archivo que queremos instalar.
+  5. Una vez se instale correctamente el software, seleccionaremos la nueva aplicación y pulsaremos sobre “configurar” para poder al apartado de instalación de aplicaciones de “Entware”. 
+  6. Una vez ahí, podremos apreciar 3 recuadros:
+  
+  - Search → Nos permite hacer una búsqueda de cualquier paquete.
+  - Install → Nos permite instalar un paquete que previamente ha sido encontrado.
+  - Remove → Nos permite eliminar un paquete que previamente ha sido instalado.
+  </td>
+ </tr>
+</table>
 
 ### Proceso para mantener la configuración del servidor SSH en el NAS. ###
 1º - Primero, debemos iniciar sesión en el NAS mediante el comando “sshd@[IP]”.
@@ -41,28 +45,3 @@ ChallengeResponseAuthentication no
 TCPKeepAlive yes
 MasAuthTries 5
 Subsystem sftp /usr/bin/sftp-server
-REALIZAR TANTO EN EL SERVIDOR MAESTRO COMO EN LOS SERVIDORES ESCLAVOS
-1º - Crearemos un usuario mediante el comando “sudo adduser [usuario]”.
-2º - Crearemos un grupo mediante el comando “sudo groupadd [grupo]”.
-3º - Añadiremos el usuario al grupo mediante el comando “sudo adduser [usuario] [grupo]”.
-4º - Ahora abriremos el archivo “Sudoers”, mediante el comando “sudo visudo” o “sudo nano 
-/etc/sudoers”.
-5º - Al final del archivo debemos añadir la siguiente línea “%[grupo] ALL=(root) NOPASSWD: 
-/usr/bin/tar”.
-6º - Ahora guardaremos el archivo y saldremos de este.
-7º - Posteriormente, nos moveremos al directorio “/usr/bin” mediante el comando “cd /usr/bin”.
-8º - En este directorio debemos crear un archivo mediante el comando “sudo nano Tar.sh”.
-9º - Dentro de este archivo debemos de insertar las siguientes sentencias:
-#!/bin/sh
-sudo /usr/bin/tar $*
-10º - Ahora guardaremos el archivo y saldremos de este.
-11º - Después, tenemos que asignarle los permisos y propiedad adecuados al fichero, mediante los 
-comandos:
-- "sudo chown root:[Grupo] /usr/bin/Tar.sh"
-- "sudo chmod 750 /usr/bin/Tar.sh"
-Creación de claves SSH para la automatización y securización del proceso de apagado.
-
-REALIZAR EN LOS NODOS DEL CLUSTER Y TRASPASARLA AL NAS
-1º - Creación de las claves mediante el comando “ssh-keygen -b 4096 -t rsa”.
-2º - Traspaso de claves mediante el comando “ssh-copy-id -i [Clave_publica] 
-[Nombre_Usuario_NAS]@[IP_Nodos_NAS]”
