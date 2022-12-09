@@ -45,6 +45,7 @@
  <tr>
   <td>
    <b>
+    
  - Port [] 
  - Protocol 2
  - Hostkey /etc/ssh/ssh_host_rsa_key
@@ -58,6 +59,7 @@
  - TCPKeepAlive yes
  - MasAuthTries 5
  - Subsystem sftp /usr/bin/sftp-server
+    
    </b>
   </td>
  </tr>
