@@ -58,24 +58,25 @@
  <tr>
   <td>
   
- 1. Debemos iniciar sesión con el usuario de copias remotas, mediante el comando “su [usuario]”.
- 2. Posteriormente, desde este usuario ejecutaremos el comando “crontab -e” que nos permitirá acceder al archivo “Crontab” (Cada usuario tiene un archivo Crontab personal).
+ 1. Debemos iniciar sesión con el usuario de copias remotas, mediante el comando <b> “su [usuario]”</b>.
+ 2. Posteriormente, desde este usuario ejecutaremos el comando <b> “crontab -e” </b> que nos permitirá acceder al archivo <b> “Crontab” </b> (Cada usuario tiene un archivo Crontab personal).
  3. Al final de este archivo debemos añadir la siguiente sentencia:
    <div align="center">
-    "@daily [usuario] /[ruta]/[script.sh]"
+    <b> "@daily [usuario] /[ruta]/[script.sh]" </b>
    </div>
   </td>
   <td>
   
- 1. Otra manera de acceder al fichero personal de automatización “Crontab” es ejecutando el siguiente comando:
+ 1. Otra manera de acceder al fichero personal de automatización <b> “Crontab” </b> es ejecutando el siguiente comando:
    <div align="center">
-    “sudo crontab -u [usuario] -d”
+    <b> “sudo crontab -u [usuario] -d” </b>
    </div>
  
  2. Al final de este archivo debemos añadir la siguiente sentencia:
    <div align="center">
-    "@daily [usuario] /[ruta]/[script.sh]
+    <b> "@daily [usuario] /[ruta]/[script.sh] </b>
    </div>
+   <br/>
   </td>
  </tr>
 </table>
