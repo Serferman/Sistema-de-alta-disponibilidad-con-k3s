@@ -6,7 +6,7 @@
  </tr>
   
  <tr>
-  <td><b> Master (Server ITX) </b></td>
+  <td align="center"><b> Master (Server ITX) </b></td>
   <td> 192.168.192.X </td>
   <td>
 
@@ -19,7 +19,7 @@
  </tr>
  
  <tr>
-  <td><b> Nodo1 (RaspberryPI) </b></td>
+  <td align="center"><b> Nodo1 (RaspberryPI) </b></td>
   <td> 192.168.192.X </td>
   <td>
   
@@ -32,7 +32,7 @@
  </tr>
  
  <tr>
-  <td rowspan="2"><b> Nodo2 (BananaPI) </b></td>
+  <td rowspan="2" align="center"><b> Nodo2 (BananaPI) </b></td>
   <td rowspan="2"> 192.168.192.X </td>
   <td>
  
@@ -59,7 +59,7 @@
  </tr>
  
  <tr>
-  <td><b> Nodo3 (RaspberryPI) </b></td>
+  <td align="center"><b> Nodo3 (RaspberryPI) </b></td>
   <td> 192.168.192.X </td>
   <td>
   
@@ -73,7 +73,7 @@
  </tr>
 
  <tr>
-  <td><b> Nodo4 (RaspberryPI) </b></td>
+  <td align="center"><b> Nodo4 (RaspberryPI) </b></td>
   <td> 192.168.192.X </td>
   <td>
   
@@ -86,7 +86,7 @@
  </tr>
   
  <tr>
-  <td><b> WD NAS (WD Ex2 Ultra)</b></td>
+  <td align="center"><b> WD NAS (WD_Ex2_Ultra)</b></td>
   <td> 192.168.192.X </td>
   <td>
   
