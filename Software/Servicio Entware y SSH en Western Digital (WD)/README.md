@@ -30,7 +30,7 @@
  
  <b> “cat /mnt/HD/HD_a2/Nas_Prog/entware/[File_conf_sshd_modificado] > /etc/ssh/[sshd_config]” </b>
 <br/>
- <b> “kill -HUP `cat /var/run/sshd.pid`” </b> 
+ <b> “kill -HUP 'cat /var/run/sshd.pid'” </b> 
  
  4. Una vez escritos los comandos dentro del archivo <b> “init.d”</b>, debemos guardarlo y salir de él.
  5. Ahora en la misma carpeta, crearemos un archivo de texto, para insertar la configuración clonada del archivo <b> “sshd_config”</b>. Todo esto mediante el comando <b> “touch sshd_config_mod”</b>
