@@ -6,6 +6,7 @@
    <div align="center">
     REALIZAR TANTO EN EL SERVIDOR MAESTRO COMO EN LOS SERVIDORES ESCLAVOS
    </div>
+   <br/>
 
   1. Crearemos un usuario mediante el comando <b> “sudo adduser [usuario]”</b>.
   2. Crearemos un grupo mediante el comando <b> “sudo groupadd [grupo]”</b>.
@@ -42,26 +43,39 @@
    <div align="center">
     REALIZAR EN LOS NODOS DEL CLUSTER Y TRASPASARLA AL NAS
    </div>
+   <br/>
    
-1º - Creación de las claves mediante el comando “ssh-keygen -b 4096 -t rsa”.
-2º - Traspaso de claves mediante el comando “ssh-copy-id -i [Clave_publica] 
-[Nombre_Usuario_NAS]@[IP_Nodos_NAS]”.
+ 1. Creación de las claves mediante el comando <b> “ssh-keygen -b 4096 -t rsa” </b>.
+ 2. Traspaso de claves mediante el comando <b> “ssh-copy-id -i [Clave_publica] 
+[Nombre_Usuario_NAS]@[IP_Nodos_NAS]” </b>.
 
-1º - Debemos iniciar sesión con el usuario de 
-copias remotas, mediante el comando “su 
-[usuario]”.
-2º - Posteriormente, desde este usuario 
-ejecutaremos el comando “crontab -e” que nos 
-permitirá acceder al archivo “Crontab” (Cada 
-usuario tiene un archivo Crontab personal).
-3º - Al final de este archivo debemos añadir la 
-siguiente sentencia:
-"@daily [usuario] /[ruta]/[script.sh]"
+  </td>
+ </tr>
+</table>
 
-1º - Otra manera de acceder al fichero personal 
-de automatización “Crontab” es ejecutando el 
-siguiente comando:
-“sudo crontab -u [usuario] -d”
-2º - Al final de este archivo debemos añadir la 
-siguiente sentencia:
-"@daily [usuario] /[ruta]/[script.sh]
+### Programación del Script para su ejecución a lo largo del tiempo (Cron/Crontab). ###
+<table>
+ <tr>
+  <td>
+  
+ 1. Debemos iniciar sesión con el usuario de copias remotas, mediante el comando “su [usuario]”.
+ 2. Posteriormente, desde este usuario ejecutaremos el comando “crontab -e” que nos permitirá acceder al archivo “Crontab” (Cada usuario tiene un archivo Crontab personal).
+ 3. Al final de este archivo debemos añadir la siguiente sentencia:
+   <div align="center">
+    "@daily [usuario] /[ruta]/[script.sh]"
+   </div>
+  </td>
+  <td>
+  
+ 1. Otra manera de acceder al fichero personal de automatización “Crontab” es ejecutando el siguiente comando:
+   <div align="center">
+    “sudo crontab -u [usuario] -d”
+   </div>
+ 
+ 2. Al final de este archivo debemos añadir la siguiente sentencia:
+   <div align="center">
+    "@daily [usuario] /[ruta]/[script.sh]
+   </div>
+  </td>
+ </tr>
+</table>
