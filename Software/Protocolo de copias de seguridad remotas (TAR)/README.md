@@ -39,6 +39,7 @@
 </div>
 
 ### Creación de claves SSH para la automatización y securización del proceso de apagado. ###
+<div align="center">
 <table>
  <tr>
   <td>
@@ -54,7 +55,8 @@
   </td>
  </tr>
 </table>
-
+</div>
+ 
 ### Programación del Script para su ejecución a lo largo del tiempo (Cron/Crontab). ###
 <table>
  <tr>
@@ -73,6 +75,7 @@
    <div align="center">
     <b> “sudo crontab -u [usuario] -d” </b>
    </div>
+   <br/>
  
  2. Al final de este archivo debemos añadir la siguiente sentencia:
    <div align="center">
