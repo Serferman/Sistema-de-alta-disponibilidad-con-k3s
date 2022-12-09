@@ -1,5 +1,6 @@
 ## Copias de Seguridad remotas (TAR) ##
 ### Configurar el sistema para ejecutar el Script de copias remotas automáticamente. ###
+<div align="center">
 <table>
  <tr>
   <td>
@@ -35,6 +36,7 @@
   </td>
  </tr>
 </table>
+</div>
 
 ### Creación de claves SSH para la automatización y securización del proceso de apagado. ###
 <table>
