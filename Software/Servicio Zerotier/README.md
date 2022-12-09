@@ -1,39 +1,39 @@
 <table>
- <tr>
-  <td> Equipo </td>
-  <td> IP (Zerotier) </td>
-  <td> Proceso de instalación de Zerotier </td>
+ <tr align="center">
+  <td><h3> Equipo </h3></td>
+  <td><h3> IP(Zerotier) </h3></td>
+  <td><h3> Proceso de instalación de Zerotier </h3></td>
  </tr>
   
  <tr>
-  <td> Master </td>
-  <td></td>
+  <td><b> Master </b></td>
+  <td> 192.168.192.X </td>
   <td>
 
   1. “curl -s https://install.zerotier.com/ | sudo bash”
   2. “sudo reboot”
-  3. “sudo zerotier-cli join [Network_ID]” --> Entrar en la VPN
-  4. “sudo zerotier-cli leave [Network_ID]” --> Salir de la VPN
+  3. “sudo zerotier-cli join [Network_ID]” --> <b> Entrar en la VPN </b>
+  4. “sudo zerotier-cli leave [Network_ID]” --> <b> Salir de la VPN </b>
 
   </td>
  </tr>
  
  <tr>
-  <td> Nodo1 </td>
-  <td></td>
+  <td><b> Nodo1 </b></td>
+  <td> 192.168.192.X </td>
   <td>
   
   1. “curl -s https://install.zerotier.com/ | sudo bash”
   2. “sudo reboot”
-  3. “sudo zerotier-cli join [Network_ID]” --> Entrar en la VPN
-  4. “sudo zerotier-cli leave [Network_ID]” --> Salir de la VPN
+  3. “sudo zerotier-cli join [Network_ID]” --> <b> Entrar en la VPN </b>
+  4. “sudo zerotier-cli leave [Network_ID]” --> <b> Salir de la VPN </b>
     
   </td>
  </tr>
  
  <tr>
-  <td rowspan="2"> Nodo2 (BananaPI) </td>
-  <td rowspan="2"></td>
+  <td rowspan="2"><b> Nodo2 (BananaPI) </b></td>
+  <td rowspan="2"> 192.168.192.X </td>
   <td>
  
   1. “apt-get install wget”
@@ -41,8 +41,8 @@
   3. “apt install apt-transport-https ca-certificates curl gnupg lsb-release”
   4. “curl -fsSL https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/doc/contact%40zerotier.com.gpg | gpg --dearmor -o /etc/apt/trusted.gpg.d/zerotier.gpg”
   5. “echo "deb https://download.zerotier.com/debian/$(lsb_release -cs)/ $(lsb_release -cs) main" | tee /etc/apt/sources.list.d/zerotier.list”
-  6. “sudo zerotier-cli join [Network_ID]” --> Entrar en la VPN
-  7. “sudo zerotier-cli leave [Network_ID]” --> Salir de la VPN
+  6. “sudo zerotier-cli join [Network_ID]” --> <b> Entrar en la VPN </b>
+  7. “sudo zerotier-cli leave [Network_ID]” --> <b> Salir de la VPN  </b>
     
   </td>
  </tr>
@@ -52,42 +52,42 @@
 
   1. “curl -s https://install.zerotier.com/ | sudo bash”
   2. “sudo reboot”
-  3. “sudo zerotier-cli join [Network_ID]” --> Entrar en la VPN
-  4. “sudo zerotier-cli leave [Network_ID]” --> Salir de la VPN  
+  3. “sudo zerotier-cli join [Network_ID]” --> <b> Entrar en la VPN </b>
+  4. “sudo zerotier-cli leave [Network_ID]” --> <b> Salir de la VPN </b>  
     
   </td>
  </tr>
  
  <tr>
-  <td> Nodo3 </td>
-  <td></td>
+  <td><b> Nodo3 </b></td>
+  <td> 192.168.192.X </td>
   <td>
   
   1. “curl -s https://install.zerotier.com/ | sudo bash”
   2. “sudo reboot”
-  3. “sudo zerotier-cli join [Network_ID]” --> Entrar en la VPN
-  4. “sudo zerotier-cli leave [Network_ID]” --> Salir de la VPN
+  3. “sudo zerotier-cli join [Network_ID]” --> <b> Entrar en la VPN </b>
+  4. “sudo zerotier-cli leave [Network_ID]” --> <b> Salir de la VPN </b>
 
     
   </td>
  </tr>
 
  <tr>
-  <td> Nodo4 </td>
-  <td></td>
+  <td><b> Nodo4 </b></td>
+  <td> 192.168.192.X </td>
   <td>
   
   1. “curl -s https://install.zerotier.com/ | sudo bash”
   2. “sudo reboot”
-  3. “sudo zerotier-cli join [Network_ID]” --> Entrar en la VPN
-  4. “sudo zerotier-cli leave [Network_ID]” --> Salir de la VPN
+  3. “sudo zerotier-cli join [Network_ID]” --> <b> Entrar en la VPN </b>
+  4. “sudo zerotier-cli leave [Network_ID]” --> <b> Salir de la VPN </b>
     
   </td>
  </tr>
   
  <tr>
-  <td> WD NAS </td>
-  <td></td>
+  <td><b> WD NAS </b></td>
+  <td> 192.168.192.X </td>
   <td>
   
   1. Bajar el binario "https://download.zerotier.com/dist/wd/"
