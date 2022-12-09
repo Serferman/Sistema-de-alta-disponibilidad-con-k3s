@@ -27,11 +27,10 @@
  1. Primero, debemos iniciar sesión en el NAS mediante el comando “sshd@[IP]”.
  2. Una vez dentro del sistema, nos moveremos al directorio de “Entware” y ahí, abriremos el archivo “init.d” mediante el comando “sudo vi init.d”.
  3. Al final de este archivo tenemos que añadir 2 sentencias de comandos:
- <b>
-  “cat /mnt/HD/HD_a2/Nas_Prog/entware/[File_conf_sshd_modificado] > /etc/ssh/[sshd_config]”
- <br/>
-  “kill -HUP `cat /var/run/sshd.pid`”
- </b>
+ 
+ <b> “cat /mnt/HD/HD_a2/Nas_Prog/entware/[File_conf_sshd_modificado] > /etc/ssh/[sshd_config]” </b>
+<br/>
+ <b> “kill -HUP `cat /var/run/sshd.pid`” </b> 
  
  4. Una vez escritos los comandos dentro del archivo “init.d”, debemos guardarlo y salir de él.
  5. Ahora en la misma carpeta, crearemos un archivo de texto, para insertar la configuración clonada del archivo “sshd_config”. Todo esto mediante el comando “touch sshd_config_mod”
@@ -41,19 +40,25 @@
  </tr>
 </table>
 
-Archivo de configuración modificado del servicio SSH en el NAS. 
-Copias de Seguridad remotas (TAR)
-Configurar el sistema para ejecutar el Script de copias remotas automáticamente.
-Port [] 
-Protocol 2
-Hostkey /etc/ssh/ssh_host_rsa_key
-SyslogFacility AUTHPRIV
-AllowUsers sshd
-PermitRootLogin no
-PubkeyAuthentication yes
-PermitEmptyPasswords no
-PasswordAuthentication no
-ChallengeResponseAuthentication no
-TCPKeepAlive yes
-MasAuthTries 5
-Subsystem sftp /usr/bin/sftp-server
+### Archivo de configuración modificado del servicio SSH en el NAS. ###
+<table>
+ <tr>
+  <td>
+   <b>
+ - Port [] 
+ - Protocol 2
+ - Hostkey /etc/ssh/ssh_host_rsa_key
+ - SyslogFacility AUTHPRIV
+ - AllowUsers sshd
+ - PermitRootLogin no
+ - PubkeyAuthentication yes
+ - PermitEmptyPasswords no
+ - PasswordAuthentication no
+ - ChallengeResponseAuthentication no
+ - TCPKeepAlive yes
+ - MasAuthTries 5
+ - Subsystem sftp /usr/bin/sftp-server
+   </b>
+  </td>
+ </tr>
+</table>
