@@ -7,29 +7,42 @@
     REALIZAR TANTO EN EL SERVIDOR MAESTRO COMO EN LOS SERVIDORES ESCLAVOS
    </div>
 
-  1. Crearemos un usuario mediante el comando “sudo adduser [usuario]”.
-  2. Crearemos un grupo mediante el comando “sudo groupadd [grupo]”.
-  3. Añadiremos el usuario al grupo mediante el comando “sudo adduser [usuario] [grupo]”.
-  4. Ahora abriremos el archivo “Sudoers”, mediante el comando “sudo visudo” o “sudo nano /etc/sudoers”.
-  5. Al final del archivo debemos añadir la siguiente línea “%[grupo] ALL=(root) NOPASSWD: /usr/bin/tar”.
+  1. Crearemos un usuario mediante el comando <b> “sudo adduser [usuario]”</b>.
+  2. Crearemos un grupo mediante el comando <b> “sudo groupadd [grupo]”</b>.
+  3. Añadiremos el usuario al grupo mediante el comando <b> “sudo adduser [usuario] [grupo]”</b>.
+  4. Ahora abriremos el archivo <b> “Sudoers”</b>, mediante el comando <b> “sudo visudo” </b> o <b> “sudo nano /etc/sudoers”</b>.
+  5. Al final del archivo debemos añadir la siguiente línea <b> “%[grupo] ALL=(root) NOPASSWD: /usr/bin/tar”</b>.
   6. Ahora guardaremos el archivo y saldremos de este.
-  7. Posteriormente, nos moveremos al directorio “/usr/bin” mediante el comando “cd /usr/bin”.
-  8. En este directorio debemos crear un archivo mediante el comando “sudo nano Tar.sh”.
+  <br/>
+  
+  7. Posteriormente, nos moveremos al directorio <b> “/usr/bin” </b> mediante el comando <b> “cd /usr/bin”</b>.
+  8. En este directorio debemos crear un archivo mediante el comando <b> “sudo nano Tar.sh”</b>.
   9. Dentro de este archivo debemos de insertar las siguientes sentencias:
-#!/bin/sh
-sudo /usr/bin/tar $*
+  
+  <div align="center">
+   <b> #!/bin/sh </b>
+    <br/>
+   <b> sudo /usr/bin/tar $* </b>
+  </div>
+ 
   10. Ahora guardaremos el archivo y saldremos de este.
   11. Después, tenemos que asignarle los permisos y propiedad adecuados al fichero, mediante los comandos:
   
-  - "sudo chown root:[Grupo] /usr/bin/Tar.sh"
-  - "sudo chmod 750 /usr/bin/Tar.sh"
+  - <b> "sudo chown root:[Grupo] /usr/bin/Tar.sh" </b>
+  - <b> "sudo chmod 750 /usr/bin/Tar.sh" </b>
   
   </td>
  </tr>
 </table>
 
 ### Creación de claves SSH para la automatización y securización del proceso de apagado. ###
-REALIZAR EN LOS NODOS DEL CLUSTER Y TRASPASARLA AL NAS
+<table>
+ <tr>
+  <td>
+   <div align="center">
+    REALIZAR EN LOS NODOS DEL CLUSTER Y TRASPASARLA AL NAS
+   </div>
+   
 1º - Creación de las claves mediante el comando “ssh-keygen -b 4096 -t rsa”.
 2º - Traspaso de claves mediante el comando “ssh-copy-id -i [Clave_publica] 
 [Nombre_Usuario_NAS]@[IP_Nodos_NAS]”.
