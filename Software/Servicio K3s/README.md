@@ -1,11 +1,11 @@
 <table>
  <tr>
-  <td> Equipo </td>
-  <td> Proceso de instalación de k3s </td>
+  <td><h3> Equipo </h3></td>
+  <td><h3> Proceso de instalación de k3s </h3></td>
  </tr>
  
  <tr>
-  <td> Master (Server_ITX)</td>
+  <td align="center"><b> Master (Server_ITX) </b></td>
   <td>
   
   1. “curl -sfL https://get.k3s.io | K3S_KUBECONFIG_MODE="644" sh -s -“
@@ -18,7 +18,7 @@
  
  
  <tr>
-  <td> Nodo1 (RaspberryPI) </td>
+  <td align="center"><b> Nodo1 (RaspberryPI) </b></td>
   <td>
   
   1. “curl -sfL https://get.k3s.io | K3S_TOKEN="K10fda709ef5a6a5d61c8a7b42fdab8d82fc4fa059149424403d6db3ef967605aeb::server:da079804ac9d07934d62b2ae91c2da55" K3S_URL="https://192.168.2.7:6443" K3S_NODE_NAME="servername" sh -"
@@ -28,7 +28,7 @@
  
  
  <tr>
-  <td> Nodo2 (BananaPI) </td>
+  <td align="center"><b> Nodo2 (BananaPI) </b></td>
   <td>
   
   1. “curl -sfL https://get.k3s.io | K3S_TOKEN="K10fda709ef5a6a5d61c8a7b42fdab8d82fc4fa059149424403d6db3ef967605aeb::server:da079804ac9d07934d62b2ae91c2da55" K3S_URL="https://192.168.2.7:6443" K3S_NODE_NAME="servername" sh -"
@@ -38,7 +38,7 @@
  
  
  <tr>
-  <td> Nodo3 (RaspberryPI) </td>
+  <td align="center"><b> Nodo3 (RaspberryPI) </b></td>
   <td>
   
  1. “curl -sfL https://get.k3s.io | K3S_TOKEN="K10fda709ef5a6a5d61c8a7b42fdab8d82fc4fa059149424403d6db3ef967605aeb::server:da079804ac9d07934d62b2ae91c2da55" K3S_URL="https://192.168.2.7:6443" K3S_NODE_NAME="servername" sh -"
@@ -48,7 +48,7 @@
  
  
  <tr>
-  <td> Nodo4 (RaspberryPI) </td>
+  <td align="center"><b> Nodo4 (RaspberryPI) </b></td>
   <td>
   
  1. “curl -sfL https://get.k3s.io | K3S_TOKEN="K10fda709ef5a6a5d61c8a7b42fdab8d82fc4fa059149424403d6db3ef967605aeb::server:da079804ac9d07934d62b2ae91c2da55" K3S_URL="https://192.168.2.7:6443" K3S_NODE_NAME="servername" sh -"
