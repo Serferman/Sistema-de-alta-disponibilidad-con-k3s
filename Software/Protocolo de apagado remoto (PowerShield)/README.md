@@ -33,7 +33,7 @@
  </tr>
 </table>
    
-   <img src="diagramas/Recursos varios/PowerShield_Recurso1.PNG">
+<img src="/diagramas/Recursos varios/PowerShield_Recurso1.PNG">
 
 ### Configuración del sistema para la ejecución del Script de apagado automáticamente. ###
 <div align="center"> 
