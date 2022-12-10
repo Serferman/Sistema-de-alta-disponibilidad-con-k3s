@@ -15,6 +15,10 @@
  </tr>
 </table>
 
+<div align="center">
+ <img src="/diagramas/Recursos varios/MyCloudOS5_Portainer.png" width="60%">
+</div>
+
 ### Añadir el Clúster “K3s” a la administración gráfica de “Portainer.io”. ###
 <table>
  <tr>
@@ -37,3 +41,13 @@
   </td>
  </tr>
 </table>
+
+<div align="center">
+ <img src="/diagramas/Recursos varios/Portainer_Insercción_Cluster.jpg" width="75%">
+</div>
+
+  <br/>
+
+<div align="center">
+ <img src="/diagramas/Recursos varios/Portainer_Cluster_Recursos.png" width="75%">
+</div>
