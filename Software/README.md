@@ -47,6 +47,9 @@ Estas son las posibles bases que estableceré al proyecto, pero obviamente todo 
 
 <br/>
 
+## Orden de creación de cada servicio ##
+<a href=""> </a>
+
 ## Expansiones o ampliaciones lógicas
 Con relación a las ampliaciones lógicas, debemos de tener en cuenta que el núcleo del sistema es el software de clusterización, por lo que todo lo que se añada al sistema, será complementario al mismo o con la finalidad de mejorar o proteger el sistema. Se tendrá en cuenta las siguientes características:
 
